@@ -1,0 +1,33 @@
+.bread-crumbs {
+    &__in {
+        padding: 40px 0 50px 80px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        ul li {
+            position: relative;
+            margin-right: 52px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+        ul li:not(:first-child):before {
+            content: "";
+            position: absolute;
+            top: 11px;
+            left: -28px;
+            width: 12px;
+            height: 7px;
+            background: #009846;
+            border-radius: 50%;
+        }
+        ul li a:active {
+            color: #C48321
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.news {
+    position: relative;
+    &__bg {
+        z-index: 5;
+        position: absolute;
+        bottom: 78px;
+        left: 187px;
+    }
+    &__in {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 80px 120px;
+    }
+    &__left {
+        width: 40%;
+        h2 {
+            font-family: 'Calibri';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 90px;
+            margin-top: 0;
+        }
+        span {
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 192px;
+        }
+        .button {
+            display: block;
+            max-width: 258px;
+            box-sizing: border-box;
+            border: 2px solid #EC6708;
+            border-radius: 200px;
+            padding: 16px 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+    &__right {
+        width: 65%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 20px;
+    }
+    &__item {
+        padding: 10px 10px 20px;
+        background: #FCDFB3;
+        border-radius: 20px;
+        &-image {
+            max-height: 300px;
+            height: 100%;
+            margin-bottom: 20px;
+            img {
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-about {
+            padding: 0 20px;
+            span {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: #009846;
+            }
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.tabs {
+    position: relative;
+    &__paws {
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: -1;
+    }
+    &__in {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        padding: 120px 80px 45px;
+    }
+    &__item {
+        background: #FCDFB3;
+        border-radius: 20px;
+        padding: 30px 80px;
+        .icon {
+            text-align: center;
+            margin-top: 20px;
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}

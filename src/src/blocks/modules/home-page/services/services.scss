@@ -1,0 +1,104 @@
+.services {
+    padding-top: 50px;
+    position: relative;
+    &__in {
+        padding: 120px 80px 206px;
+        background: url("../img/big-trees.svg"), #FCDFB3;
+        background-repeat: no-repeat; 
+        background-position: 0% 100%;
+        border-radius: 120px;
+        position: relative;
+        h2 {
+        font-family: 'Calibri';
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 90px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        }
+    }
+    &__big-branch {
+        position: absolute;
+        top: -42px;
+        right: 0;
+        z-index: 3;
+    }
+    &__slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 21px;
+    }
+    &__item {
+        width: 100%;
+        max-width: 413px;
+        box-sizing: border-box;
+        position: relative;
+        &-image {
+            max-height: 250px;
+            height: 100%;
+            img {
+                border-radius: 20px;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border: 5px solid #EC6708;
+            }
+        }
+        &-about {
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            span {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 26px;
+                display: block;
+                max-width: 334px;
+            }
+            .button-services {
+            display: block;
+            max-width: 333px;
+            border: 2px solid #EC6708;
+            border-radius: 200px;
+            padding: 16px 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 11px;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            }
+        }
+    }
+    &__price {
+        width: 120px;
+        height: 120px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 46%;
+        right: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .bold-pice {
+            font-weight: 700;
+            line-height: 26px;
+        }
+    }
+}
+

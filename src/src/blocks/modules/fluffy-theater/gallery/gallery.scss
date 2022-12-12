@@ -1,0 +1,88 @@
+.gallery-theater {
+    position: relative;
+    padding-bottom: 120px;
+    &__big-branch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(180deg);
+        transform: scale(-1, 1)
+    }
+    &__in {
+        padding: 120px 80px 80px 80px;
+        h2 {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 53px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+       
+        ul {
+            list-style: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            width: 52%;
+            li:not(:last-child) {
+                margin-right: 40px;
+            }
+            li a {
+                color: #EC6708;
+            }
+            li a:active {
+                border-bottom: 2px solid #EC6708;
+            }
+        }
+        &-button {
+            display: block;
+            max-width: 180px;
+            width: 100%;
+            box-sizing: border-box;
+            background: #C48321;
+            padding: 16px 48.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+                margin-right: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        &-item {
+            width: 100%;
+            max-height: 354px;
+            height: 100%;
+            iframe{
+                border: 5px solid #EC6708;
+                border-radius: 20px;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                border: 5px solid #EC6708;
+                border-radius: 20px;
+                height: 100%;
+            }
+        }
+    }
+}

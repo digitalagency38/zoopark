@@ -1,0 +1,94 @@
+.gallery {
+    padding-top: 120px;
+    position: relative;
+    &__big-branch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(180deg);
+        transform: scale(-1, 1)
+    }
+    &__paws {
+        position: absolute;
+        top: 21%;
+        left: 59%;
+        transform: scale(-1, 1)
+    }
+    &__in {
+        padding: 120px 80px 200px 80px;
+        background: #FCDFB3;
+        border-radius: 120px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        h2 {
+            font-family: 'Calibri';
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 90px;
+            margin: 0;
+            margin-right: 56px;
+            width: 26%;
+            padding-bottom: 20px;
+
+        }
+        ul {
+            list-style: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            width: 52%;
+            li:not(:last-child) {
+                margin-right: 40px;
+            }
+            li a:active {
+                color: #EC6708;
+                border-bottom: 2px solid #EC6708;
+            }
+        }
+        &-button {
+            display: block;
+            max-width: 238px;
+            border: 2px solid #EC6708;
+            border-radius: 200px;
+            padding: 16px 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                margin-right: 20px;
+                white-space: nowrap;
+            }
+        }
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        &-item {
+            max-height: 354px;
+            height: 100%;
+            iframe{
+                border: 5px solid #EC6708;
+                border-radius: 20px;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                border: 5px solid #EC6708;
+                border-radius: 20px;
+                height: 100%;
+            }
+        }
+    }
+}

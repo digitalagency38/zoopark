@@ -1,0 +1,103 @@
+.poster {
+    padding-top: 120px;
+    &__in {
+        padding: 0 80px;
+        h2 {
+            font-family: 'Calibri';
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 90px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+    .billboard-cards {
+        &__item {
+        display: flex;
+        align-items: center;
+        padding: 10px 53px 10px 10px;
+        background: #FCDFB3;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+        &-image {
+            max-width: 403px;
+            padding-right: 40px;
+            max-height: 217px;
+            img {
+                border-radius: 20px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        &-about {
+            max-width: 610px;
+            margin-right: 93px;
+            h2 {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 48px;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0;
+            }
+            &-price {
+                span {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 38px;
+                }
+            }
+        }
+        &-price {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            span {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+                margin-right: 20px;
+            }
+        }
+        &-button-theater {
+            display: block;
+            max-width: 180px;
+            width: 100%;
+            box-sizing: border-box;
+            background: #C48321;
+            padding: 16px 48.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+                margin-right: 0;
+            }
+        }
+        &-date {
+            span {
+                display: block;
+                text-align: center;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: #009846;
+            }
+            span:first-child {
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 72px;
+            }
+        }
+    }
+    
+}

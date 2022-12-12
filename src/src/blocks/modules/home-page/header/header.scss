@@ -1,0 +1,86 @@
+.header {
+    &__in {
+        
+        padding: 17.5px 80px 17.5px 84px;
+    }
+    &__top, &__top-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .adress {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            &__geolocation {
+                margin-right: 14px;
+            }
+            }
+        .adress:first-child {
+            margin-right: 24px;
+        }
+    }
+    &__top-item {
+        .operating-mode {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__icon {
+                margin-right: 13px;
+            }
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            .chart {
+                font-weight: 300;
+                margin-left: 10px;
+            }
+        }
+    }
+    &__bottom {
+        padding: 30px 0;
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .menu {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                border: 2px solid #2B2A29;
+                border-radius: 2000px;
+                padding: 15px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .line {
+                    margin-right: 30px;
+                    position: relative;
+                }
+                .line div {
+                    width: 29px;
+                    height: 3px;
+                    background: #2B2A29;
+                    border-radius: 3px;
+                }
+                .line div:first-child {
+                    margin-bottom: 6px;
+                }
+                .line div:last-child {
+                    position: absolute;
+                    left: 50%;
+                }
+            }
+            .phone {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+            }
+        }
+    }
+    
+}

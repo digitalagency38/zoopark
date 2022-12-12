@@ -1,0 +1,62 @@
+.contacts {
+    &__in {
+        padding: 0 80px 120px;
+        h2 {
+            font-family: 'Calibri';
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 90px;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+    }
+    &__adreses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        &-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        &-item-map {
+            border: 5px solid #EC6708;
+            border-radius: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+        &-item-info {
+            margin-top: 30px;
+            .city {
+                h2 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+                span {
+                    display: block;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                }
+            }
+            .operating-mode {
+                margin-top: 30px;
+                h2 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+                span {
+                    display: block;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+

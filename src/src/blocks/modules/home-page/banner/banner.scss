@@ -1,0 +1,169 @@
+.banner {
+    background: #F7E3C1;
+    padding-top: 100px;
+    position: relative;
+    .leaves {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .grass {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+    }
+    &__in {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 80px 0 78px;
+        
+    }
+    &__left {
+        width: 40%;
+        span {
+            font-family: 'Calibri';
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 117px;
+            display: block;
+        }
+        .cities, .cities__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #EC6708;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        }
+        .cities {
+            margin-top: 78px;
+            justify-content: start;
+            padding-bottom: 36px;
+            &__item:first-child {
+                padding-right: 60px;
+            }
+            &__item span {
+                display: block;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #EC6708;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #EC6708;
+            }
+        }
+        .raccoon {
+            position: relative;
+            &__item {
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+            &__item:first-child {
+                top: 125px;
+            }
+        }
+        
+    }
+    &__right {
+        width: 57%;
+        position: relative;
+        .pay {
+            position: absolute;
+            top: 22%;
+            left: 4%;
+            .circle {
+                width: 79px;
+                height: 79px;
+                background: #2B2A29;
+                border-radius: 50%;
+                text-align: center;
+                img {
+                    padding: 33px 0;
+                }
+            }
+        }
+        .about {
+            font-family: 'Calibri';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 108px;
+            max-width: 516px;
+            padding-top: 25px;
+            margin: 0;
+        }
+    }
+    .orange-blocks {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        &__item {
+            max-width: 355px;
+            background: #EC6708;
+            border-radius: 20px 20px 0px 0px;
+            padding: 50px 30px 30px;
+            box-sizing: border-box;
+            min-height: 446px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &:first-child {
+                background-image: url("../img/orange-bg.svg"), url("../img/orange-bg2.svg"),url("../img/orange-bg3.svg"),url("../img/orange-bg4.svg"),url("../img/orange-bg5.svg");
+                background-position: 15% 55%, 84% 14%, 87% 55%,65% 100%, 87% 100%;
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,;
+            }
+            &:last-child {
+                background-image: url("../img/orange-bg6.svg"), url("../img/orange-bg7.svg");
+                background-position: 50% 68%, 100% 89%;
+                background-repeat: no-repeat, no-repeat;
+            }
+            h2 {
+                font-family: 'Calibri';
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+                margin-bottom: 19px;
+                margin-top: 0;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                padding-bottom: 0;
+            }
+            .list {
+                &__item {
+                    border-bottom: 2px solid #2B2A29;
+                    padding-bottom: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                &__item:not(:last-child) {
+                    margin-bottom: 26px;
+                }
+            }
+            .button {
+                display: block;
+                background: #EC6708;
+                border: 2px solid #2B2A29;
+                border-radius: 200px;
+                padding: 16px 44px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+}

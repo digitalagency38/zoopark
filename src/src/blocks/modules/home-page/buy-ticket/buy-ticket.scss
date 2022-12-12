@@ -1,0 +1,75 @@
+.buy-ticket {
+    position: relative;
+    &__paws {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__in {
+        padding: 39px 80px 70px;
+        h2 {
+            font-family: 'Calibri';
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 90px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    &__item {
+        background: #FCDFB3;
+        border-radius: 20px;
+        background: url(../img/trees.svg),url(../img/trees2.svg),#FCDFB3;
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0 9%, 52% 100%;
+        
+        h2 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 48px;
+            margin-bottom: 20px;
+            padding: 40px 40px 0 40px;
+        }
+        .price {
+            padding:0 40px 40px 40px;
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                display: block;
+            }
+            .bold-price {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 48px;
+            }
+        }
+        .line {
+            border-bottom: 1px dashed #432F0F;
+            height: 1px;
+            width: 100%;
+        }
+        .button-ticket {
+            margin: 40px 40px 52px 40px;
+            display: block;
+            max-width: 333px;
+            border: 2px solid #EC6708;
+            border-radius: 200px;
+            padding: 16px 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
