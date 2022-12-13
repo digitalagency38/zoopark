@@ -1,0 +1,95 @@
+.news-zoo {
+    position: relative;
+    margin-left: 240px;
+    &__in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 120px 0;
+    }
+    &__left {
+        width: 14.5%;
+        background: url("../img/lapki.svg"), #C48321;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding: 100px 206px 100px 80px;
+        h2 {
+            font-family: 'Calibri';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 53px;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        span {
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #fff;
+            max-width: 192px;
+            margin-bottom: 82px;
+        }
+        .button {
+            display: block;
+            max-width: 155px;
+            width: 100%;
+            box-sizing: border-box;
+            background: #fff;
+            padding: 16px 29px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn-title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: inherit;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__right {
+        width: 65%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 20px;
+    }
+    &__item {
+        padding: 10px 10px 20px;
+        border-radius: 20px;
+        max-width: 630px;
+        &-image {
+            max-height: 300px;
+            height: 100%;
+            margin-bottom: 20px;
+            img {
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-about {
+            padding: 0 20px;
+            span {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: #009846;
+            }
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}

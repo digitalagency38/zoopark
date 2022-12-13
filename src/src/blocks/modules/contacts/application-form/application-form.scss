@@ -1,0 +1,26 @@
+.application-form {
+    &__in {
+        padding: 0 80px 120px;
+    }
+    &__flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-text {
+            max-width: 450px;
+            margin-right: 92px;
+            h2 {
+                font-weight: 700;
+                font-size: 44px;
+                line-height: 53px;
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
