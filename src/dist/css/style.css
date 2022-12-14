@@ -1281,6 +1281,7 @@ a {
 .gallery__images-item iframe {
   border: 5px solid #EC6708;
   border-radius: 20px;
+  height: 354px;
 }
 
 .gallery__images-item img {
@@ -1289,7 +1290,7 @@ a {
   width: 100%;
   border: 5px solid #EC6708;
   border-radius: 20px;
-  height: 100%;
+  height: 354px;
 }
 
 .reviews {
@@ -1996,6 +1997,11 @@ a {
   margin-right: 20px;
 }
 
+.bread-crumbs__in.our-pets,
+.bread-crumbs__in.photos-bread-crumbs {
+  padding: 40px 0 40px 80px;
+}
+
 .bread-crumbs__in {
   padding: 40px 0 50px 80px;
 }
@@ -2394,7 +2400,7 @@ a {
 
 .atmosphere__gallery-item img {
   width: 100%;
-  height: 100%;
+  height: 332px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2629,42 +2635,6 @@ a {
   position: absolute;
   top: 0;
   left: -22px;
-}
-
-.bread-crumbs__in.our-pets {
-  padding: 40px 0 40px 80px;
-}
-
-.bread-crumbs__in.our-pets ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.bread-crumbs__in.our-pets ul li {
-  position: relative;
-  margin-right: 52px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-}
-
-.bread-crumbs__in.our-pets ul li:not(:first-child):before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: -28px;
-  width: 12px;
-  height: 7px;
-  background: #009846;
-  border-radius: 50%;
-}
-
-.bread-crumbs__in.our-pets ul li a:active {
-  color: #C48321;
 }
 
 .zoo-news__in {
@@ -3230,6 +3200,72 @@ a {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 15px;
+}
+
+.photos__in {
+  padding: 0 80px 100px;
+}
+
+.photos__in .gallery-title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.photos__in .photo-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.photos .photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px 100px;
+}
+
+.photos .photo-gallery__item {
+  max-height: 332px;
+  height: 100%;
+}
+
+.photos .photo-gallery__item img {
+  width: 100%;
+  height: 332px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #C48321;
+  box-sizing: border-box;
+}
+
+.video__in {
+  padding: 0 80px 120px;
+}
+
+.video__in h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.video .video-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px 100px;
+}
+
+.video .video-gallery__item {
+  max-height: 332px;
+  height: 100%;
+}
+
+.video .video-gallery__item iframe {
+  border: 5px solid #EC6708;
+  border-radius: 20px;
+  height: 332px;
 }
 
 .webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }

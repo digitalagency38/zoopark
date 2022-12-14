@@ -1,0 +1,24 @@
+.video {
+    &__in {
+        padding: 0 80px 120px;
+        h2 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+    .video-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 80px 100px;
+        &__item {
+            max-height: 332px;
+            height: 100%;
+            iframe{
+                border: 5px solid #EC6708;
+                border-radius: 20px;
+                height: 332px;
+            }
+        }
+    }
+}
