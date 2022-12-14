@@ -3268,4 +3268,64 @@ a {
   height: 332px;
 }
 
+.personal-data__in {
+  padding: 0 80px 120px 80px;
+}
+
+.personal-data__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.personal-data__text-item {
+  margin-bottom: 50px;
+}
+
+.personal-data__text-item s h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.personal-data__text-item p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.personal-data__text-item p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.personal-data__text-item ul li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.personal-data__text-item-list {
+  margin-bottom: 20px;
+}
+
+.personal-data__text-item-list span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+}
+
+.personal-data__text-item-list span:last-child {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+}
+
 .webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }
