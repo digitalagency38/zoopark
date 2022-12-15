@@ -2873,6 +2873,10 @@ a {
   margin-bottom: 50px;
 }
 
+.banner-holiday-team {
+  margin-bottom: 120px;
+}
+
 .banner-holiday__in {
   max-width: 846px;
   width: 100%;
@@ -3326,6 +3330,271 @@ a {
   font-size: 14px;
   line-height: 24px;
   display: block;
+}
+
+.detailed-about-us__in {
+  padding: 0 80px;
+}
+
+.detailed-about-us__in h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.detailed-about-us__in-banner {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.detailed-about-us__in-banner__item {
+  max-height: 520px;
+  height: 100%;
+}
+
+.detailed-about-us__in-banner__item img {
+  border: 5px solid #C48321;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.detailed-about-us__info {
+  padding: 0 217px 50px;
+}
+
+.detailed-about-us__info-text h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.detailed-about-us__info-text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detailed-about-us__info-text ul {
+  padding-left: 18px;
+}
+
+.detailed-about-us__info-text ul li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detailed-about-us__info-text .detailed-about-us__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.detailed-about-us__about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.detailed-about-us__about-item-image {
+  height: 233px;
+}
+
+.detailed-about-us__about-item-image img {
+  border: 5px solid #C48321;
+  border-radius: 20px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.detailed-about-us__after-banner-text {
+  padding: 0 217px 120px;
+}
+
+.detailed-about-us__after-banner-text .litle-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+
+.detailed-about-us__after-banner-text .for-the-press {
+  margin-bottom: 50px;
+}
+
+.detailed-about-us__after-banner-text .for-the-press h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.detailed-about-us__after-banner-text .for-the-press p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detailed-about-us__after-banner-text .for-the-press p:first-child {
+  margin-top: 0;
+}
+
+.detailed-about-us__after-banner-text .for-the-press p:last-child {
+  margin-bottom: 0;
+}
+
+.detailed-about-us__after-banner-text .for-the-press a {
+  font-weight: 600;
+  border-bottom: 1px solid;
+}
+
+.detailed-about-us__after-banner-text .for-the-press-image {
+  width: 100%;
+}
+
+.detailed-about-us__after-banner-text .for-the-press-image .image-item {
+  max-height: 450px;
+  height: 100%;
+}
+
+.detailed-about-us__after-banner-text .for-the-press-image .image-item img {
+  border: 5px solid #2B2A29;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+}
+
+.detailed-about-us__after-banner-text .for-the-press-image span {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.about-us-slider__in {
+  padding: 0 80px 120px 80px;
+}
+
+.about-us-slider__flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 80px;
+}
+
+.about-us-slider__flex-item {
+  height: 450px;
+}
+
+.about-us-slider__flex-item img {
+  border: 5px solid #C48321;
+  border-radius: 20px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.team {
+  background: url("../img/team-bg.svg"), #FCDFB3;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-bottom: 120px;
+  background-size: cover;
+}
+
+.team__in {
+  padding: 150px 70px 150px 90px;
+}
+
+.team__in h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.team__photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.team__item {
+  padding: 10px 10px 30px 10px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.team__item-image {
+  height: 250px;
+}
+
+.team__item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.team__item span {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.work-license__in {
+  padding: 0 297px 40px;
+}
+
+.work-license__in h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.work-license__text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.work-license__text p:first-child {
+  margin-top: 0;
+}
+
+.work-license__text p:last-child {
+  margin-bottom: 0;
 }
 
 .webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }

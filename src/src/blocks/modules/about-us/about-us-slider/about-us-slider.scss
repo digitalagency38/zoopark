@@ -1,0 +1,23 @@
+.about-us-slider {
+    &__in {
+        padding: 0 80px 120px 80px;
+    }
+    &__flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding-bottom: 80px;
+        &-item {
+            height: 450px;
+            img {
+                border: 5px solid #C48321;
+                border-radius: 20px;
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                height: 100%;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
