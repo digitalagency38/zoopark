@@ -3597,4 +3597,39 @@ a {
   margin-bottom: 0;
 }
 
+.history-zoo__in {
+  padding: 0 80px 100px 80px;
+}
+
+.history-zoo__text h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.history-zoo__text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+.history-zoo__text p:first-child {
+  margin-top: 0;
+}
+
+.history-zoo__text p:last-child {
+  margin-bottom: 0;
+}
+
+.history-zoo__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
 .webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }
