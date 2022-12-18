@@ -3632,4 +3632,72 @@ a {
   margin-bottom: 40px;
 }
 
+.history-by-year__in {
+  padding: 0 80px;
+}
+
+.history-by-year__in-item {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+}
+
+.history-by-year__in-item .year-line {
+  width: 8px;
+  height: 100%;
+  background: #E5B376;
+  position: relative;
+}
+
+.history-by-year__in-item .year-line:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EC6708;
+}
+
+.history-by-year__in-item .year-line:nth-child(1) {
+  border-radius: 5000px;
+}
+
+.history-by-year__in-item span {
+  display: block;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  color: #EC6708;
+  margin-top: 35px;
+}
+
+.history-by-year__in-item .about-year {
+  background: #F7E7CF;
+  margin-top: 35px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  padding: 10px 10px 30px 10px;
+}
+
+.history-by-year__in-item .about-year-image {
+  max-height: 300px;
+  height: 100%;
+}
+
+.history-by-year__in-item .about-year-image img {
+  width: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.history-by-year__in-item .about-year p {
+  padding: 20px 20px 0 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }
