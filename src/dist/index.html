@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?_v=20221218202624">
+    <link rel="stylesheet" href="css/style.css?_v=20230104015519">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="app">
          <div class="header">
     <div class="container">
     <div class="header__in">
@@ -100,18 +100,15 @@
         <div class="banner__right">
             <p class="about">Сибирский Зоопарк создавался, как частный семейный зоопарк. Когда мы поняли, что все наши питомцы не помещаются дома, мы построили маленький зоопарк.</p>
             
-            <div class="pay">
-                <div class="circle">
-                    <img src="img/arrow-white.svg" alt="arrow">
-                </div>
-                <span>Купить билет</span>
-            </div>
             <div class="orange-blocks">
                 <div class="orange-blocks__item">
+                    <div class="pay">
+                        <img src="img/buy_ticket.svg" width="100%" alt="arrow">
+                    </div>
                     <div class="text">
-                    <h2>Развлечения</h2>
-                    <p>Не следует, однако, забывать, что выбранный нами инновационный путь напрямую зависит от вывода текущих</p>
-                </div>
+                        <h2>Развлечения</h2>
+                        <p>Не следует, однако, забывать, что выбранный нами инновационный путь напрямую зависит от вывода текущих</p>
+                    </div>
                     <div class="list">
                         <a href="" class="list__item">
                             <span>Пушистый театр</span>
@@ -130,9 +127,9 @@
 
                 <div class="orange-blocks__item">
                     <div class="text">
-                    <h2>Реабилитация</h2>
-                    <p>Не следует, однако, забывать, что выбранный нами инновационный путь напрямую зависит от вывода текущих</p>
-                </div>
+                        <h2>Реабилитация</h2>
+                        <p>Не следует, однако, забывать, что выбранный нами инновационный путь напрямую зависит от вывода текущих</p>
+                    </div>
                     <a href="" class="button">
                         <span>Подробнее</span>
                         <img src="img/black-arrow.svg" alt="arrow">
@@ -191,19 +188,98 @@
                         <img src="img/green-button.svg" alt="button">
                     </div>
                 </a>
-            </div>
-            <div class="all-animals__right">
-                <div class="all-animals__item">
-                    <div class="animal">
-                        <img src="img/rat.png" alt="animal">
+                <div class="all-animals__arrows global__arows">
+                    <div class="global__arow global__arow--prev" @click="allAnimals.slider.go('<')">
+                        <div class="global__arow-in">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none">
+                                <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"/>
+                            </svg>
+                        </div>
                     </div>
-                    <span>Крысы</span>
+                    <div class="global__arow global__arow--next" @click="allAnimals.slider.go('>')">
+                        <div class="global__arow-in">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none">
+                                <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="all-animals__item">
-                    <div class="animal">
-                        <img src="img/guinea-pig.png" alt="animal">
+            </div>
+            <div class="all-animals__right glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
+                            <div class="all-animals__item glide__slide">
+                                <div class="animal">
+                                    <img src="img/rat.png" alt="animal">
+                                </div>
+                                <span>Крысы</span>
+                            </div>
+                        
                     </div>
-                    <span>Морские свинки</span>
                 </div>
             </div>
         </div>
@@ -211,56 +287,58 @@
 </div> 
          <div class="buy-ticket">
     <div class="buy-ticket__paws">
-        <img src="img/paws.svg" alt="paws">
+        <img src="img/paws-reviews.svg" alt="paws">
     </div>
     <div class="container">
         <div class="buy-ticket__in">
             <h2>Купите билеты в зоопарк</h2>
             <div class="buy-ticket__items">
-                <div class="buy-ticket__item">
-                    <h2>Взрослый билет</h2>
-                    <div class="price">
-                        <span>Цена</span>
-                        <span class="bold-price">350 ₽</span>
-                        </div>
-                        <div class="line"></div>
-                        <a href="" class="button-ticket">
-                            <span>К покупке</span>
-                        <div class="green-button">
-                            <img src="img/green-button.svg" alt="button">
-                        </div>
-                        </a>
-                </div>
-
-                <div class="buy-ticket__item">
-                    <h2>Взрослый билет</h2>
-                    <div class="price">
-                        <span>Цена</span>
-                        <span class="bold-price">350 ₽</span>
-                        </div>
-                        <div class="line"></div>
-                        <a href="" class="button-ticket">
-                            <span>К покупке</span>
-                        <div class="green-button">
-                            <img src="img/green-button.svg" alt="button">
-                        </div>
-                        </a>
-                </div>
-
-                <div class="buy-ticket__item">
-                    <h2>Взрослый билет</h2>
-                    <div class="price">
-                        <span>Цена</span>
-                        <span class="bold-price">350 ₽</span>
-                        </div>
-                        <div class="line"></div>
-                        <a href="" class="button-ticket">
-                            <span>К покупке</span>
-                        <div class="green-button">
-                            <img src="img/green-button.svg" alt="button">
-                        </div>
-                        </a>
-                </div>
+                
+                    <div class="buy-ticket__item">
+                        <h2>Взрослый билет</h2>
+                        <div class="price">
+                            <span>Цена</span>
+                            <span class="bold-price">350 ₽</span>
+                            </div>
+                            <div class="line"></div>
+                            <a href="" class="button-ticket">
+                                <span>К покупке</span>
+                            <div class="green-button">
+                                <img src="img/green-button.svg" alt="button">
+                            </div>
+                            </a>
+                    </div>
+                
+                    <div class="buy-ticket__item">
+                        <h2>Взрослый билет</h2>
+                        <div class="price">
+                            <span>Цена</span>
+                            <span class="bold-price">350 ₽</span>
+                            </div>
+                            <div class="line"></div>
+                            <a href="" class="button-ticket">
+                                <span>К покупке</span>
+                            <div class="green-button">
+                                <img src="img/green-button.svg" alt="button">
+                            </div>
+                            </a>
+                    </div>
+                
+                    <div class="buy-ticket__item">
+                        <h2>Взрослый билет</h2>
+                        <div class="price">
+                            <span>Цена</span>
+                            <span class="bold-price">350 ₽</span>
+                            </div>
+                            <div class="line"></div>
+                            <a href="" class="button-ticket">
+                                <span>К покупке</span>
+                            <div class="green-button">
+                                <img src="img/green-button.svg" alt="button">
+                            </div>
+                            </a>
+                    </div>
+                
             </div>
         </div>
     </div>
@@ -272,63 +350,230 @@
     <div class="container">
         <div class="services__in">
             <h2>Услуги зоопарка</h2>
-            <div class="services__slider">
-                <div class="services__item">
-                    <div class="services__item-image">
-                        <img src="img/banner-fluffy.jpg" alt="image">
-                    </div>
-                    <div class="services__price">
-                        <span>от</span>
-                        <span class="bold-pice">1 990 ₽</span>
-                    </div>
-                    <div class="services__item-about">
-                        <h2>Пушистый театр</h2>
-                        <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
-                        <a href="" class="button-services">
-                            <span>К покупке</span>
-                        <div class="green-button">
-                            <img src="img/green-button.svg" alt="button">
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="services__item">
-                    <div class="services__item-image">
-                        <img src="img/services.jpg" alt="image">
-                    </div>
-                    <div class="services__price">
-                        <span>от</span>
-                        <span class="bold-pice">1 990 ₽</span>
-                    </div>
-                    <div class="services__item-about">
-                        <h2>Пушистый театр</h2>
-                        <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
-                        <a href="" class="button-services">
-                            <span>К покупке</span>
-                        <div class="green-button">
-                            <img src="img/green-button.svg" alt="button">
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <div class="services__item-image">
-                        <img src="img/services.jpg" alt="image">
-                    </div>
-                    <div class="services__price">
-                    <span>от</span>
-                    <span class="bold-pice">1 990 ₽</span>
-                </div>
-                    <div class="services__item-about">
-                        <h2>Пушистый театр</h2>
-                        <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
-                        <a href="" class="button-services">
-                            <span>К покупке</span>
-                        <div class="green-button">
-                            <img src="img/green-button.svg" alt="button">
-                        </div>
-                        </a>
+            <div class="services__slider glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="services__item glide__slide">
+                                <div class="services__item-image">
+                                    <div class="services__item-image-in">
+                                        <img src="img/banner-fluffy.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="services__price">
+                                    <span>от</span>
+                                    <span class="bold-pice">1 990 ₽</span>
+                                </div>
+                                <div class="services__item-about">
+                                    <h2>Пушистый театр</h2>
+                                    <span>Не следует, однако, забывать, что выбранный нами инновационный путь</span>
+                                    <a href="" class="button-services">
+                                        <span>К покупке</span>
+                                    <div class="green-button">
+                                        <img src="img/green-button.svg" alt="button">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
@@ -726,14 +971,7 @@
         </div>
     </div>
 </div> 
-
-
-
-         
-
-         
-
     </div>
-    <script src="js/app.min.js?_v=20221218202624"></script>
+    <script src="js/app.min.js?_v=20230104015519"></script>
 </body>
 </html>

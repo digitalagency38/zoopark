@@ -379,6 +379,81 @@ template {
   display: none;
 }
 
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.glide * {
+  box-sizing: inherit;
+}
+
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.glide__slides--dragging {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glide__slide a {
+  -webkit-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.glide--rtl {
+  direction: rtl;
+}
+
 @font-face {
   font-family: "Calibri";
   font-display: swap;
@@ -396,36 +471,71 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
-  font-weight: 100;
+  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-300Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-300Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
-  font-weight: 500;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
-  font-weight: 700;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-700Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
-  font-weight: 900;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 * {
@@ -442,6 +552,35 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.global__arows {
+  display: flex;
+  align-items: center;
+}
+
+.global__arow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #EC6708;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.global__arow--prev {
+  margin-right: 47px;
+  transform: rotate(180deg);
+}
+
+.global__arow-in {
+  width: 38px;
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  font-size: 0;
 }
 
 .header__in {
@@ -635,8 +774,8 @@ a {
 
 .banner__right .pay {
   position: absolute;
-  top: 22%;
-  left: 4%;
+  top: -82px;
+  left: 30px;
 }
 
 .banner__right .pay .circle {
@@ -678,6 +817,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .banner .orange-blocks__item:first-child {
@@ -777,6 +917,7 @@ a {
 
 .all-animals {
   position: relative;
+  overflow: hidden;
 }
 
 .all-animals__bg {
@@ -788,14 +929,27 @@ a {
 
 .all-animals__in {
   display: flex;
-  align-items: flex-start;
   padding: 75px 0 80px 120px;
 }
 
 .all-animals__left {
-  width: 30%;
+  width: 325px;
   position: relative;
   z-index: 3;
+  background: linear-gradient(to right, #fff 0%, #fff calc(100% - 20px), transparent 100%);
+  padding-right: 67px;
+  box-sizing: border-box;
+}
+
+.all-animals__left:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -2000px;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  background: #fff;
 }
 
 .all-animals__left h2 {
@@ -817,7 +971,7 @@ a {
 
 .all-animals__left .button {
   display: block;
-  max-width: 258px;
+  max-width: 100%;
   box-sizing: border-box;
   border: 2px solid #EC6708;
   border-radius: 200px;
@@ -835,13 +989,16 @@ a {
 }
 
 .all-animals__right {
-  width: 65%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  position: relative;
-  right: 6%;
-  z-index: 1;
+  width: calc(100% - 258px - 67px);
+}
+
+.all-animals__right .glide__track {
+  overflow: visible;
+  height: 100%;
+}
+
+.all-animals__right .glide__slides {
+  height: 100%;
 }
 
 .all-animals__item {
@@ -849,7 +1006,6 @@ a {
   background: #FCDFB3;
   border-radius: 20px;
   text-align: center;
-  max-width: 413px;
   position: relative;
   height: 100%;
 }
@@ -866,6 +1022,11 @@ a {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.all-animals__arrows {
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .buy-ticket {
@@ -899,7 +1060,7 @@ a {
 
 .buy-ticket__item {
   background: #FCDFB3;
-  border-radius: 20px;
+  border-radius: 20px 120px 20px 20px;
   background: url(../img/trees.svg), url(../img/trees2.svg), #FCDFB3;
   background-repeat: no-repeat, no-repeat;
   background-position: 0 9%, 52% 100%;
@@ -934,6 +1095,28 @@ a {
   border-bottom: 1px dashed #432F0F;
   height: 1px;
   width: 100%;
+  position: relative;
+}
+
+.buy-ticket__item .line:after,
+.buy-ticket__item .line:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.buy-ticket__item .line:before {
+  left: 0;
+  transform: translate(-50%, calc(-50% + 1px));
+}
+
+.buy-ticket__item .line:after {
+  right: 0;
+  transform: translate(50%, calc(-50% + 1px));
 }
 
 .buy-ticket__item .button-ticket {
@@ -986,21 +1169,13 @@ a {
 }
 
 .services__slider {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 21px;
+  width: 100%;
 }
 
 .services__item {
   width: 100%;
-  max-width: 413px;
   box-sizing: border-box;
   position: relative;
-}
-
-.services__item-image {
-  max-height: 250px;
-  height: 100%;
 }
 
 .services__item-image img {
@@ -1010,6 +1185,17 @@ a {
   width: 100%;
   height: 100%;
   border: 5px solid #EC6708;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.services__item-image-in {
+  position: relative;
+  padding-top: 60%;
 }
 
 .services__item-about h2 {

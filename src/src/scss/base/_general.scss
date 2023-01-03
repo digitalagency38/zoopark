@@ -11,3 +11,32 @@ a {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+
+.global {
+    &__arows {
+        display: flex;
+        align-items: center;
+    }
+    &__arow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #EC6708;
+        box-sizing: border-box;
+        position: relative;
+        cursor: pointer;
+        &--prev {
+            margin-right: 47px;
+            transform: rotate(180deg);
+        }
+    }
+    &__arow-in {
+        width: 38px;
+        position: absolute;
+        top: 50%;
+        right: 13px;
+        transform: translateY(-50%);
+        font-size: 0;
+    }
+}

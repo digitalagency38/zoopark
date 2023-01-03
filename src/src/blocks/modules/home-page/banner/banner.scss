@@ -73,8 +73,8 @@
         position: relative;
         .pay {
             position: absolute;
-            top: 22%;
-            left: 4%;
+            top: -82px;
+            left: 30px;
             .circle {
                 width: 79px;
                 height: 79px;
@@ -111,6 +111,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
             &:first-child {
                 background-image: url("../img/orange-bg.svg"), url("../img/orange-bg2.svg"),url("../img/orange-bg3.svg"),url("../img/orange-bg4.svg"),url("../img/orange-bg5.svg");
                 background-position: 15% 55%, 84% 14%, 87% 55%,65% 100%, 87% 100%;

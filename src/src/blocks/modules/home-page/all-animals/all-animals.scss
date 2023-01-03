@@ -1,5 +1,6 @@
 .all-animals {
     position: relative;
+    overflow: hidden;
     &__bg {
         z-index: 5;
         position: absolute;
@@ -8,13 +9,25 @@
     }
     &__in {
         display: flex;
-        align-items: flex-start;
         padding: 75px 0 80px 120px;
     }
     &__left {
-        width: 30%;
+        width: calc(258px + 67px);
         position: relative;
         z-index: 3;
+        background: linear-gradient(to right, #fff 0%, #fff calc(100% - 20px), transparent 100%);
+        padding-right: 67px;
+        box-sizing: border-box;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -2000px;
+            top: 0;
+            bottom: 0;
+            right: 100%;
+            background: #fff;
+        }
         h2 {
             font-weight: 700;
             font-size: 96px;
@@ -32,7 +45,7 @@
         }
         .button {
             display: block;
-            max-width: 258px;
+            max-width: 100%;
             box-sizing: border-box;
             border: 2px solid #EC6708;
             border-radius: 200px;
@@ -49,20 +62,27 @@
         }
     }
     &__right {
-        width: 65%;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-gap: 20px;
-        position: relative;
-        right: 6%;
-        z-index: 1;
+        width: calc(100% - 258px - 67px);
+        // display: grid;
+        // grid-template-columns: 1fr 1fr ;
+        // grid-gap: 20px;
+        // position: relative;
+        // right: 6%;
+        // z-index: 1;
+        .glide__track {
+            overflow: visible;
+            height: 100%;
+        }
+        .glide__slides {
+            height: 100%;
+        }
     }
     &__item {
         padding: 73px 0px 40px 0px;
         background: #FCDFB3;
         border-radius: 20px;
         text-align: center;
-        max-width: 413px;
+        // max-width: 413px;
         position: relative;
         height: 100%;
         span {
@@ -78,5 +98,9 @@
             right: 0;
             text-align: center;
         }
+    }
+    &__arrows {
+        justify-content: flex-end;
+        margin-top: 20px;
     }
 }

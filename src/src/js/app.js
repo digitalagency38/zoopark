@@ -1,14 +1,16 @@
 import * as globalFunctions from './modules/functions.js';
+import Vue from 'vue/dist/vue.js';
 
 globalFunctions.isWebp();
 
-// import PlacesAndcases from '../blocks/modules/places-and-cases/places-and-cases.js';
+import AllAnimals from '../blocks/modules/home-page/all-animals/all-animals.js';
 
-// window.placesAndCases = new PlacesAndcases();
-
-
-
-
-$(document).ready(function() {
-    // window.placesAndCases.init();
+window.app = new Vue({
+    el: '#app',
+    data: () => ({
+        allAnimals: new AllAnimals()
+    }),
+    mounted() {
+        this.allAnimals.init();
+    }
 });
