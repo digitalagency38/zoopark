@@ -471,13 +471,6 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
   src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
   font-weight: 400;
 }
@@ -486,6 +479,13 @@ template {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -581,6 +581,34 @@ a {
   right: 13px;
   transform: translateY(-50%);
   font-size: 0;
+}
+
+.global__dots {
+  display: flex;
+  align-items: center;
+  background: #2B2A29;
+  padding: 10px;
+  border-radius: 1000px;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.global__dot {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 200px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.global__dot:not(:last-child) {
+  margin-right: 10px;
+}
+
+.global__dot.isActive {
+  width: 30px;
 }
 
 .header__in {
@@ -1144,7 +1172,7 @@ a {
 }
 
 .services__in {
-  padding: 120px 80px 206px;
+  padding: 120px 80px 135px;
   background: url("../img/big-trees.svg"), #FCDFB3;
   background-repeat: no-repeat;
   background-position: 0% 100%;
@@ -1170,6 +1198,10 @@ a {
 
 .services__slider {
   width: 100%;
+}
+
+.services__item-image {
+  position: relative;
 }
 
 .services__item {
@@ -1216,7 +1248,6 @@ a {
 
 .services__item-about .button-services {
   display: block;
-  max-width: 333px;
   border: 2px solid #EC6708;
   border-radius: 200px;
   padding: 16px 44px;
@@ -1238,8 +1269,8 @@ a {
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 46%;
-  right: 6%;
+  bottom: -80px;
+  right: 26px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1256,6 +1287,13 @@ a {
 .services__price .bold-pice {
   font-weight: 700;
   line-height: 26px;
+}
+
+.services__pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .poster {

@@ -2,7 +2,7 @@
     padding-top: 50px;
     position: relative;
     &__in {
-        padding: 120px 80px 206px;
+        padding: 120px 80px 135px;
         background: url("../img/big-trees.svg"), #FCDFB3;
         background-repeat: no-repeat; 
         background-position: 0% 100%;
@@ -25,6 +25,9 @@
     }
     &__slider {
         width: 100%;
+    }
+    &__item-image {
+        position: relative;
     }
     &__item {
         width: 100%;
@@ -65,7 +68,6 @@
             }
             .button-services {
             display: block;
-            max-width: 333px;
             border: 2px solid #EC6708;
             border-radius: 200px;
             padding: 16px 44px;
@@ -87,8 +89,8 @@
         background: #fff;
         border-radius: 50%;
         position: absolute;
-        top: 46%;
-        right: 6%;
+        bottom: -80px;
+        right: 26px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -103,6 +105,12 @@
             font-weight: 700;
             line-height: 26px;
         }
+    }
+    &__pagination {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 

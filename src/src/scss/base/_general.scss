@@ -39,4 +39,28 @@ a {
         transform: translateY(-50%);
         font-size: 0;
     }
+    &__dots {
+        display: flex;
+        align-items: center;
+        background: #2B2A29;
+        padding: 10px;
+        border-radius: 1000px;
+        font-size: 0;
+        box-sizing: border-box;
+    }
+    &__dot {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        background: #fff;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &.isActive {
+            width: 30px;
+        }
+    }
 }

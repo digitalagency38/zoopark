@@ -5,10 +5,10 @@ const Services = class Services {
         this.slider = null;
     }
     initSlider() {
-        if (!document.querySelector('.all-animals__right.glide')) return;
+        if (!document.querySelector('.services__slider.glide')) return;
 
-        this.slider = new Glide('.all-animals__right.glide', {
-            perView: 2,
+        this.slider = new Glide('.services__slider.glide', {
+            perView: 3,
             gap: 20,
             swipeThreshold: false,
             dragThreshold: false,
