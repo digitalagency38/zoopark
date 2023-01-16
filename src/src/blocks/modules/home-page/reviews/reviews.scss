@@ -17,7 +17,7 @@
         transform: scale(-1, 1);
     }
     &__in {
-        padding: 120px 80px;
+        padding: 120px 80px 110px;
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -25,12 +25,17 @@
             line-height: 90px;
             margin-top: 0;
             margin-bottom: 39px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
         }
     }
     &__items {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-gap: 20px;
+        width: 100%;
     }
     &__item {
         background: #FCDFB3;
@@ -39,7 +44,6 @@
         &-name {
             display: flex;
             align-items: center;
-            margin-top: 20px;
             span {
                 font-weight: 700;
                 font-size: 24px;
@@ -64,6 +68,8 @@
             font-weight: 300;
             font-size: 16px;
             line-height: 26px;
+            margin-top: 20px;
+            margin-bottom: 26px;
         }
     }
     &__bottom {

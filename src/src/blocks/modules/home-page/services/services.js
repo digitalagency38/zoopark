@@ -12,7 +12,13 @@ const Services = class Services {
             gap: 20,
             swipeThreshold: false,
             dragThreshold: false,
-            type: 'carousel'
+            type: 'carousel',
+            breakpoints: {
+                1130: {
+                    perView: 2
+                },
+                
+            }
         }).mount()
     }
     init() {

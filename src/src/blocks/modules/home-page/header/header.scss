@@ -1,7 +1,7 @@
 .header {
     &__in {
         
-        padding: 17.5px 80px 17.5px 84px;
+        padding: 17.5px 80px 0 84px;
     }
     &__top, &__top-item {
         display: flex;
@@ -40,6 +40,12 @@
                 margin-left: 10px;
             }
         }
+        @media all and (max-width:1320px) {
+            &:last-child {
+                display: none;
+            }
+        }
+        
     }
     &__bottom {
         padding: 30px 0;

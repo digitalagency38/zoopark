@@ -11,6 +11,10 @@
             line-height: 90px;
             margin: 0;
             margin-bottom: 40px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
         }
         .title-contacts {
             font-weight: 700;
@@ -22,6 +26,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
+        @media all and (max-width:1130px) {
+        grid-template-columns: 1fr;
+        }
         &-item {
             display: flex;
             align-items: flex-start;

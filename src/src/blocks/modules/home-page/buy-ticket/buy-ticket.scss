@@ -14,12 +14,19 @@
             line-height: 90px;
             margin-top: 0;
             margin-bottom: 40px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
         }
     }
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+        @media all and (max-width:1130px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__item {
         background: #FCDFB3;
@@ -27,13 +34,20 @@
         background: url(../img/trees.svg),url(../img/trees2.svg),#FCDFB3;
         background-repeat: no-repeat, no-repeat;
         background-position: 0 9%, 52% 100%;
+        @media all and (max-width:1130px) {
+            background-size: cover;
+        }
         
         h2 {
             font-weight: 700;
             font-size: 30px;
             line-height: 48px;
-            margin-bottom: 20px;
+            margin-bottom: 27px;
             padding: 40px 40px 0 40px;
+            @media all and (max-width:1130px) {
+                font-size: 28px;
+                line-height: 28px;
+            }
         }
         .price {
             padding:0 40px 40px 40px;
@@ -80,7 +94,7 @@
             max-width: 333px;
             border: 2px solid #EC6708;
             border-radius: 200px;
-            padding: 16px 44px;
+            padding: 14px 44px;
             display: flex;
             align-items: center;
             justify-content: space-between;

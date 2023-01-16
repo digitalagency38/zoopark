@@ -9,7 +9,7 @@
     }
     &__in {
         display: flex;
-        padding: 75px 0 80px 120px;
+        padding: 75px 0 80px 80px;
     }
     &__left {
         width: calc(258px + 67px);
@@ -35,6 +35,10 @@
             margin-bottom: 40px;
             font-family: 'Calibri';
             margin-top: 0;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
         }
         span {
             display: block;
@@ -49,11 +53,12 @@
             box-sizing: border-box;
             border: 2px solid #EC6708;
             border-radius: 200px;
-            padding: 16px 44px;
+            padding: 12px 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-top: 30px;
+            max-width: 223px;
             span {
                 font-weight: 600;
                 font-size: 16px;
@@ -102,5 +107,6 @@
     &__arrows {
         justify-content: flex-end;
         margin-top: 20px;
+        margin-right: 40px;
     }
 }

@@ -12,10 +12,13 @@
         position: absolute;
         top: 21%;
         left: 59%;
-        transform: scale(-1, 1)
+        transform: scale(-1, 1);
+        @media all and (max-width:1130px) {
+            top: 15%;
+        }
     }
     &__in {
-        padding: 120px 80px 200px 80px;
+        padding: 100px 80px 120px 80px;
         background: #FCDFB3;
         border-radius: 120px;
     }
@@ -23,7 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -33,6 +36,10 @@
             margin-right: 56px;
             width: 26%;
             padding-bottom: 20px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
 
         }
         ul {
@@ -45,8 +52,17 @@
             padding: 0;
             margin: 0;
             width: 52%;
+            li {
+                white-space: nowrap 
+            }
+            @media all and (max-width:1260px) {
+                width: 30%;
+            }
             li:not(:last-child) {
                 margin-right: 40px;
+                @media all and (max-width:1130px) {
+                    margin-right: 20px;
+                }
             }
             li a:active {
                 color: #EC6708;
@@ -58,7 +74,7 @@
             max-width: 238px;
             border: 2px solid #EC6708;
             border-radius: 200px;
-            padding: 16px 44px;
+            padding: 12px 44px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -72,9 +88,10 @@
         }
     }
     &__images {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-gap: 20px;
+        width: 100%;
         &-item {
             max-height: 354px;
             height: 100%;
@@ -89,6 +106,7 @@
                 border: 5px solid #EC6708;
                 border-radius: 20px;
                 height: 354px;
+                box-sizing: border-box;
             }
         }
     }

@@ -472,70 +472,35 @@ template {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 100;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-300Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-300Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-700Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 900;
 }
 
 * {
@@ -612,7 +577,7 @@ a {
 }
 
 .header__in {
-  padding: 17.5px 80px 17.5px 84px;
+  padding: 17.5px 80px 0 84px;
 }
 
 .header__top,
@@ -746,7 +711,7 @@ a {
   font-family: "Calibri";
   font-weight: 700;
   font-size: 96px;
-  line-height: 117px;
+  line-height: 103px;
   display: block;
 }
 
@@ -762,13 +727,13 @@ a {
 }
 
 .banner__left .cities {
-  margin-top: 78px;
+  margin-top: 87px;
   justify-content: start;
   padding-bottom: 36px;
 }
 
 .banner__left .cities__item:first-child {
-  padding-right: 60px;
+  padding-right: 64px;
 }
 
 .banner__left .cities__item span {
@@ -779,6 +744,7 @@ a {
   font-size: 24px;
   line-height: 29px;
   color: #EC6708;
+  margin-right: 22px;
 }
 
 .banner__left .raccoon {
@@ -796,7 +762,7 @@ a {
 }
 
 .banner__right {
-  width: 57%;
+  width: 57.5%;
   position: relative;
 }
 
@@ -852,6 +818,7 @@ a {
   background-image: url("../img/orange-bg.svg"), url("../img/orange-bg2.svg"), url("../img/orange-bg3.svg"), url("../img/orange-bg4.svg"), url("../img/orange-bg5.svg");
   background-position: 15% 55%, 84% 14%, 87% 55%, 65% 100%, 87% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  margin-right: 28px;
 }
 
 .banner .orange-blocks__item:last-child {
@@ -932,7 +899,7 @@ a {
 
 .tabs__item .icon {
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .tabs__item span {
@@ -957,7 +924,7 @@ a {
 
 .all-animals__in {
   display: flex;
-  padding: 75px 0 80px 120px;
+  padding: 75px 0 80px 80px;
 }
 
 .all-animals__left {
@@ -1003,11 +970,12 @@ a {
   box-sizing: border-box;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 16px 44px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  max-width: 223px;
 }
 
 .all-animals__left .button span {
@@ -1055,6 +1023,7 @@ a {
 .all-animals__arrows {
   justify-content: flex-end;
   margin-top: 20px;
+  margin-right: 40px;
 }
 
 .buy-ticket {
@@ -1098,7 +1067,7 @@ a {
   font-weight: 700;
   font-size: 30px;
   line-height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   padding: 40px 40px 0 40px;
 }
 
@@ -1153,7 +1122,7 @@ a {
   max-width: 333px;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 16px 44px;
+  padding: 14px 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1172,7 +1141,7 @@ a {
 }
 
 .services__in {
-  padding: 120px 80px 135px;
+  padding: 100px 80px 135px;
   background: url("../img/big-trees.svg"), #FCDFB3;
   background-repeat: no-repeat;
   background-position: 0% 100%;
@@ -1336,6 +1305,25 @@ a {
   height: 100%;
 }
 
+.poster .billboard-cards-date__mobile {
+  display: none;
+}
+
+.poster .billboard-cards-date__mobile span {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #009846;
+}
+
+.poster .billboard-cards-date__mobile span:first-child {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+
 .poster .billboard-cards-about {
   max-width: 610px;
   margin-right: 93px;
@@ -1378,9 +1366,11 @@ a {
 .poster .billboard-cards-button {
   display: block;
   max-width: 225px;
+  width: 100%;
+  box-sizing: border-box;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 16px 44px;
+  padding: 10px 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1388,8 +1378,9 @@ a {
 
 .poster .billboard-cards-button span {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 19px;
+  margin-right: 15px !important;
 }
 
 .poster .billboard-cards-date span {
@@ -1428,7 +1419,7 @@ a {
 }
 
 .gallery__in {
-  padding: 120px 80px 200px 80px;
+  padding: 100px 80px 120px 80px;
   background: #FCDFB3;
   border-radius: 120px;
 }
@@ -1437,7 +1428,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .gallery__menu h2 {
@@ -1463,6 +1454,10 @@ a {
   width: 52%;
 }
 
+.gallery__menu ul li {
+  white-space: nowrap;
+}
+
 .gallery__menu ul li:not(:last-child) {
   margin-right: 40px;
 }
@@ -1477,7 +1472,7 @@ a {
   max-width: 238px;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 16px 44px;
+  padding: 12px 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1492,9 +1487,7 @@ a {
 }
 
 .gallery__images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  width: 100%;
 }
 
 .gallery__images-item {
@@ -1515,6 +1508,7 @@ a {
   border: 5px solid #EC6708;
   border-radius: 20px;
   height: 354px;
+  box-sizing: border-box;
 }
 
 .reviews {
@@ -1541,7 +1535,7 @@ a {
 }
 
 .reviews__in {
-  padding: 120px 80px;
+  padding: 120px 80px 110px;
 }
 
 .reviews__in h2 {
@@ -1554,9 +1548,7 @@ a {
 }
 
 .reviews__items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  width: 100%;
 }
 
 .reviews__item {
@@ -1568,7 +1560,6 @@ a {
 .reviews__item-name {
   display: flex;
   align-items: center;
-  margin-top: 20px;
 }
 
 .reviews__item-name span {
@@ -1596,6 +1587,8 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 26px;
 }
 
 .reviews__bottom {
@@ -1640,7 +1633,7 @@ a {
 }
 
 .news__left {
-  width: 40%;
+  width: 30%;
 }
 
 .news__left h2 {
@@ -1650,6 +1643,7 @@ a {
   font-size: 96px;
   line-height: 90px;
   margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .news__left span {
@@ -1662,11 +1656,11 @@ a {
 
 .news__left .button {
   display: block;
-  max-width: 258px;
+  max-width: 223px;
   box-sizing: border-box;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 16px 44px;
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1680,7 +1674,7 @@ a {
 }
 
 .news__right {
-  width: 65%;
+  width: 66%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -1690,6 +1684,7 @@ a {
   padding: 10px 10px 20px;
   background: #FCDFB3;
   border-radius: 20px;
+  height: 100%;
 }
 
 .news__item-image {
@@ -1808,7 +1803,7 @@ a {
 }
 
 .footer__in {
-  padding: 150px 122px 0 80px;
+  padding: 145px 122px 0 80px;
   background: url("../img/forest-footer3.svg"), #F7E3C1;
   background-repeat: no-repeat;
   background-position: 0px 88px;
@@ -1819,7 +1814,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .footer__top-item {
@@ -1840,6 +1835,7 @@ a {
 .footer__top-item-rating .rating {
   width: 70px;
   height: 70px;
+  box-sizing: border-box;
   border: 4px solid #009846;
   border-radius: 50%;
   display: flex;
@@ -4055,6 +4051,200 @@ a {
      object-fit: cover;
   height: 100%;
   box-sizing: border-box;
+}
+
+@media all and (max-width: 1320px) {
+  .header__top-item:last-child {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1260px) {
+  .banner__in {
+    flex-direction: column;
+  }
+
+  .banner__left {
+    width: 100%;
+  }
+
+  .tabs__in {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__menu ul {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 1130px) {
+  .banner {
+    padding-top: 80px;
+  }
+
+  .banner__left span {
+    font-size: 80px;
+    line-height: 75px;
+  }
+
+  .banner__left .cities {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .banner__left .cities__item:first-child {
+    padding-right: 45px;
+  }
+
+  .banner__left .raccoon__item {
+    left: auto;
+    right: 0;
+    top: -80px;
+  }
+
+  .banner__left .raccoon__item:first-child {
+    top: 115px;
+    right: -60px;
+  }
+
+  .banner__right {
+    width: 100%;
+  }
+
+  .banner__right .about {
+    padding-top: 0;
+    padding-bottom: 156px;
+  }
+
+  .banner .orange-blocks {
+    justify-content: start;
+  }
+
+  .all-animals__left h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .buy-ticket__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .buy-ticket__items {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-ticket__item {
+    background-size: cover;
+  }
+
+  .buy-ticket__item h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .services__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .services__item-about h2 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .poster__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .poster .billboard-cards__item {
+    flex-direction: column;
+  }
+
+  .poster .billboard-cards-about-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .poster .billboard-cards-date {
+    display: none;
+  }
+
+  .poster .billboard-cards-date__mobile {
+    display: block;
+  }
+
+  .poster .billboard-cards-about {
+    margin-right: 0;
+  }
+
+  .gallery__paws {
+    top: 15%;
+  }
+
+  .gallery__menu h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .gallery__menu ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .reviews__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .news__left h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .contacts__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .contacts__adreses {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer__top-item {
+    margin-right: 70px;
+    width: 30%;
+  }
+
+  .footer__top-menu {
+    width: 30%;
+  }
+
+  .footer__top-social-network {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 990px) {
+  .banner__left .raccoon__item img {
+    width: 49%;
+  }
+
+  .banner__left .raccoon__item {
+    top: 62px;
+    z-index: 100;
+  }
+
+  .banner__left .raccoon__item:first-child {
+    top: 118px;
+    right: 125px;
+  }
 }
 
 .webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }
