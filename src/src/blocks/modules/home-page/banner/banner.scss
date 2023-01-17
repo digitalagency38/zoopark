@@ -2,7 +2,7 @@
     background: #F7E3C1;
     padding-top: 100px;
     position: relative;
-    @media all and (max-width:1130px) {
+    @media all and (max-width:1260px) {
         padding-top: 80px;
     }
     .leaves {
@@ -36,7 +36,7 @@
             font-size: 96px;
             line-height: 103px;
             display: block;
-            @media all and (max-width:1130px) {
+            @media all and (max-width:1260px) {
                 font-size: 80px;
                 line-height: 75px;            
             }
@@ -54,13 +54,13 @@
             margin-top: 87px;
             justify-content: start;
             padding-bottom: 36px;
-            @media all and (max-width:1130px) {
+            @media all and (max-width:1260px) {
                 margin-top: 30px;
                 padding-bottom: 40px;
             }
             &__item:first-child {
                 padding-right: 64px;
-                @media all and (max-width:1130px) {
+                @media all and (max-width:1260px) {
                     padding-right: 45px;
                 }
             }
@@ -81,11 +81,15 @@
                 position: absolute;
                 top: 50%;
                 left: 0;
-                @media all and (max-width:1130px) {
+                @media all and (max-width:1260px) {
                     left: auto;
                     right: 0;
                     top: -80px;
                 }
+                @media all and (max-width:990px) {
+                    right: -200px;
+                }
+                
                 img {
                     @media all and (max-width:990px) {
                         width: 49%;
@@ -98,13 +102,13 @@
             }
             &__item:first-child {
                 top: 125px;
-                @media all and (max-width:1130px) {
+                @media all and (max-width:1260px) {
                     top: 115px;
                     right: -60px;
                 }
                 @media all and (max-width:990px) {
-                    top: 118px;
-                     right: 125px;
+                    top: 107px;
+                     right: -72px;
                 }
             }
         }
@@ -113,7 +117,7 @@
     &__right {
         width: 57.5%;
         position: relative;
-        @media all and (max-width:1130px) {
+        @media all and (max-width:1260px) {
             width: 100%;
         }
         .pay {
@@ -140,7 +144,7 @@
             max-width: 516px;
             padding-top: 25px;
             margin: 0;
-            @media all and (max-width:1130px) {
+            @media all and (max-width:1260px) {
                 padding-top: 0;
                 padding-bottom: 156px;
             }
@@ -150,7 +154,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        @media all and (max-width:1130px) {
+        @media all and (max-width:1260px) {
             justify-content: start;
         }
         &__item {

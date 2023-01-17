@@ -455,10 +455,10 @@ template {
 }
 
 @font-face {
-  font-family: "Calibri";
+  font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff"), url("../fonts/Calibri-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
@@ -469,38 +469,73 @@ template {
 }
 
 @font-face {
-  font-family: "MuseoSansCyrl";
+  font-family: "Calibri";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
+  src: url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff"), url("../fonts/Calibri-Bold.ttf") format("ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-300Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-300Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-700Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
   src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
-  font-weight: 900;
+  font-weight: 400;
 }
 
 * {
@@ -986,6 +1021,7 @@ a {
 
 .all-animals__right {
   width: calc(100% - 258px - 67px);
+  padding-right: 190px;
 }
 
 .all-animals__right .glide__track {
@@ -1370,7 +1406,7 @@ a {
   box-sizing: border-box;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 10px 44px;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1634,6 +1670,7 @@ a {
 
 .news__left {
   width: 30%;
+  padding-right: 44px;
 }
 
 .news__left h2 {
@@ -1657,14 +1694,14 @@ a {
 .news__left .button {
   display: block;
   max-width: 223px;
+  width: 100%;
   box-sizing: border-box;
   border: 2px solid #EC6708;
   border-radius: 200px;
-  padding: 16px 24px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
 }
 
 .news__left .button span {
@@ -1675,9 +1712,7 @@ a {
 
 .news__right {
   width: 66%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  width: calc(100% - 258px - 67px);
 }
 
 .news__item {
@@ -1688,8 +1723,7 @@ a {
 }
 
 .news__item-image {
-  max-height: 300px;
-  height: 100%;
+  height: 300px;
   margin-bottom: 20px;
 }
 
@@ -1722,6 +1756,17 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
+}
+
+.news__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.news__arrows {
+  margin-left: 20px;
 }
 
 .contacts .page-contacts {
@@ -4060,26 +4105,16 @@ a {
 }
 
 @media all and (max-width: 1260px) {
+  .banner {
+    padding-top: 80px;
+  }
+
   .banner__in {
     flex-direction: column;
   }
 
   .banner__left {
     width: 100%;
-  }
-
-  .tabs__in {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gallery__menu ul {
-    width: 30%;
-  }
-}
-
-@media all and (max-width: 1130px) {
-  .banner {
-    padding-top: 80px;
   }
 
   .banner__left span {
@@ -4120,6 +4155,16 @@ a {
     justify-content: start;
   }
 
+  .tabs__in {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__menu ul {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 1130px) {
   .all-animals__left h2 {
     font-size: 75px;
     line-height: 75px;
@@ -4232,6 +4277,10 @@ a {
 }
 
 @media all and (max-width: 990px) {
+  .banner__left .raccoon__item {
+    right: -200px;
+  }
+
   .banner__left .raccoon__item img {
     width: 49%;
   }
@@ -4242,8 +4291,8 @@ a {
   }
 
   .banner__left .raccoon__item:first-child {
-    top: 118px;
-    right: 125px;
+    top: 107px;
+    right: -72px;
   }
 }
 

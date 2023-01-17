@@ -14,6 +14,7 @@
     }
     &__left {
         width: 30%;
+        padding-right: 44px;
         h2 {
             font-family: 'Calibri';
             font-style: normal;
@@ -37,14 +38,15 @@
         .button {
             display: block;
             max-width: 223px;
+            width: 100%;
             box-sizing: border-box;
             border: 2px solid #EC6708;
             border-radius: 200px;
-            padding: 16px 24px;
+            padding: 12px 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 30px;
+            
             span {
                 font-weight: 600;
                 font-size: 16px;
@@ -54,9 +56,11 @@
     }
     &__right {
         width: 66%;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-gap: 20px;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr ;
+        // grid-gap: 20px;
+        width: calc(100% - 258px - 67px);
+        // padding-right: 190px;
     }
     &__item {
         padding: 10px 10px 20px;
@@ -64,8 +68,8 @@
         border-radius: 20px;
         height: 100%;
         &-image {
-            max-height: 300px;
-            height: 100%;
+            // max-height: 300px;
+            height: 300px;
             margin-bottom: 20px;
             img {
                 border-radius: 20px;
@@ -93,5 +97,14 @@
                 line-height: 26px;
             }
         }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    &__arrows {
+        margin-left: 20px;
     }
 }
