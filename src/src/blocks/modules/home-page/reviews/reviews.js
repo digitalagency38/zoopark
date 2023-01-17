@@ -12,7 +12,13 @@ const Reviews = class Reviews {
             gap: 20,
             swipeThreshold: false,
             dragThreshold: false,
-            type: 'carousel'
+            type: 'carousel',
+            breakpoints: {
+                990: {
+                    perView: 1
+                },
+                
+            }
         }).mount()
     }
     init() {

@@ -17,6 +17,9 @@ const Services = class Services {
                 1130: {
                     perView: 2
                 },
+                990: {
+                    perView: 1
+                },
                 
             }
         }).mount()

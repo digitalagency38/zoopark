@@ -18,6 +18,9 @@
     }
     &__in {
         padding: 120px 80px 110px;
+        @media all and (max-width:740px) {
+            padding: 60px 16px;
+        }
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -28,6 +31,11 @@
             @media all and (max-width:1130px) {
                 font-size: 75px;
                 line-height: 75px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+                margin-bottom: 30px;
             }
         }
     }
@@ -41,6 +49,10 @@
         background: #FCDFB3;
         border-radius: 20px;
         padding: 40px 40px 44px;
+        @media all and (max-width:740px) {
+            padding: 40px 20px 30px;
+            margin-bottom: 0;
+        }
         &-name {
             display: flex;
             align-items: center;
@@ -70,7 +82,11 @@
             line-height: 26px;
             margin-top: 20px;
             margin-bottom: 26px;
+            @media all and (max-width:740px) {
+                margin-bottom: 34px;
+            }
         }
+        
     }
     &__bottom {
         display: flex;

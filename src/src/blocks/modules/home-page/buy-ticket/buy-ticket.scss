@@ -7,6 +7,9 @@
     }
     &__in {
         padding: 39px 80px 70px;
+        @media all and (max-width:740px) {
+            padding: 60px 16px;
+        }
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -18,6 +21,11 @@
                 font-size: 75px;
                 line-height: 75px;
             }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+                margin-bottom: 30px;
+            }
         }
     }
     &__items {
@@ -26,6 +34,9 @@
         grid-gap: 20px;
         @media all and (max-width:1130px) {
             grid-template-columns: 1fr;
+        }
+        @media all and (max-width:740px) {
+            grid-gap: 16px;
         }
     }
     &__item {
@@ -48,9 +59,18 @@
                 font-size: 28px;
                 line-height: 28px;
             }
+            @media all and (max-width:740px) {
+                font-size: 24px;
+                line-height: 29px;
+                padding: 40px 20px 30px 20px;
+                margin-bottom: 0;
+            }
         }
         .price {
             padding:0 40px 40px 40px;
+            @media all and (max-width:740px) {
+                padding: 0 20px 40px;
+            }
             span {
                 font-weight: 400;
                 font-size: 18px;
@@ -99,6 +119,9 @@
             align-items: center;
             justify-content: space-between;
             margin-top: 30px;
+            @media all and (max-width:740px) {
+                margin: 30px 20px;
+            }
             span {
                 font-weight: 600;
                 font-size: 16px;

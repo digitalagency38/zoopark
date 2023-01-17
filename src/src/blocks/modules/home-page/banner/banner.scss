@@ -24,6 +24,9 @@
         @media all and (max-width:1260px) {
             flex-direction: column;
         }       
+        @media all and (max-width:740px) {
+            padding: 0 40px 0 16px;
+        }
     }
     &__left {
         width: 40%;
@@ -40,6 +43,11 @@
                 font-size: 80px;
                 line-height: 75px;            
             }
+            @media all and (max-width:740px) {
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 78px;
+            }
         }
         .cities, .cities__item {
         display: flex;
@@ -49,6 +57,11 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 29px;
+        }
+        .cities__item .icon img {
+            @media all and (max-width:740px) {
+                width: 20px;
+            }
         }
         .cities {
             margin-top: 87px;
@@ -73,6 +86,11 @@
                 line-height: 29px;
                 color: #EC6708;
                 margin-right: 22px;
+                @media all and (max-width:740px) {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
             }
         }
         .raccoon {
@@ -87,17 +105,18 @@
                     top: -80px;
                 }
                 @media all and (max-width:990px) {
-                    right: -200px;
+                    right: 50px;
+                    top: 62px;
+                    z-index: 100;
+                }
+                @media all and (max-width:740px) {
+                    top: 88px;
                 }
                 
                 img {
                     @media all and (max-width:990px) {
-                        width: 49%;
+                        max-width: 230px;
                     }
-                }
-                @media all and (max-width:990px) {
-                    top: 62px;
-                    z-index: 100;
                 }
             }
             &__item:first-child {
@@ -107,8 +126,16 @@
                     right: -60px;
                 }
                 @media all and (max-width:990px) {
-                    top: 107px;
-                     right: -72px;
+                    top: 108px;
+                    right: 108px;
+                }
+                @media all and (max-width:740px) {
+                    top: 139px;
+                }
+                img {
+                    @media all and (max-width:990px) {
+                        max-width: 160px;
+                    }
                 }
             }
         }
@@ -124,6 +151,10 @@
             position: absolute;
             top: -82px;
             left: 30px;
+            @media all and (max-width:740px) {
+                top: -142px;
+                left: 0;
+            }
             .circle {
                 width: 79px;
                 height: 79px;
@@ -168,6 +199,10 @@
             flex-direction: column;
             justify-content: space-between;
             position: relative;
+            @media all and (max-width:740px) {
+                padding: 20px 40px;
+                min-height: 395px;
+            }
             &:first-child {
                 background-image: url("../img/orange-bg.svg"), url("../img/orange-bg2.svg"),url("../img/orange-bg3.svg"),url("../img/orange-bg4.svg"),url("../img/orange-bg5.svg");
                 background-position: 15% 55%, 84% 14%, 87% 55%,65% 100%, 87% 100%;
@@ -186,6 +221,11 @@
                 line-height: 44px;
                 margin-bottom: 19px;
                 margin-top: 0;
+                @media all and (max-width:740px) {
+                    font-size: 32px;
+                    line-height: 39px;
+                    margin-bottom: 15px;
+                }
             }
             p {
                 font-weight: 300;
@@ -206,6 +246,9 @@
                 }
                 &__item:not(:last-child) {
                     margin-bottom: 26px;
+                    @media all and (max-width:740px) {
+                        margin-bottom: 14px;
+                    }
                 }
             }
             .button {

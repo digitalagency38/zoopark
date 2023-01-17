@@ -4,6 +4,9 @@
     }
     &__in {
         padding: 0 80px 120px;
+        @media all and (max-width:740px) {
+            padding: 0 16px 60px;
+        }
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -14,6 +17,11 @@
             @media all and (max-width:1130px) {
                 font-size: 75px;
                 line-height: 75px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+                margin-bottom: 30px;
             }
         }
         .title-contacts {
@@ -32,21 +40,40 @@
         &-item {
             display: flex;
             align-items: flex-start;
+            @media all and (max-width:740px) {
+                flex-direction: column-reverse;
+            }
+            &:not(:last-child) {
+                @media all and (max-width:740px) {
+                    margin-bottom: 40px;
+                }
+            }
         }
         &-item-map {
             border: 5px solid #EC6708;
             border-radius: 20px;
             margin-right: 20px;
             overflow: hidden;
+            @media all and (max-width:740px) {
+                border: 2px solid #EC6708;
+                width: 100%;
+            }
         }
         &-item-info {
             margin-top: 30px;
+            @media all and (max-width:740px) {
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
             .city {
                 h2 {
                     font-weight: 700;
                     font-size: 24px;
                     line-height: 30px;
                     margin-bottom: 20px;
+                    @media all and (max-width:740px) {
+                        margin-bottom: 10px;
+                    }
                 }
                 span {
                     display: block;
@@ -58,6 +85,9 @@
             }
             .operating-mode {
                 margin-top: 30px;
+                @media all and (max-width:740px) {
+                    margin-top: 9px;
+                }
                 h2 {
                     font-weight: 700;
                     font-size: 18px;

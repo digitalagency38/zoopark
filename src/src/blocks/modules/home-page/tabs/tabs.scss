@@ -15,11 +15,18 @@
         @media all and (max-width:1260px) {
             grid-template-columns: 1fr 1fr;
         }
+        @media all and (max-width:740px) {
+            padding: 60px 16px 26px 16px;
+            grid-gap: 16px;
+        }
     }
     &__item {
         background: #FCDFB3;
         border-radius: 20px;
         padding: 30px 80px;
+        @media all and (max-width:740px) {
+            padding: 30px 21.5px;
+        }
         .icon {
             text-align: center;
             margin-bottom: 20px;

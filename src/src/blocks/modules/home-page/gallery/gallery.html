@@ -44,7 +44,7 @@
                 </div> -->
             </div>
 
-            <div class="services__pagination" v-if="services.slider">
+            <div class="services__pagination gallery__pagination" v-if="services.slider">
                 <div class="global__dots">
                     @@for ($i = 0; $i < 10; $i++) {
                         <div class="global__dot" :class="{'isActive': services.slider.index == `+ $i +`}" @click="services.slider.go('=`+ $i +`')">`+ $i +`</div>
@@ -64,7 +64,12 @@
                 </div>
             </div>
 
-
+            <a href="" class="gallery__menu-button-mobile">
+                <span>Вся галерея</span>
+            <div class="green-button">
+                <img src="img/green-button.svg" alt="button">
+            </div>
+            </a>
 
         </div>
     </div>

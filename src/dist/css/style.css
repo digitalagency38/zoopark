@@ -455,10 +455,10 @@ template {
 }
 
 @font-face {
-  font-family: "MuseoSansCyrl";
+  font-family: "Calibri";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff"), url("../fonts/Calibri-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 @font-face {
@@ -469,73 +469,38 @@ template {
 }
 
 @font-face {
-  font-family: "Calibri";
+  font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff"), url("../fonts/Calibri-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
+  font-weight: 100;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-300Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-300Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-700Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
-  font-weight: 400;
+  font-weight: 900;
 }
 
 * {
@@ -1062,6 +1027,32 @@ a {
   margin-right: 40px;
 }
 
+.all-animals__bottom-mobile {
+  display: none;
+}
+
+.all-animals__bottom-mobile .button {
+  box-sizing: border-box;
+  border: 2px solid #EC6708;
+  border-radius: 200px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.all-animals__bottom-mobile .button span {
+  margin-right: 112px;
+}
+
+.all-animals__bottom-mobile .all-animals__arrows {
+  display: flex;
+  margin-right: 0;
+}
+
 .buy-ticket {
   position: relative;
 }
@@ -1504,7 +1495,6 @@ a {
 }
 
 .gallery__menu-button {
-  display: block;
   max-width: 238px;
   border: 2px solid #EC6708;
   border-radius: 200px;
@@ -1515,6 +1505,26 @@ a {
 }
 
 .gallery__menu-button span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.gallery__menu-button-mobile {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 40px;
+  border: 2px solid #EC6708;
+  border-radius: 200px;
+  padding: 12px 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery__menu-button-mobile span {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -1692,7 +1702,6 @@ a {
 }
 
 .news__left .button {
-  display: block;
   max-width: 223px;
   width: 100%;
   box-sizing: border-box;
@@ -1713,6 +1722,17 @@ a {
 .news__right {
   width: 66%;
   width: calc(100% - 258px - 67px);
+}
+
+.news__right .news__buttons {
+  display: none;
+}
+
+.news__right .news__buttons .button span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 200px;
 }
 
 .news__item {
@@ -4207,6 +4227,10 @@ a {
     flex-direction: column;
   }
 
+  .poster .billboard-cards-image {
+    padding-right: 0;
+  }
+
   .poster .billboard-cards-about-title {
     display: flex;
     align-items: center;
@@ -4277,22 +4301,461 @@ a {
 }
 
 @media all and (max-width: 990px) {
-  .banner__left .raccoon__item {
-    right: -200px;
+  .header__in {
+    padding: 0 80px 0 84px;
   }
 
-  .banner__left .raccoon__item img {
-    width: 49%;
+  .header__top {
+    display: none;
+  }
+
+  .header__bottom-item .phone {
+    display: none;
   }
 
   .banner__left .raccoon__item {
+    right: 50px;
     top: 62px;
     z-index: 100;
   }
 
+  .banner__left .raccoon__item img {
+    max-width: 230px;
+  }
+
   .banner__left .raccoon__item:first-child {
-    top: 107px;
-    right: -72px;
+    top: 108px;
+    right: 108px;
+  }
+
+  .banner__left .raccoon__item:first-child img {
+    max-width: 160px;
+  }
+
+  .all-animals__in {
+    flex-direction: column;
+  }
+
+  .all-animals__left {
+    width: 100%;
+  }
+
+  .all-animals__left h2 {
+    margin-bottom: 20px;
+  }
+
+  .all-animals__left span {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .all-animals__left .button {
+    display: none;
+  }
+
+  .all-animals__arrows {
+    display: none;
+  }
+
+  .all-animals__bottom-mobile {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 75px;
+  }
+
+  .gallery__menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gallery__menu-button {
+    display: none;
+  }
+
+  .gallery__menu-button-mobile {
+    display: flex;
+  }
+
+  .news__in {
+    flex-direction: column;
+  }
+
+  .news__left {
+    width: 100%;
+  }
+
+  .news__left .button {
+    display: none;
+  }
+
+  .news__right {
+    width: 100%;
+  }
+
+  .news__right .news__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .news__right .news__buttons .button {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #EC6708;
+    border-radius: 200px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .news__right .news__buttons .news__arrows {
+    display: flex;
+  }
+
+  .news__arrows {
+    display: none;
+  }
+
+  .footer__top-item {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 19px;
+  }
+
+  .footer__top-item-logo {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .footer__top-item-rating .rating:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .footer__top-menu {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__bottom-menu {
+    margin-bottom: 40px;
+  }
+
+  .footer__bottom-pay {
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .header__in {
+    padding: 0 16px;
+  }
+
+  .header__bottom {
+    padding: 36px 0 22px 0;
+  }
+
+  .header__bottom-item {
+    flex-direction: row-reverse;
+  }
+
+  .banner__in {
+    padding: 0 40px 0 16px;
+  }
+
+  .banner__left span {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+  }
+
+  .banner__left .cities__item .icon img {
+    width: 20px;
+  }
+
+  .banner__left .cities__item span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .banner__left .raccoon__item {
+    top: 88px;
+  }
+
+  .banner__left .raccoon__item:first-child {
+    top: 139px;
+  }
+
+  .banner__right .pay {
+    top: -142px;
+    left: 0;
+  }
+
+  .banner .orange-blocks__item {
+    padding: 20px 40px;
+    min-height: 395px;
+  }
+
+  .banner .orange-blocks__item h2 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 15px;
+  }
+
+  .banner .orange-blocks__item .list__item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .tabs__in {
+    padding: 60px 16px 26px 16px;
+    grid-gap: 16px;
+  }
+
+  .tabs__item {
+    padding: 30px 21.5px;
+  }
+
+  .all-animals__in {
+    padding: 34px 16px 0 16px;
+  }
+
+  .all-animals__left h2 {
+    font-size: 55px;
+    line-height: 67px;
+  }
+
+  .all-animals__bottom-mobile {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .all-animals__bottom-mobile .button {
+    margin-top: 20px;
+  }
+
+  .buy-ticket__in {
+    padding: 60px 16px;
+  }
+
+  .buy-ticket__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .buy-ticket__items {
+    grid-gap: 16px;
+  }
+
+  .buy-ticket__item h2 {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 40px 20px 30px 20px;
+    margin-bottom: 0;
+  }
+
+  .buy-ticket__item .price {
+    padding: 0 20px 40px;
+  }
+
+  .buy-ticket__item .button-ticket {
+    margin: 30px 20px;
+  }
+
+  .services {
+    padding-top: 0;
+  }
+
+  .services__in {
+    padding: 60px 16px;
+  }
+
+  .services__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .services__item-about h2 {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  .services__item-about .button-services {
+    margin-top: 20px;
+  }
+
+  .services__price {
+    width: 90px;
+    height: 90px;
+    bottom: -35px;
+  }
+
+  .poster {
+    padding-top: 60px;
+  }
+
+  .poster__in {
+    padding: 0 16px;
+  }
+
+  .poster__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .poster .billboard-cards__item {
+    padding: 10px 10px 40px 10px;
+  }
+
+  .poster .billboard-cards-about-title {
+    margin-top: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .poster .billboard-cards-about {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .poster .billboard-cards-about h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-right: 17.5px;
+  }
+
+  .poster .billboard-cards-price {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .poster .billboard-cards-price span {
+    margin-bottom: 20px;
+  }
+
+  .poster .billboard-cards-button {
+    max-width: 100%;
+    padding: 9px 24px;
+  }
+
+  .poster .billboard-cards-button span {
+    margin-bottom: 0 !important;
+  }
+
+  .gallery {
+    padding-top: 60px;
+  }
+
+  .gallery__in {
+    padding: 60px 16px;
+  }
+
+  .gallery__menu {
+    margin-bottom: 40px;
+  }
+
+  .gallery__menu h2 {
+    font-size: 55px;
+    line-height: 67px;
+  }
+
+  .gallery__menu ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .gallery__pagination {
+    margin-top: 20px;
+  }
+
+  .reviews__in {
+    padding: 60px 16px;
+  }
+
+  .reviews__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .reviews__item {
+    padding: 40px 20px 30px;
+    margin-bottom: 0;
+  }
+
+  .reviews__item p {
+    margin-bottom: 34px;
+  }
+
+  .news__in {
+    padding: 0 16px 60px;
+  }
+
+  .news__left h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 20px;
+  }
+
+  .news__item-about h2 {
+    margin: 10px 0;
+  }
+
+  .news__item-about p {
+    margin: 0;
+  }
+
+  .contacts__in {
+    padding: 0 16px 60px;
+  }
+
+  .contacts__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__adreses-item {
+    flex-direction: column-reverse;
+  }
+
+  .contacts__adreses-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .contacts__adreses-item-map {
+    border: 2px solid #EC6708;
+    width: 100%;
+  }
+
+  .contacts__adreses-item-info {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .contacts__adreses-item-info .city h2 {
+    margin-bottom: 10px;
+  }
+
+  .contacts__adreses-item-info .operating-mode {
+    margin-top: 9px;
+  }
+
+  .footer__in {
+    padding: 90px 16px 0;
   }
 }
 

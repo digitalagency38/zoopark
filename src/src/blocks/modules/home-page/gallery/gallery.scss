@@ -1,6 +1,9 @@
 .gallery {
     padding-top: 120px;
     position: relative;
+    @media all and (max-width:740px) {
+        padding-top: 60px;
+    }
     &__big-branch {
         position: absolute;
         top: 0;
@@ -21,12 +24,22 @@
         padding: 100px 80px 120px 80px;
         background: #FCDFB3;
         border-radius: 120px;
+        @media all and (max-width:740px) {
+            padding: 60px 16px;
+        }
     }
     &__menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
+        @media all and (max-width:990px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @media all and (max-width:740px) {
+            margin-bottom: 40px;
+        }
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -39,6 +52,10 @@
             @media all and (max-width:1130px) {
                 font-size: 75px;
                 line-height: 75px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
             }
 
         }
@@ -63,6 +80,10 @@
                 @media all and (max-width:1130px) {
                     margin-right: 20px;
                 }
+                @media all and (max-width:740px) {
+                    margin-right: 40px;
+                }
+                
             }
             li a:active {
                 color: #EC6708;
@@ -70,7 +91,6 @@
             }
         }
         &-button {
-            display: block;
             max-width: 238px;
             border: 2px solid #EC6708;
             border-radius: 200px;
@@ -78,6 +98,30 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media all and (max-width:990px) {
+                display: none;
+            }
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                margin-right: 20px;
+                white-space: nowrap;
+            }
+        }
+        &-button-mobile {
+            display: none;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 40px;
+            border: 2px solid #EC6708;
+            border-radius: 200px;
+            padding: 12px 44px;
+            align-items: center;
+            justify-content: space-between;
+            @media all and (max-width:990px) {
+                display: flex;
+            }
             span {
                 font-weight: 600;
                 font-size: 16px;
@@ -108,6 +152,11 @@
                 height: 354px;
                 box-sizing: border-box;
             }
+        }
+    }
+    &__pagination {
+        @media all and (max-width:740px) {
+            margin-top: 20px;
         }
     }
 }

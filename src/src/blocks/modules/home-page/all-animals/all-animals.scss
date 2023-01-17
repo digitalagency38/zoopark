@@ -10,6 +10,12 @@
     &__in {
         display: flex;
         padding: 75px 0 80px 80px;
+        @media all and (max-width:990px) {
+            flex-direction: column;
+        }
+        @media all and (max-width:740px) {
+            padding: 34px 16px 0 16px;
+        }
     }
     &__left {
         width: calc(258px + 67px);
@@ -18,6 +24,9 @@
         background: linear-gradient(to right, #fff 0%, #fff calc(100% - 20px), transparent 100%);
         padding-right: 67px;
         box-sizing: border-box;
+        @media all and (max-width:990px) {
+            width: 100%;
+        }
         &:after {
             content: "";
             display: block;
@@ -39,6 +48,13 @@
                 font-size: 75px;
                 line-height: 75px;
             }
+            @media all and (max-width:990px) {
+                margin-bottom: 20px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+            }
         }
         span {
             display: block;
@@ -46,6 +62,10 @@
             font-size: 16px;
             line-height: 24px;
             max-width: 192px;
+            @media all and (max-width:990px) {
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
         }
         .button {
             display: block;
@@ -59,6 +79,9 @@
             justify-content: space-between;
             margin-top: 30px;
             max-width: 223px;
+            @media all and (max-width:990px) {
+                display: none;
+            }
             span {
                 font-weight: 600;
                 font-size: 16px;
@@ -109,5 +132,44 @@
         justify-content: flex-end;
         margin-top: 20px;
         margin-right: 40px;
+         @media all and (max-width:990px) {
+                display: none;
+            }
+    }
+    &__bottom-mobile {
+        display: none;
+        @media all and (max-width:990px) {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            margin-right: 75px;
+        }
+        @media all and (max-width:740px) {
+            margin-top: 10px;
+            margin-right: 0;
+        }
+        
+        .button {
+            box-sizing: border-box;
+            border: 2px solid #EC6708;
+            border-radius: 200px;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            max-width: 100%;
+            width: 100%;
+            @media all and (max-width:740px) {
+                margin-top: 20px;
+            }
+            span {
+                margin-right: 112px;
+            }
+        }
+        .all-animals__arrows {
+            display: flex;
+            margin-right: 0;
+        }
     }
 }

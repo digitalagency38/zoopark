@@ -16,9 +16,8 @@ const AllAnimals = class AllAnimals {
             breakpoints: {
                 1130: {
                     perView: 1
-                },
-                
-            }
+                }
+            },
         }).mount()
     }
     init() {

@@ -5,6 +5,9 @@
         background-repeat: no-repeat;
         background-position: 0px 88px;
         border-radius: 120px 120px 0 0;
+        @media all and (max-width:740px) {
+            padding: 90px 16px 0;
+        }
     }
     &__top {
         display: flex;
@@ -22,9 +25,20 @@
                 margin-right: 70px;
                 width: 30%;
             }
+            @media all and (max-width:990px) {
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 19px;
+            }
         }
         &-item-logo {
             margin-bottom: 76px;
+            @media all and (max-width:990px) {
+                margin-right: 16px;
+                margin-bottom: 0;
+            }
         }
         &-item-rating {
             display: flex;
@@ -41,6 +55,9 @@
                 align-items: center;
                 &:not(:last-child) {
                     margin-right: 40px;
+                    @media all and (max-width:990px) {
+                        margin-right: 16px;
+                    }
                 }
                 span {
                     display: block;
@@ -62,6 +79,10 @@
             margin-right: 20px;
             @media all and (max-width:1130px) {
                 width: 30%;
+            }
+            @media all and (max-width:990px) {
+                width: 45%;
+                margin-bottom: 40px;
             }
             h2 {
                 margin-top: 0;
@@ -114,12 +135,19 @@
         align-items: center;
         justify-content: space-between;
         color: #fff;
+        @media all and (max-width:990px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
         &-menu {
             list-style: none;
             padding: 0;
             display: flex;
             align-items: center;
             margin: 0;
+            @media all and (max-width:990px) {
+                margin-bottom: 40px;
+            }
             li {
                 color: #fff;
                 font-weight: 400;
@@ -136,6 +164,9 @@
         &-pay {
             display: flex;
             align-items: center;
+            @media all and (max-width:990px) {
+                margin-bottom: 40px;
+            }
             .pay-icon:not(:last-child) {
                 margin-right: 20px;
             }
