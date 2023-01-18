@@ -6,6 +6,14 @@
         position: absolute;
         top: 0;
         right: 0;
+        img {
+            @media all and (max-width:740px) {
+                width: 108px;
+            }
+        }
+        @media all and (max-width:740px) {
+
+        }
     }
     &__in {
         display: flex;
@@ -114,6 +122,9 @@
         // max-width: 413px;
         position: relative;
         height: 100%;
+        @media all and (max-width:740px) {
+            max-height: 226px;
+        }
         span {
             font-weight: 700;
             font-size: 24px;

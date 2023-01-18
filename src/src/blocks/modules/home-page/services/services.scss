@@ -1,6 +1,7 @@
 .services {
     padding-top: 50px;
     position: relative;
+    overflow: hidden;
     @media all and (max-width:740px) {
         padding-top: 0;
     }
@@ -11,6 +12,7 @@
         background-position: 0% 100%;
         border-radius: 120px;
         position: relative;
+        
         @media all and (max-width:740px) {
             padding: 60px 16px;
         }
@@ -37,6 +39,19 @@
         top: -42px;
         right: 0;
         z-index: 3;
+        img {
+            @media all and (max-width:740px) {
+                width: 238px;
+            }
+        }
+        @media all and (max-width:740px) {
+            top: -11px;
+            right: -40px;        
+        }
+        @media all and (max-width:740px) {
+            top: 47px;  
+            right: -52px;     
+        }
     }
     &__slider {
         width: 100%;
@@ -80,7 +95,7 @@
                 @media all and (max-width:740px) {
                     font-size: 24px;
                     line-height: 38px;
-                    margin-bottom: 10px;
+                    margin-bottom: 17px;
                 }
             }
             span {
@@ -100,7 +115,7 @@
             justify-content: space-between;
             margin-top: 11px;
             @media all and (max-width:740px) {
-                margin-top: 20px;
+                margin-top: 45px;
             }
             span {
                 font-weight: 600;

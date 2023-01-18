@@ -4,6 +4,14 @@
         position: absolute;
         top: 0;
         right: 0;
+        @media all and (max-width:740px) {
+            top: 162px;
+            right: 0;
+            transform: rotate(45deg);
+        }
+        @media all and (max-width:380px) {
+            top: 123px;
+        }
     }
     &__in {
         padding: 39px 80px 70px;
@@ -69,7 +77,7 @@
         .price {
             padding:0 40px 40px 40px;
             @media all and (max-width:740px) {
-                padding: 0 20px 40px;
+                padding: 0 20px 24px;
             }
             span {
                 font-weight: 400;

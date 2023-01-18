@@ -4,22 +4,36 @@
         position: absolute;
         top: 105px;
         right: 323px;
+        @media all and (max-width:990px) {
+            display: none;
+        }
     }
     &__leaves {
         position: absolute;
         top: 0;
         right: 0;
+        img {
+            @media all and (max-width:740px) {
+                width: 108px;
+            }
+        }
+        @media all and (max-width:740px) {
+            top: 32px;
+        }
     }
     &__leaves-second {
         position: absolute;
         top: 212px;
         left: 0;
         transform: scale(-1, 1);
+        @media all and (max-width:740px) {
+            display: none;
+        }
     }
     &__in {
         padding: 120px 80px 110px;
         @media all and (max-width:740px) {
-            padding: 60px 16px;
+            padding: 60px 16px 45px 0;
         }
         h2 {
             font-family: 'Calibri';
@@ -84,6 +98,7 @@
             margin-bottom: 26px;
             @media all and (max-width:740px) {
                 margin-bottom: 34px;
+                line-height: 24px;
             }
         }
         

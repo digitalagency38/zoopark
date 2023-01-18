@@ -5,6 +5,9 @@
         bottom: 0;
         left: 2%;
         z-index: -1;
+        @media all and (max-width:990px) {
+            display: none;
+        }
     }
     &__in {
         display: grid;
@@ -25,7 +28,7 @@
         border-radius: 20px;
         padding: 30px 80px;
         @media all and (max-width:740px) {
-            padding: 30px 21.5px;
+            padding: 35px 21.5px;
         }
         .icon {
             text-align: center;
@@ -37,6 +40,10 @@
             font-weight: 700;
             font-size: 18px;
             line-height: 27px;
+            @media all and (max-width:740px) {
+                font-size: 14px;
+                line-height: 19px;
+            }
         }
     }
 }

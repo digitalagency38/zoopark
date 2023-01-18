@@ -638,6 +638,10 @@ a {
   justify-content: space-between;
 }
 
+.header__bottom-item .logo img {
+  width: 100%;
+}
+
 .header__bottom-item .menu {
   font-weight: 400;
   font-size: 20px;
@@ -681,6 +685,7 @@ a {
   background: #F7E3C1;
   padding-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .banner .leaves {
@@ -1165,6 +1170,7 @@ a {
 .services {
   padding-top: 50px;
   position: relative;
+  overflow: hidden;
 }
 
 .services__in {
@@ -1789,6 +1795,18 @@ a {
   margin-left: 20px;
 }
 
+.contacts {
+  position: relative;
+}
+
+.contacts__paws {
+  display: none;
+}
+
+.contacts__paws img {
+  width: 112px;
+}
+
 .contacts .page-contacts {
   padding-bottom: 100px;
 }
@@ -1890,6 +1908,10 @@ a {
 
 .footer__top-item-logo {
   margin-bottom: 76px;
+}
+
+.footer__top-item-logo img {
+  width: 100%;
 }
 
 .footer__top-item-rating {
@@ -4129,6 +4151,10 @@ a {
     padding-top: 80px;
   }
 
+  .banner .grass {
+    display: none;
+  }
+
   .banner__in {
     flex-direction: column;
   }
@@ -4143,7 +4169,7 @@ a {
   }
 
   .banner__left .cities {
-    margin-top: 30px;
+    margin-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -4168,7 +4194,7 @@ a {
 
   .banner__right .about {
     padding-top: 0;
-    padding-bottom: 156px;
+    padding-bottom: 178px;
   }
 
   .banner .orange-blocks {
@@ -4181,6 +4207,12 @@ a {
 
   .gallery__menu ul {
     width: 30%;
+  }
+}
+
+@media all and (max-width: 1160px) {
+  .footer__in {
+    background-position: 0 160px;
   }
 }
 
@@ -4332,6 +4364,10 @@ a {
     max-width: 160px;
   }
 
+  .tabs__paws {
+    display: none;
+  }
+
   .all-animals__in {
     flex-direction: column;
   }
@@ -4377,6 +4413,14 @@ a {
     display: flex;
   }
 
+  .reviews__paws {
+    display: none;
+  }
+
+  .news__bg {
+    display: none;
+  }
+
   .news__in {
     flex-direction: column;
   }
@@ -4409,6 +4453,11 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .news__right .news__buttons .button span {
+    margin-right: 0;
   }
 
   .news__right .news__buttons .news__arrows {
@@ -4417,6 +4466,10 @@ a {
 
   .news__arrows {
     display: none;
+  }
+
+  .footer__in {
+    background-position: 0 290px;
   }
 
   .footer__top-item {
@@ -4468,14 +4521,39 @@ a {
     flex-direction: row-reverse;
   }
 
+  .header__bottom-item .logo {
+    max-width: 156px;
+  }
+
+  .header__bottom-item .menu span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .header__bottom-item .menu .line {
+    margin-right: 20px;
+  }
+
+  .header__bottom-item .menu .line div {
+    width: 20px;
+  }
+
+  .banner .leaves {
+    top: 307px;
+  }
+
+  .banner .leaves img {
+    width: 73px;
+  }
+
   .banner__in {
-    padding: 0 40px 0 16px;
+    padding: 0 0 0 16px;
   }
 
   .banner__left span {
     font-weight: 700;
     font-size: 64px;
-    line-height: 78px;
+    line-height: 65px;
   }
 
   .banner__left .cities__item .icon img {
@@ -4489,11 +4567,11 @@ a {
   }
 
   .banner__left .raccoon__item {
-    top: 88px;
+    top: 65px;
   }
 
   .banner__left .raccoon__item:first-child {
-    top: 139px;
+    top: 112px;
   }
 
   .banner__right .pay {
@@ -4501,9 +4579,15 @@ a {
     left: 0;
   }
 
+  .banner__right .about {
+    width: 86%;
+    padding-bottom: 157px;
+  }
+
   .banner .orange-blocks__item {
-    padding: 20px 40px;
+    padding: 40px 20px;
     min-height: 395px;
+    max-width: 242px;
   }
 
   .banner .orange-blocks__item h2 {
@@ -4522,7 +4606,16 @@ a {
   }
 
   .tabs__item {
-    padding: 30px 21.5px;
+    padding: 35px 21.5px;
+  }
+
+  .tabs__item span {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .all-animals__bg img {
+    width: 108px;
   }
 
   .all-animals__in {
@@ -4534,6 +4627,10 @@ a {
     line-height: 67px;
   }
 
+  .all-animals__item {
+    max-height: 226px;
+  }
+
   .all-animals__bottom-mobile {
     margin-top: 10px;
     margin-right: 0;
@@ -4541,6 +4638,12 @@ a {
 
   .all-animals__bottom-mobile .button {
     margin-top: 20px;
+  }
+
+  .buy-ticket__paws {
+    top: 162px;
+    right: 0;
+    transform: rotate(45deg);
   }
 
   .buy-ticket__in {
@@ -4565,7 +4668,7 @@ a {
   }
 
   .buy-ticket__item .price {
-    padding: 0 20px 40px;
+    padding: 0 20px 24px;
   }
 
   .buy-ticket__item .button-ticket {
@@ -4586,14 +4689,28 @@ a {
     margin-bottom: 30px;
   }
 
+  .services__big-branch img {
+    width: 238px;
+  }
+
+  .services__big-branch {
+    top: -11px;
+    right: -40px;
+  }
+
+  .services__big-branch {
+    top: 47px;
+    right: -52px;
+  }
+
   .services__item-about h2 {
     font-size: 24px;
     line-height: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 
   .services__item-about .button-services {
-    margin-top: 20px;
+    margin-top: 45px;
   }
 
   .services__price {
@@ -4603,7 +4720,7 @@ a {
   }
 
   .poster {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 
   .poster__in {
@@ -4623,7 +4740,19 @@ a {
   .poster .billboard-cards-about-title {
     margin-top: 20px;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+  }
+
+  .poster .billboard-cards-date__mobile span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .poster .billboard-cards-date__mobile span:first-child {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .poster .billboard-cards-about {
@@ -4634,7 +4763,7 @@ a {
   .poster .billboard-cards-about h2 {
     font-size: 24px;
     line-height: 29px;
-    margin-right: 17.5px;
+    margin-right: 21.5px;
   }
 
   .poster .billboard-cards-price {
@@ -4656,8 +4785,32 @@ a {
     margin-bottom: 0 !important;
   }
 
+  .poster .billboard-cards-date span:first-child {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .gallery {
-    padding-top: 60px;
+    padding-top: 120px;
+  }
+
+  .gallery__big-branch img {
+    width: 306px;
+  }
+
+  .gallery__big-branch {
+    top: 90px;
+    left: -56px;
+  }
+
+  .gallery__paws img {
+    width: 105px;
+  }
+
+  .gallery__paws {
+    top: 15%;
+    left: 66%;
   }
 
   .gallery__in {
@@ -4665,7 +4818,7 @@ a {
   }
 
   .gallery__menu {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .gallery__menu h2 {
@@ -4677,12 +4830,28 @@ a {
     margin-right: 40px;
   }
 
+  .gallery__images-item {
+    max-height: 250px;
+  }
+
   .gallery__pagination {
     margin-top: 20px;
   }
 
+  .reviews__leaves img {
+    width: 108px;
+  }
+
+  .reviews__leaves {
+    top: 32px;
+  }
+
+  .reviews__leaves-second {
+    display: none;
+  }
+
   .reviews__in {
-    padding: 60px 16px;
+    padding: 60px 16px 45px 0;
   }
 
   .reviews__in h2 {
@@ -4698,10 +4867,15 @@ a {
 
   .reviews__item p {
     margin-bottom: 34px;
+    line-height: 24px;
   }
 
   .news__in {
     padding: 0 16px 60px;
+  }
+
+  .news__left {
+    padding-right: 0;
   }
 
   .news__left h2 {
@@ -4755,7 +4929,66 @@ a {
   }
 
   .footer__in {
-    padding: 90px 16px 0;
+    background-position: 0 486px;
+    padding: 80px 16px 0;
+  }
+
+  .footer__top-item-logo {
+    width: 156px;
+  }
+
+  .footer__top-menu {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .footer__bottom {
+    padding: 40px 18px;
+  }
+
+  .footer__bottom-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__bottom-menu li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .contacts__paws {
+    display: block;
+    position: absolute;
+    top: 86px;
+    right: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media all and (max-width: 427px) {
+  .banner__left .raccoon__item {
+    top: 132px;
+    right: 0;
+  }
+
+  .banner__left .raccoon__item:first-child {
+    top: 144px;
+    right: 47px;
+  }
+
+  .banner__right .pay {
+    top: -129px;
+  }
+
+  .banner__right .pay img {
+    width: 108px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .buy-ticket__paws {
+    top: 123px;
   }
 }
 

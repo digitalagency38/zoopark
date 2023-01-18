@@ -70,6 +70,14 @@
             @media all and (max-width:740px) {
                 flex-direction: row-reverse;
             }
+            .logo {
+                @media all and (max-width:740px) {
+                    max-width: 156px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
             .menu {
                 font-weight: 400;
                 font-size: 20px;
@@ -80,15 +88,27 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                span {
+                    @media all and (max-width:740px) {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
                 .line {
                     margin-right: 30px;
                     position: relative;
+                    @media all and (max-width:740px) {
+                        margin-right: 20px;
+                    }
                 }
                 .line div {
                     width: 29px;
                     height: 3px;
                     background: #2B2A29;
                     border-radius: 3px;
+                    @media all and (max-width:740px) {
+                        width: 20px;
+                    }
                 }
                 .line div:first-child {
                     margin-bottom: 6px;

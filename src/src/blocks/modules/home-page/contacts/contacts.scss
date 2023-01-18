@@ -1,4 +1,18 @@
 .contacts {
+    position: relative;
+    &__paws {
+        display: none;
+        @media all and (max-width:540px) {
+            display: block;
+            position: absolute;
+            top: 86px;
+            right: 0;
+            transform: rotate(45deg);
+        }
+        img {
+            width: 112px;
+        }
+    }
     .page-contacts {
         padding-bottom: 100px;
     }

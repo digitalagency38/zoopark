@@ -2,14 +2,23 @@
     padding-top: 120px;
     position: relative;
     @media all and (max-width:740px) {
-        padding-top: 60px;
+        padding-top: 120px;
     }
     &__big-branch {
         position: absolute;
         top: 0;
         left: 0;
         transform: rotate(180deg);
-        transform: scale(-1, 1)
+        transform: scale(-1, 1);
+        img {
+            @media all and (max-width:740px) {
+                width: 306px;
+            }
+        }
+        @media all and (max-width:740px) {
+            top: 90px;
+            left: -56px;        
+        }
     }
     &__paws {
         position: absolute;
@@ -18,6 +27,15 @@
         transform: scale(-1, 1);
         @media all and (max-width:1130px) {
             top: 15%;
+        }
+        img {
+            @media all and (max-width:740px) {
+                width: 105px;
+            }
+        }
+        @media all and (max-width:740px) {
+            top: 15%;
+            left: 66%;       
         }
     }
     &__in {
@@ -38,7 +56,7 @@
             align-items: flex-start;
         }
         @media all and (max-width:740px) {
-            margin-bottom: 40px;
+            margin-bottom: 33px;
         }
         h2 {
             font-family: 'Calibri';
@@ -139,6 +157,9 @@
         &-item {
             max-height: 354px;
             height: 100%;
+            @media all and (max-width:740px) {
+                max-height: 250px;
+            }
             iframe{
                 border: 5px solid #EC6708;
                 border-radius: 20px;

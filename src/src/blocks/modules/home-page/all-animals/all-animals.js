@@ -14,7 +14,7 @@ const AllAnimals = class AllAnimals {
             dragThreshold: false,
             type: 'carousel',
             breakpoints: {
-                1130: {
+                1131: {
                     perView: 1
                 },
                 0: {
