@@ -5,8 +5,35 @@
             padding: 40px 0 40px 16px;
         }
     }
+    &__in.personal-data-bc {
+        ul li {
+            @media all and (max-width:740px) {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 27px;
+                
+            }
+            &:first-child {
+                @media all and (max-width:740px) {
+                    margin-right: 32px;
+                }
+            }
+            &:last-child {
+                @media all and (max-width:740px) {
+                    margin-right: 0;
+                }
+            }
+        }
+        ul {
+            align-items: flex-start;
+        }
+        ul li:not(:first-child):before {
+            left: -23px;
+        }
+    }
     &__in {
         padding: 40px 0 50px 80px;
+        
         
         ul {
             list-style: none;
