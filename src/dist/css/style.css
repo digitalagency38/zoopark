@@ -2620,6 +2620,8 @@ a {
 
 .furry-actors__animals-item {
   padding: 10px 10px 30px;
+  background: #F7E7CF;
+  border-radius: 20px;
 }
 
 .furry-actors__animals-image {
@@ -4208,6 +4210,10 @@ a {
   .gallery__menu ul {
     width: 30%;
   }
+
+  .furry-actors__animals {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media all and (max-width: 1160px) {
@@ -4329,6 +4335,12 @@ a {
   .footer__top-social-network {
     margin-left: 0;
     max-width: 100%;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .furry-actors__animals {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -4505,6 +4517,12 @@ a {
 
   .footer__bottom-pay {
     margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .furry-actors__animals {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -4953,6 +4971,15 @@ a {
 
   .footer__bottom-menu li:not(:last-child) {
     margin-bottom: 24px;
+  }
+
+  .bread-crumbs__in.our-pets,
+  .bread-crumbs__in.photos-bread-crumbs {
+    padding: 40px 0 50px 16px;
+  }
+
+  .furry-actors__in.our-pets {
+    padding: 0 16px 120px 16px;
   }
 }
 

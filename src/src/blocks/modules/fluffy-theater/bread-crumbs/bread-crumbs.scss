@@ -1,9 +1,13 @@
 .bread-crumbs {
     &__in.our-pets, &__in.photos-bread-crumbs {
         padding: 40px 0 40px 80px;
+        @media all and (max-width:740px) {
+            padding: 40px 0 50px 16px;
+        }
     }
     &__in {
         padding: 40px 0 50px 80px;
+        
         ul {
             list-style: none;
             padding: 0;

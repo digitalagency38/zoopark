@@ -8,6 +8,9 @@
     &__card {
         display: flex;
         align-items: center;
+        @media all and (max-width:1200px) {
+            flex-direction: column;
+        }
         &-image {
             width: 100%;
             max-width: 728px;
