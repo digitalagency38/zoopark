@@ -510,6 +510,10 @@ template {
   color: #2B2A29;
 }
 
+body {
+  background: #FFFBF2;
+}
+
 a {
   text-decoration: none;
 }
@@ -2880,6 +2884,7 @@ a {
   line-height: 90px;
   margin-top: 0;
   margin-bottom: 40px;
+  font-family: "Calibri";
 }
 
 .furry-actors__animals {
@@ -2952,10 +2957,11 @@ a {
 
 .zoo-news__in h2 {
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 90px;
   margin-top: 0;
   margin-bottom: 40px;
+  font-family: "Calibri";
 }
 
 .zoo-news__animals {
@@ -2966,6 +2972,10 @@ a {
 
 .zoo-news__animals-item {
   padding: 10px 10px 20px;
+  background: #F3DBB7;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .zoo-news__animals-image {
@@ -2997,8 +3007,8 @@ a {
 
 .zoo-news__animals-info h2 {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 24px !important;
+  line-height: 38px !important;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -3075,7 +3085,7 @@ a {
 }
 
 .zoo-news__navigation ul li:active {
-  background: #C48321;
+  background: #EC6708;
 }
 
 .zoo-news__navigation ul li a:active {
@@ -4220,6 +4230,15 @@ a {
   .furry-actors__animals {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .zoo-news__in h2 {
+    font-size: 56px;
+    line-height: 62px;
+  }
+
+  .zoo-news__animals {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -4543,6 +4562,10 @@ a {
 
   .footer__bottom-pay {
     margin-bottom: 40px;
+  }
+
+  .zoo-news__animals {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -5005,11 +5028,15 @@ a {
   }
 
   .mini-banner {
-    padding-bottom: 60px;
+    padding-bottom: 78px;
   }
 
   .mini-banner .container {
     padding: 0 16px;
+  }
+
+  .mini-banner__card-image {
+    height: 250px;
   }
 
   .mini-banner__card-text {
@@ -5033,6 +5060,30 @@ a {
     font-size: 55px;
     line-height: 67px;
     margin-bottom: 20px;
+  }
+
+  .zoo-news__in {
+    padding: 0 16px 60px;
+  }
+
+  .zoo-news__animals {
+    grid-gap: 20px;
+  }
+
+  .zoo-news__animals-image {
+    height: 300px;
+  }
+
+  .zoo-news__navigation {
+    padding-top: 24px;
+  }
+
+  .zoo-news__navigation ul li:first-child {
+    display: none;
+  }
+
+  .zoo-news__navigation ul li:nth-child(5) {
+    display: none;
   }
 }
 
