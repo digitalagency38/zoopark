@@ -26,7 +26,9 @@
             line-height: 25px !important;
         }
         &-item {
-            margin-bottom: 50px;
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
             @media all and (max-width:740px) {
                 margin-bottom: 60px;
             }
@@ -57,9 +59,16 @@
                 line-height: 24px;
                 margin-bottom: 15px;
             }
+            ul {
+                margin-bottom: 0;
+            }
+            ul:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
         &-item-list {
             margin-bottom: 20px;
+            margin-left: 20px;
             span:first-child {
                 font-weight: 700;
                 font-size: 18px;

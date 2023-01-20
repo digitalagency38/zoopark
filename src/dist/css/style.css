@@ -581,7 +581,7 @@ a {
 }
 
 .header__in {
-  padding: 17.5px 80px 0 84px;
+  padding: 14.5px 80px 0 84px;
 }
 
 .header__top,
@@ -603,7 +603,7 @@ a {
 
 .header__top .adress__geolocation,
 .header__top-item .adress__geolocation {
-  margin-right: 14px;
+  margin-right: 7px;
 }
 
 .header__top .adress:first-child,
@@ -633,7 +633,7 @@ a {
 }
 
 .header__bottom {
-  padding: 30px 0;
+  padding: 40px 0 26px 0;
 }
 
 .header__bottom-item {
@@ -1461,11 +1461,15 @@ a {
   border-radius: 120px;
 }
 
+.gallery__in-history {
+  background: none;
+}
+
 .gallery__menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 .gallery__menu h2 {
@@ -1890,7 +1894,7 @@ a {
 }
 
 .footer__in {
-  padding: 145px 122px 0 80px;
+  padding: 152px 122px 0 80px;
   background: url("../img/forest-footer3.svg"), #F7E3C1;
   background-repeat: no-repeat;
   background-position: 0px 88px;
@@ -2318,7 +2322,7 @@ a {
 }
 
 .bread-crumbs__in.personal-data-bc ul li:not(:first-child):before {
-  left: -23px;
+  left: -31px;
 }
 
 .bread-crumbs__in {
@@ -2747,9 +2751,10 @@ a {
 }
 
 .gallery-theater__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 90px;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -3618,7 +3623,7 @@ a {
   line-height: 25px !important;
 }
 
-.personal-data__text-item {
+.personal-data__text-item:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -3648,8 +3653,17 @@ a {
   margin-bottom: 15px;
 }
 
+.personal-data__text-item ul {
+  margin-bottom: 0;
+}
+
+.personal-data__text-item ul:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .personal-data__text-item-list {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .personal-data__text-item-list span:first-child {
@@ -3932,7 +3946,7 @@ a {
 }
 
 .history-zoo__in {
-  padding: 0 80px 100px 80px;
+  padding: 0 80px 140px 80px;
 }
 
 .history-zoo__text h2 {
@@ -3959,20 +3973,23 @@ a {
 }
 
 .history-zoo__title {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 90px;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
 .history-by-year__in {
   padding: 0 80px;
+  margin-bottom: 10px;
 }
 
 .history-by-year__in-item {
   display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-columns: 530fr 120fr 630fr;
 }
 
 .history-by-year__in-item .year-line {
@@ -3980,6 +3997,8 @@ a {
   height: 100%;
   background: #E5B376;
   position: relative;
+  margin-top: -40px;
+  padding-bottom: 158px;
 }
 
 .history-by-year__in-item .year-line:before {
@@ -4003,15 +4022,14 @@ a {
   font-size: 44px;
   line-height: 53px;
   color: #EC6708;
-  margin-top: 35px;
 }
 
 .history-by-year__in-item .about-year {
   background: #F7E7CF;
-  margin-top: 35px;
   margin-bottom: 100px;
   border-radius: 20px;
   padding: 10px 10px 30px 10px;
+  display: inherit;
 }
 
 .history-by-year__in-item .about-year-image {
@@ -4032,6 +4050,7 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
 }
 
 .detailed-animal-page__in {
@@ -5140,6 +5159,31 @@ a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
+  }
+
+  .history-zoo__in {
+    padding: 0 16px 50px 16px;
+  }
+
+  .history-zoo__text h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .history-zoo__title {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 20px;
+  }
+
+  .history-by-year__in {
+    padding: 0 16px 0 16px;
+  }
+
+  .history-by-year__in-item span {
+    font-size: 34px;
+    line-height: 41px;
   }
 }
 

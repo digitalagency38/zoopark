@@ -1,25 +1,73 @@
-<div class="gallery-theater">
+<div class="gallery">
+    <div class="gallery__paws">
+        <img src="img/paws-reviews.svg" alt="paws">
+    </div>
     <div class="container">
-        <div class="gallery-theater__in">
-            <h2>Галерея</h2>
-            <div class="gallery-theater__menu">
+        <div class="gallery__in gallery__in-history">
+            <div class="gallery__menu">
+                <h2>Галерея</h2>
                 <ul>
                     <li><a href="#">Все</a></li>
                     <li><a href="#">Фотографии</a></li>
                     <li><a href="#">Видео файлы</a></li>
                 </ul>
-                <a href="" class="gallery-theater__menu-button">
+                <a href="" class="gallery__menu-button">
                     <span>Вся галерея</span>
+                <div class="green-button">
+                    <img src="img/green-button.svg" alt="button">
+                </div>
                 </a>
             </div>
-            <div class="gallery-theater__images">
-                <div class="gallery-theater__images-item">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xcvNFNKvrZQ" title="МЫШИ - ИНТЕРЕСНЫЕ ФАКТЫ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            <div class="gallery__images glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        @@for ($i = 0; $i < 10; $i++) {
+                            <div class="gallery__images-item glide__slide">
+                                <img src="img/banner-fluffy.jpg" alt="image">
+                            </div>
+                        }
+                    </div>
+
                 </div>
-                <div class="gallery-theater__images-item">
-                    <img src="img/fairy-tales.jpg" alt="image">
+                <!-- @@for ($i = 0; $i < 10; $i++) {
+                <div class="gallery__images-item">
+                    <img src="img/banner-fluffy.jpg" alt="image">
+                </div>
+            } -->
+                <!-- <div class="gallery__images-item">
+                    <img src="img/gallery.jpg" alt="image">
+                </div> -->
+            </div>
+
+            <div class="services__pagination gallery__pagination" v-if="services.slider">
+                <div class="global__dots">
+                    @@for ($i = 0; $i < 5; $i++) {
+                        <div class="global__dot" :class="{'isActive': services.slider.index == `+ $i +`}" @click="services.slider.go('=`+ $i +`')">`+ $i +`</div>
+                    }
+                </div>
+                <div class="services__arrows global__arows">
+                    <div class="global__arow global__arow--prev" @click="services.slider.go('<')">
+                        <div class="global__arow-in">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
+                        </div>
+                    </div>
+                    <div class="global__arow global__arow--next" @click="services.slider.go('>')">
+                        <div class="global__arow-in">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <a href="" class="gallery__menu-button-mobile">
+                <span>Вся галерея</span>
+            <div class="green-button">
+                <img src="img/green-button.svg" alt="button">
+            </div>
+            </a>
+
         </div>
     </div>
 </div>
