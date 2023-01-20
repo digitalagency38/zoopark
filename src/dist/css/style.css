@@ -1795,7 +1795,6 @@ a {
 .news__buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-top: 30px;
 }
 
@@ -1820,7 +1819,7 @@ a {
 }
 
 .contacts__in {
-  padding: 0 80px 120px;
+  padding: 0 80px 110px;
 }
 
 .contacts__in h2 {
@@ -2334,7 +2333,7 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -3106,13 +3105,14 @@ a {
 }
 
 .text-news__in {
-  padding: 40px 80px 0 80px;
+  padding: 0 80px 0 80px;
 }
 
 .text-news__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 116px;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -3135,6 +3135,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  box-sizing: border-box;
 }
 
 .text-news__about {
@@ -3171,6 +3172,11 @@ a {
 }
 
 .text-news__about ul li,
+.text-news__text-second ul li {
+  margin-bottom: 10px;
+}
+
+.text-news__about ul li,
 .text-news__about p,
 .text-news__text-second ul li,
 .text-news__text-second p {
@@ -3181,7 +3187,7 @@ a {
 
 .text-news__about ul,
 .text-news__text-second ul {
-  padding-left: 17px;
+  padding-left: 26px;
 }
 
 .text-news__about ul:not(:last-child),
@@ -3201,8 +3207,12 @@ a {
   margin-bottom: 40px;
 }
 
+.text-news__about {
+  margin-bottom: 100px;
+}
+
 .banner-holiday {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .banner-holiday-team {
@@ -3213,9 +3223,10 @@ a {
   max-width: 846px;
   width: 100%;
   margin: 0 auto;
-  background: #FCDFB3;
+  background: #F7E7CF;
   border-radius: 20px;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .banner-holiday__in span {
@@ -3243,9 +3254,10 @@ a {
   max-width: 846px;
   width: 100%;
   margin: 0 auto;
-  background: #C48321;
+  background: #EC6708;
   border-radius: 20px;
   padding: 30px 40px;
+  box-sizing: border-box;
 }
 
 .buy-a-ticket__in h2 {
@@ -3269,132 +3281,26 @@ a {
   line-height: 24px;
   color: #fff;
   margin: 0;
+  margin-right: 83px;
 }
 
-.buy-a-ticket__item button {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #C48321;
-  padding: 16px 38px;
-  background: #fff;
-  border: none;
-  width: 100%;
-  max-width: 180px;
-  box-sizing: border-box;
-  margin-left: 24px;
-  cursor: pointer;
-}
-
-.news-zoo {
-  position: relative;
-  margin-left: 240px;
-}
-
-.news-zoo__in {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0 120px 0;
-}
-
-.news-zoo__left {
-  width: 14.5%;
-  background: url("../img/lapki.svg"), #C48321;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  padding: 100px 206px 100px 80px;
-}
-
-.news-zoo__left h2 {
-  font-family: "Calibri";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.news-zoo__left span {
-  display: block;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  color: #fff;
-  max-width: 192px;
-  margin-bottom: 82px;
-}
-
-.news-zoo__left .button {
-  display: block;
-  max-width: 155px;
+.buy-a-ticket__item .button {
+  max-width: 223px;
   width: 100%;
   box-sizing: border-box;
-  background: #fff;
-  padding: 16px 29px;
+  border: 2px solid #fff;
+  border-radius: 200px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.news-zoo__left .button .btn-title {
+.buy-a-ticket__item .button span {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  color: inherit;
-  margin-bottom: 0;
-}
-
-.news-zoo__right {
-  width: 65%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-}
-
-.news-zoo__item {
-  padding: 10px 10px 20px;
-  border-radius: 20px;
-  max-width: 630px;
-}
-
-.news-zoo__item-image {
-  max-height: 300px;
-  height: 100%;
-  margin-bottom: 20px;
-}
-
-.news-zoo__item-image img {
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.news-zoo__item-about {
-  padding: 0 20px;
-}
-
-.news-zoo__item-about span {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  color: #009846;
-}
-
-.news-zoo__item-about h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 38px;
-}
-
-.news-zoo__item-about p {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
+  color: #fff;
 }
 
 .company-details__in {
@@ -4415,6 +4321,17 @@ a {
     margin-left: 0;
     max-width: 100%;
   }
+
+  .text-news__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .text-news__about h2,
+  .text-news__text-second h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 @media all and (max-width: 1100px) {
@@ -4600,6 +4517,14 @@ a {
 
   .zoo-news__animals {
     grid-template-columns: 1fr;
+  }
+
+  .banner-holiday {
+    padding: 0 60px;
+  }
+
+  .buy-a-ticket {
+    padding: 0 60px 120px 60px;
   }
 }
 
@@ -5056,6 +4981,15 @@ a {
     margin-bottom: 24px;
   }
 
+  .bread-crumbs-text-page ul li {
+    font-size: 14px;
+    margin-right: 33px;
+  }
+
+  .bread-crumbs-text-page ul li:not(:first-child):before {
+    left: -23px;
+  }
+
   .bread-crumbs__in.our-pets,
   .bread-crumbs__in.photos-bread-crumbs {
     padding: 40px 0 40px 16px;
@@ -5132,6 +5066,83 @@ a {
 
   .zoo-news__navigation ul li:nth-child(5) {
     display: none;
+  }
+
+  .text-news__in {
+    padding: 0 16px;
+  }
+
+  .text-news__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 20px;
+  }
+
+  .text-news__banner {
+    margin-bottom: 40px;
+  }
+
+  .text-news__banner-image {
+    height: 250px;
+  }
+
+  .text-news__about .text-news-title,
+  .text-news__text-second .text-news-title {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+
+  .text-news__about h2,
+  .text-news__text-second h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 13px;
+  }
+
+  .text-news__about ul:not(:last-child),
+  .text-news__text-second ul:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .text-news__about {
+    margin-bottom: 60px;
+  }
+
+  .banner-holiday {
+    padding: 0 16px;
+    margin-bottom: 60px;
+  }
+
+  .banner-holiday__in span {
+    margin-bottom: 16px;
+  }
+
+  .buy-a-ticket {
+    padding: 0 16px 60px 16px;
+  }
+
+  .buy-a-ticket__in {
+    padding: 30px;
+  }
+
+  .buy-a-ticket__in h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .buy-a-ticket__item {
+    flex-direction: column;
+  }
+
+  .buy-a-ticket__item p {
+    margin-right: 0;
+    margin-bottom: 33px;
+  }
+
+  .buy-a-ticket__item .button {
+    max-width: 100%;
   }
 
   .personal-data__in {

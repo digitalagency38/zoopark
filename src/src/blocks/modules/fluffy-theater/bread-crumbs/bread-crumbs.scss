@@ -1,4 +1,15 @@
 .bread-crumbs {
+    &-text-page ul li{
+        @media all and (max-width:740px) {
+            font-size: 14px;
+            margin-right: 33px;
+        }
+        &:not(:first-child):before {
+            @media all and (max-width:740px) {
+                left: -23px;
+            }
+        }
+    }
     &__in.our-pets, &__in.photos-bread-crumbs {
         padding: 40px 0 40px 80px;
         @media all and (max-width:740px) {
@@ -40,7 +51,7 @@
             padding: 0;
             margin: 0;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             position: relative;
         }
         ul li {
@@ -64,4 +75,5 @@
             color: #C48321
         }
     }
+    
 }

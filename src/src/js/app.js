@@ -34,3 +34,4 @@ window.app = new Vue({
 
     }
 });
+
