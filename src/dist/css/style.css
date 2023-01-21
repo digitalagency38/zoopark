@@ -1833,8 +1833,8 @@ a {
 
 .contacts__in .title-contacts {
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 117px;
 }
 
 .contacts__adreses {
@@ -1853,6 +1853,9 @@ a {
   border-radius: 20px;
   margin-right: 20px;
   overflow: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 390px;
 }
 
 .contacts__adreses-item-info {
@@ -3304,13 +3307,14 @@ a {
 }
 
 .company-details__in {
-  padding: 0 80px 120px 80px;
+  padding: 14px 80px 120px 80px;
 }
 
 .company-details__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 117px;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -3322,13 +3326,15 @@ a {
 }
 
 .company-details__item {
-  background: #C48321;
+  background: #EC6708;
   border-radius: 20px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  box-sizing: border-box;
+  min-height: 182px;
 }
 
 .company-details__item h2 {
@@ -3336,6 +3342,8 @@ a {
   font-size: 24px;
   line-height: 30px;
   color: #fff;
+  font-family: "MuseoSansCyrl";
+  margin-bottom: 25px;
 }
 
 .company-details__item span {
@@ -3361,9 +3369,10 @@ a {
 }
 
 .application-form__flex-text h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 90px;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -3372,6 +3381,10 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+}
+
+.application-form__flex-form .image-form img {
+  width: 100%;
 }
 
 .error__in {
@@ -4179,6 +4192,31 @@ a {
   .zoo-news__animals {
     grid-template-columns: 1fr 1fr;
   }
+
+  .company-details__tabs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1260px) {
+  .contacts__in .title-contacts {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .application-form__flex {
+    flex-direction: column;
+  }
+
+  .application-form__flex-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .application-form__flex-form {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -4331,6 +4369,21 @@ a {
   .text-news__text-second h2 {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .company-details__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .company-details__item h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .application-form__flex-text h2 {
+    font-size: 75px;
+    line-height: 75px;
   }
 }
 
@@ -4918,11 +4971,21 @@ a {
     margin: 0;
   }
 
+  .contacts .page-contacts {
+    padding-bottom: 60px;
+  }
+
   .contacts__in {
     padding: 0 16px 60px;
   }
 
   .contacts__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__in .title-contacts {
     font-size: 55px;
     line-height: 67px;
     margin-bottom: 30px;
@@ -5143,6 +5206,37 @@ a {
 
   .buy-a-ticket__item .button {
     max-width: 100%;
+  }
+
+  .company-details__in {
+    padding: 0 16px 60px;
+  }
+
+  .company-details__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .company-details__tabs {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .company-details__item h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .application-form__in {
+    padding: 0 16px 60px;
+  }
+
+  .application-form__flex-text h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 20px;
   }
 
   .personal-data__in {

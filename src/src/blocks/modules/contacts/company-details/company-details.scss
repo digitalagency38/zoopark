@@ -1,32 +1,65 @@
 .company-details {
     &__in {
-        padding: 0 80px 120px 80px;
+        padding: 14px 80px 120px 80px;
+        @media all and (max-width:740px) {
+            padding: 0 16px 60px;
+        }
         h2 {
+            font-family: 'Calibri';
             font-weight: 700;
-            font-size: 44px;
-            line-height: 53px;
+            font-size: 96px;
+            line-height: 117px;
             margin-top: 0;
             margin-bottom: 40px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+                margin-bottom: 30px;
+            }
         }
     }
     &__tabs {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        @media all and (max-width:1260px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media all and (max-width:740px) {
+            grid-template-columns: 1fr;
+            grid-gap: 16px;
+        }
     }
     &__item {
-        background: #C48321;
+        background: #EC6708;
         border-radius: 20px;
         padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        box-sizing: border-box;
+        min-height: 182px;
         h2 {
             font-weight: 700;
             font-size: 24px;
             line-height: 30px;
             color: #fff;
+            font-family: "MuseoSansCyrl";
+            margin-bottom: 25px;
+            @media all and (max-width:1130px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 24px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
         }
         span {
             font-weight: 300;
