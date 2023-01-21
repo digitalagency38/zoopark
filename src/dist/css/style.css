@@ -3951,8 +3951,7 @@ a {
   padding-bottom: 158px;
 }
 
-.history-by-year__in-item .year-line:before {
-  content: "";
+.history-by-year__in-item .year-line .circle {
   position: absolute;
   top: 50px;
   left: -12px;
@@ -3962,8 +3961,21 @@ a {
   background: #EC6708;
 }
 
+.history-by-year__in-item .year-line .circle .circle-monile {
+  display: none;
+}
+
 .history-by-year__in-item .year-line:nth-child(1) {
   border-radius: 5000px;
+}
+
+.history-by-year__in-item .year-line .year-mobile {
+  display: none;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  white-space: nowrap;
+  color: #EC6708;
 }
 
 .history-by-year__in-item span {
@@ -4949,6 +4961,10 @@ a {
     padding-top: 120px;
   }
 
+  .gallery-history {
+    padding-top: 0;
+  }
+
   .gallery__big-branch img {
     width: 306px;
   }
@@ -4971,6 +4987,10 @@ a {
     padding: 60px 16px;
   }
 
+  .gallery__in-history {
+    padding: 19px 16px 70px;
+  }
+
   .gallery__menu {
     margin-bottom: 33px;
   }
@@ -4986,6 +5006,10 @@ a {
 
   .gallery__images-item {
     max-height: 250px;
+  }
+
+  .gallery__images-item img {
+    height: 250px;
   }
 
   .gallery__pagination {
@@ -5449,9 +5473,65 @@ a {
     padding: 0 16px 0 16px;
   }
 
+  .history-by-year__in-item {
+    grid-template-columns: 0.1fr 1fr;
+  }
+
+  .history-by-year__in-item .year-line {
+    margin-top: -23px;
+    padding-bottom: 40px;
+  }
+
+  .history-by-year__in-item .year-line .circle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    top: 28px;
+  }
+
+  .history-by-year__in-item .year-line .circle .circle-monile {
+    display: block;
+    margin: 0 auto;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .history-by-year__in-item .year-line .year-mobile {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 32px;
+  }
+
   .history-by-year__in-item span {
-    font-size: 34px;
-    line-height: 41px;
+    display: none;
+  }
+
+  .history-by-year__in-item .about-year {
+    margin-top: 60px;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 80px;
+  }
+
+  .history-by-year__in-item .about-year-image {
+    max-height: 200px;
+  }
+
+  .history-by-year__in-item .about-year-image img {
+    min-height: 200px;
+  }
+
+  .history-by-year__in-item .about-year p {
+    -webkit-line-clamp: 8;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 

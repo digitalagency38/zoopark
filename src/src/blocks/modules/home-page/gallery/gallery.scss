@@ -4,6 +4,11 @@
     @media all and (max-width:740px) {
         padding-top: 120px;
     }
+    &-history {
+        @media all and (max-width:740px) {
+            padding-top: 0;
+        } 
+    }
     &__big-branch {
         position: absolute;
         top: 0;
@@ -47,6 +52,9 @@
         }
         &-history {
             background: none;
+            @media all and (max-width:740px) {
+                padding: 19px 16px 70px;
+            }
         }
     }
     &__menu {
@@ -175,6 +183,9 @@
                 border-radius: 20px;
                 height: 354px;
                 box-sizing: border-box;
+                @media all and (max-width:740px) {
+                    height: 250px;
+                }
             }
         }
     }

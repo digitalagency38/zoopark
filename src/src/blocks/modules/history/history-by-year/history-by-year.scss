@@ -11,7 +11,7 @@
         // grid-template-columns: 1fr 0.4fr 1fr;
         grid-template-columns: 530fr 120fr 630fr;
         @media all and (max-width:740px) {
-            
+            grid-template-columns: 0.1fr 1fr;
         }
         .year-line {
             width: 8px;
@@ -20,8 +20,11 @@
             position: relative;
             margin-top: -40px;
             padding-bottom: 158px;
-            &:before {
-                content: "";
+            @media all and (max-width:740px) {
+                margin-top: -23px;
+                padding-bottom: 40px;
+            }
+            .circle {
                 position: absolute;
                 top: 50px;
                 left: -12px;
@@ -29,9 +32,41 @@
                 height: 32px;
                 border-radius: 50%;
                 background: #EC6708;
+                @media all and (max-width:740px) {
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    top: 28px;
+                }
+                .circle-monile {
+                    display: none;
+                    @media all and (max-width:740px) {
+                        display: block;
+                        margin: 0 auto;
+                        width: 12px;
+                        height: 12px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                }
             }
             &:nth-child(1) {
                 border-radius: 5000px;
+            }
+            .year-mobile {
+                display: none;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 41px;
+                white-space: nowrap;
+                color: #EC6708;
+                @media all and (max-width:740px) {
+                    display: block;
+                    position: absolute;
+                    top: 19px;
+                    left: 32px;
+                }
             }
         }
         span {
@@ -41,8 +76,7 @@
             line-height: 53px;
             color: #EC6708;
         @media all and (max-width:740px) {
-            font-size: 34px;
-            line-height: 41px;
+            display: none;
         }
             // &:first-child {
             //     margin-top: 35px;
@@ -55,14 +89,25 @@
             border-radius: 20px;
             padding: 10px 10px 30px 10px;
             display: inherit;
+            @media all and (max-width:740px) {
+                margin-top: 60px;
+                padding: 10px 10px 20px 10px;
+                margin-bottom: 80px;
+            }
             &-image {
                 max-height: 300px;
                 height: 100%;
+                @media all and (max-width:740px) {
+                    max-height: 200px;
+                }
                 img {
                     width: 100%;
                     border-radius: 20px;
                     object-fit: cover;
                     height: 100%;
+                    @media all and (max-width:740px) {
+                        min-height: 200px;
+                    }
                 }
             }
             p {
@@ -71,6 +116,15 @@
                 font-size: 16px;
                 line-height: 24px;
                 margin: 0;
+                @media all and (max-width:740px) {
+                    -webkit-line-clamp: 8;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical; 
+                    overflow: hidden; 
+                    padding: 20px 0 0 0;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
             }
         }
     }
