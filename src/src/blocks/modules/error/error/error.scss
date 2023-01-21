@@ -1,52 +1,68 @@
 .error {
+    position: relative;
+    overflow: hidden;
+    &__big-branch {
+        position: absolute;
+        top: 216px;
+        right: 0;
+        z-index: 3;
+        @media all and (max-width:1130px) {
+            top: 132px;
+        }
+        @media all and (max-width: 740px) {
+            top: auto;
+            bottom: 166px;
+            right: -106px;
+        }
+        img {
+            @media all and (max-width:1130px) {
+                max-width: 350px;
+            }
+            @media all and (max-width: 740px) {
+                max-width: 223px;
+            }
+        }
+    }
     &__in {
-        padding: 100px 80px 196px;
+        padding: 100px 80px 110px;
         background: url("../img/404.svg") no-repeat;
         background-position: 50% 50%;
+        @media all and (max-width: 740px) {
+            padding: 60px 16px 55px;
+        }
     }
     &__block {
-        display: flex;
-        align-items: flex-start;
-        &-item {
-            max-width: 679px;
-            margin-right: 80px;
+        
+        &-title {
             h2 {
+                font-family: 'Calibri';
                 font-weight: 700;
-                font-size: 44px;
-                line-height: 53px;
+                font-size: 96px;
+                line-height: 117px;
                 margin-top: 0;
-                margin-bottom: 30px;
-            }
-            p {
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 24px;
-                max-width: 413px;
-            }
-            p:last-child {
-                margin-bottom: 30px;
-            }
-            .error-button {
-                max-width: 232px;
-                width: 100%;
-                box-sizing: border-box;
-                background: #C48321;
-                padding: 16px 29px;
-                display: block;
-                span {
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: #fff;
+                margin-bottom: 40px;
+                @media all and (max-width:1130px) {
+                    font-size: 55px;
+                    line-height: 67px;
+                }
+                @media all and (max-width: 740px) {
+                    margin-bottom: 20px;
                 }
             }
         }
+        
         &-menu {
+            display: flex;
+            align-items: flex-start;
+            @media all and (max-width: 990px) {
+                flex-direction: column;
+            }
             h2 {
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 27px;
                 margin-bottom: 20px;
+                margin-top: 0;
             }
             ul {
                 list-style: none;
@@ -58,6 +74,56 @@
                 line-height: 24px;
                 margin-bottom: 15px;
             }
+            &-item {
+            max-width: 50%;  
+            @media all and (max-width: 740px) {
+                max-width: 100%;
+            }
+            &:first-child {
+                margin-right: 27%;
+                @media all and (max-width: 990px) {
+                    margin-right: 10%;
+                }
+                @media all and (max-width: 740px) {
+                    margin-right: 0;
+                    margin-bottom: 60px;
+                }
+            }          
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 413px;
+                margin-top: 0;
+            }
+            
+            .button {
+                display: block;
+                max-width: 100%;
+                box-sizing: border-box;
+                border: 2px solid #EC6708;
+                border-radius: 200px;
+                padding: 14px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+                max-width: 223px;
+                @media all and (max-width: 740px) {
+                    margin-top: 20px;
+                    max-width: 100%;
+                }
+                span {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    white-space: nowrap;
+                }
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
         }
     }
 

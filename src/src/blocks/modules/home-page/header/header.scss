@@ -71,6 +71,7 @@
                 flex-direction: row-reverse;
             }
             .logo {
+                max-width: 197px;
                 @media all and (max-width:740px) {
                     max-width: 156px;
                 }
