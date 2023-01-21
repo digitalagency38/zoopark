@@ -1,23 +1,49 @@
 .video {
     &__in {
         padding: 0 80px 120px;
+        @media all and (max-width:740px) {
+            padding: 0 16px 65px;
+        }
         h2 {
             font-weight: 700;
             font-size: 30px;
             line-height: 48px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            @media all and (max-width:740px) {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
         }
     }
     .video-gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 80px 100px;
+        @media all and (max-width:1130px) {
+            grid-gap: 20px;
+        }
+        @media all and (max-width:880px) {
+            grid-template-columns: 1fr;
+        }
+        @media all and (max-width:740px) {
+            grid-gap: 16px;
+        }
         &__item {
+            box-sizing: border-box;
             max-height: 332px;
-            height: 100%;
+            @media all and (max-width:740px) {
+                max-height: 250px;
+            }
             iframe{
                 border: 5px solid #EC6708;
                 border-radius: 20px;
                 height: 332px;
+                box-sizing: border-box;
+                @media all and (max-width:740px) {
+                    height: 250px;
+                }
             }
         }
     }

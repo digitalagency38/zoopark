@@ -60,6 +60,10 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 27px;
+            @media all and (max-width:740px) {
+                font-size: 14px;
+                margin-right: 33px;
+            }
         }
         ul li:not(:first-child):before {
             content: "";
@@ -70,6 +74,9 @@
             height: 7px;
             background: #009846;
             border-radius: 50%;
+            @media all and (max-width:740px) {
+                left: -23px;
+            }
         }
         ul li a:active {
             color: #C48321
