@@ -11,8 +11,7 @@ import News from '../blocks/modules/home-page/news/news.js';
 import Poster from '../blocks/modules/home-page/poster/poster.js';
 import About from '../blocks/modules/about-us/detailed/detailed.js';
 import AboutUs from '../blocks/modules/about-us/about-us-slider/about-us-slider.js';
-
-
+import Animal from '../blocks/modules/animal-page/detailed/detailed.js';
 
 
 
@@ -29,6 +28,8 @@ window.app = new Vue({
         news: new Poster(),
         news: new About(),
         news: new AboutUs(),
+        news: new Animal(),
+
 
 
     }),
@@ -41,6 +42,8 @@ window.app = new Vue({
         this.poster.init();
         this.about.init();
         this.aboutUs.init();
+        this.animal.init();
+
 
     }
 });
