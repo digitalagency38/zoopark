@@ -1,0 +1,222 @@
+.burger {
+    background: #F7E7CF;
+    position: relative;
+        .leaves {
+            position: absolute;
+            top: 134px;
+            right: 11px;
+            @media all and (max-width:1130px) {
+                right: 0;
+                top: 200px;
+            }
+            @media all and (max-width:740px)  {
+                top: 418px;
+                right: 12px;
+            }
+        }
+        .big-branch {
+           position: absolute;
+           bottom: 111px;
+            left: 0;
+            transform: scale(-1, 1);
+            img {
+                width: 451px;
+                @media all and (max-width:740px) {
+                    width: 217px;
+                }
+            }
+            @media all and (max-width:969px) {
+                bottom: -10px;
+            }
+            @media all and (max-width:740px) {
+                bottom: 80px;
+                z-index: 10;
+                left: -36px;
+            }
+        }
+    &__in {
+        padding: 100px 80px 301px 80px;
+        position: relative;
+        @media all and (max-width:969px) {
+            padding: 100px 80px 150px 80px;
+        }
+        @media all and (max-width:740px) {
+            padding: 40px 16px 227px 16px;
+        }
+        .raccoon {
+            position: relative;
+            &__item {
+                position: absolute;
+                top: 190px;
+                right: 79px;
+                @media all and (max-width:1130px) {
+                    top: 313px;
+                    right: -76px;
+                }
+                @media all and (max-width:740px) {
+                    top: 748px;
+                    right: -6px;
+                }
+                img {
+                    @media all and (max-width:740px) {
+                        width: 231px;
+                    }
+                }
+            }
+            &__item:first-child {
+                top: 313px;
+                right: 208px;
+                @media all and (max-width:1130px) {
+                    top: 355px;
+                    right: 30px;
+                }
+                @media all and (max-width:740px) {
+                    top: 791px;
+                    right: 52px;
+                }
+
+                img {
+                    @media all and (max-width:740px) {
+                        width: 158px;
+                    }
+                }
+            }
+        }
+        .star {
+            position: absolute;
+            right: 582px;
+            bottom: 334px;
+            @media all and (max-width:740px) {
+                right: 5px;
+                bottom: 642px;
+            }
+        }
+        .star-second {
+            position: absolute;
+            right: 187px;
+            top: 295px;
+            img {
+                width: 50px;
+            }
+            @media all and (max-width:740px) {
+                display: none;
+            }
+        }
+        .paws {
+            position: absolute;
+            right: 488px;
+            bottom: 185px;
+            transform: rotate(11deg);
+            @media all and (max-width:969px) {
+                bottom: 342px;
+                right: 335px;
+            }
+            @media all and (max-width:740px) {
+                display: none;
+            }
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 40px;
+        @media all and (max-width:1030px) {
+            flex-wrap: wrap;
+        }
+        @media all and (max-width:740px) {
+            padding-bottom: 0;
+        }
+        &-item {
+            max-width: 197px;
+            width: 100%;
+            margin-right: 128px;
+            @media all and (max-width:1130px) {
+                margin-right: 70px;
+                width: 30%;
+            }
+            @media all and (max-width:990px) {
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 19px;
+            }
+        }
+
+        
+        &-menu {
+            max-width: 305px;
+            width: 100%;
+            margin-right: 100px;
+            @media all and (max-width:1130px) {
+                width: 30%;
+            }
+            @media all and (max-width:990px) {
+                width: 45%;
+                margin-bottom: 40px;
+            }
+            @media all and (max-width:740px) {
+                width: 100%;
+                margin-bottom: 22px;
+            }
+            h2 {
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 90px;
+                @media all and (max-width:740px) {
+                    font-size: 36px;
+                    line-height: 44px;
+                    margin-bottom: 30px;
+                }
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            ul li {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+                @media all and (max-width:740px) {
+                    font-size: 18px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                    @media all and (max-width:740px) {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+        &-social-network {
+            width: 100%;
+            @media all and (max-width:1130px) {
+                margin-left: 0;
+                max-width: 100%;
+            }
+            h2 {
+                margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 90px;
+            white-space: nowrap;
+            @media all and (max-width:740px) {
+                line-height: 44px;
+                margin-bottom: 30px;
+            }
+            }
+            .social-network-icons{
+                display: flex;
+                align-items: center;
+                &__item:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    
+}
+

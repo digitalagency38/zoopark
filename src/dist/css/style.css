@@ -650,6 +650,44 @@ a {
   width: 100%;
 }
 
+.header__bottom-item .menu-close {
+  display: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  border: 2px solid #2B2A29;
+  border-radius: 2000px;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__bottom-item .menu-close span {
+  margin-left: 21px;
+}
+
+.header__bottom-item .menu-close .line {
+  margin-right: 30px;
+  position: relative;
+}
+
+.header__bottom-item .menu-close .line div {
+  width: 35px;
+  height: 2px;
+  background: #2B2A29;
+  border-radius: 3px;
+}
+
+.header__bottom-item .menu-close .line div:first-child {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.header__bottom-item .menu-close .line div:last-child {
+  position: absolute;
+  transform: rotate(135deg);
+}
+
 .header__bottom-item .menu {
   font-weight: 400;
   font-size: 20px;
@@ -4078,6 +4116,134 @@ a {
   box-sizing: border-box;
 }
 
+.burger {
+  background: #F7E7CF;
+  position: relative;
+}
+
+.burger .leaves {
+  position: absolute;
+  top: 134px;
+  right: 11px;
+}
+
+.burger .big-branch {
+  position: absolute;
+  bottom: 111px;
+  left: 0;
+  transform: scale(-1, 1);
+}
+
+.burger .big-branch img {
+  width: 451px;
+}
+
+.burger__in {
+  padding: 100px 80px 301px 80px;
+  position: relative;
+}
+
+.burger__in .raccoon {
+  position: relative;
+}
+
+.burger__in .raccoon__item {
+  position: absolute;
+  top: 190px;
+  right: 79px;
+}
+
+.burger__in .raccoon__item:first-child {
+  top: 313px;
+  right: 208px;
+}
+
+.burger__in .star {
+  position: absolute;
+  right: 582px;
+  bottom: 334px;
+}
+
+.burger__in .star-second {
+  position: absolute;
+  right: 187px;
+  top: 295px;
+}
+
+.burger__in .star-second img {
+  width: 50px;
+}
+
+.burger__in .paws {
+  position: absolute;
+  right: 488px;
+  bottom: 185px;
+  transform: rotate(11deg);
+}
+
+.burger__top {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.burger__top-item {
+  max-width: 197px;
+  width: 100%;
+  margin-right: 128px;
+}
+
+.burger__top-menu {
+  max-width: 305px;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.burger__top-menu h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 90px;
+}
+
+.burger__top-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.burger__top-menu ul li {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.burger__top-menu ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.burger__top-social-network {
+  width: 100%;
+}
+
+.burger__top-social-network h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 90px;
+  white-space: nowrap;
+}
+
+.burger__top-social-network .social-network-icons {
+  display: flex;
+  align-items: center;
+}
+
+.burger__top-social-network .social-network-icons__item:not(:last-child) {
+  margin-right: 20px;
+}
+
 @media all and (max-width: 1520px) {
   .mini-banner .container {
     padding: 0 80px;
@@ -4445,11 +4611,46 @@ a {
     font-size: 75px;
     line-height: 75px;
   }
+
+  .burger .leaves {
+    right: 0;
+    top: 200px;
+  }
+
+  .burger__in .raccoon__item {
+    top: 313px;
+    right: -76px;
+  }
+
+  .burger__in .raccoon__item:first-child {
+    top: 355px;
+    right: 30px;
+  }
+
+  .burger__top-item {
+    margin-right: 70px;
+    width: 30%;
+  }
+
+  .burger__top-menu {
+    width: 30%;
+  }
+
+  .burger__top-social-network {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 @media all and (max-width: 1100px) {
   .furry-actors__animals {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 1030px) {
+  .burger__top {
+    flex-wrap: wrap;
   }
 }
 
@@ -4647,6 +4848,34 @@ a {
   .error__block-menu-item:first-child {
     margin-right: 10%;
   }
+
+  .burger__top-item {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 19px;
+  }
+
+  .burger__top-menu {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 969px) {
+  .burger .big-branch {
+    bottom: -10px;
+  }
+
+  .burger__in {
+    padding: 100px 80px 150px 80px;
+  }
+
+  .burger__in .paws {
+    bottom: 342px;
+    right: 335px;
+  }
 }
 
 @media all and (max-width: 880px) {
@@ -4680,6 +4909,19 @@ a {
 
   .header__bottom-item .logo {
     max-width: 156px;
+  }
+
+  .header__bottom-item .menu-close span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .header__bottom-item .menu-close .line {
+    margin-right: 20px;
+  }
+
+  .header__bottom-item .menu-close .line div {
+    width: 20px;
   }
 
   .header__bottom-item .menu span {
@@ -5652,6 +5894,84 @@ a {
 
   .detailed-animal-page__about-item-image {
     max-height: 280px;
+  }
+
+  .burger .leaves {
+    top: 418px;
+    right: 12px;
+  }
+
+  .burger .big-branch img {
+    width: 217px;
+  }
+
+  .burger .big-branch {
+    bottom: 80px;
+    z-index: 10;
+    left: -36px;
+  }
+
+  .burger__in {
+    padding: 40px 16px 227px 16px;
+  }
+
+  .burger__in .raccoon__item {
+    top: 748px;
+    right: -6px;
+  }
+
+  .burger__in .raccoon__item img {
+    width: 231px;
+  }
+
+  .burger__in .raccoon__item:first-child {
+    top: 791px;
+    right: 52px;
+  }
+
+  .burger__in .raccoon__item:first-child img {
+    width: 158px;
+  }
+
+  .burger__in .star {
+    right: 5px;
+    bottom: 642px;
+  }
+
+  .burger__in .star-second {
+    display: none;
+  }
+
+  .burger__in .paws {
+    display: none;
+  }
+
+  .burger__top {
+    padding-bottom: 0;
+  }
+
+  .burger__top-menu {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .burger__top-menu h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 30px;
+  }
+
+  .burger__top-menu ul li {
+    font-size: 18px;
+  }
+
+  .burger__top-menu ul li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .burger__top-social-network h2 {
+    line-height: 44px;
+    margin-bottom: 30px;
   }
 }
 
