@@ -3249,6 +3249,27 @@ a {
   padding: 0 80px 120px;
 }
 
+.application-form__in .confirmation {
+  display: none;
+}
+
+.application-form__in .confirmation h2 {
+  font-family: "Calibri";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 90px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.application-form__in .confirmation p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 450px;
+}
+
 .application-form__flex {
   display: flex;
   align-items: flex-start;
@@ -4333,6 +4354,11 @@ a {
     line-height: 30px;
   }
 
+  .application-form__in .confirmation h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
   .application-form__flex-text h2 {
     font-size: 75px;
     line-height: 75px;
@@ -5305,6 +5331,12 @@ a {
 
   .application-form__in {
     padding: 0 16px 60px;
+  }
+
+  .application-form__in .confirmation h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 20px;
   }
 
   .application-form__flex-text h2 {
