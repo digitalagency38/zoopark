@@ -8,6 +8,12 @@ import Services from '../blocks/modules/home-page/services/services.js';
 import Gallery from '../blocks/modules/home-page/gallery/gallery.js';
 import Reviews from '../blocks/modules/home-page/reviews/reviews.js';
 import News from '../blocks/modules/home-page/news/news.js';
+import Poster from '../blocks/modules/home-page/poster/poster.js';
+import About from '../blocks/modules/about-us/detailed/detailed.js';
+import AboutUs from '../blocks/modules/about-us/about-us-slider/about-us-slider.js';
+
+
+
 
 
 
@@ -20,6 +26,9 @@ window.app = new Vue({
         gallery: new Gallery(),
         reviews: new Reviews(),
         news: new News(),
+        news: new Poster(),
+        news: new About(),
+        news: new AboutUs(),
 
 
     }),
@@ -29,8 +38,9 @@ window.app = new Vue({
         this.gallery.init();
         this.reviews.init();
         this.news.init();
-
-
+        this.poster.init();
+        this.about.init();
+        this.aboutUs.init();
 
     }
 });

@@ -1,6 +1,21 @@
 .work-license {
+    position: relative;
+    .leaves {
+        position: absolute;
+        top: 4%;
+        right: -24px;
+        @media all and (max-width:740px) {
+            display: none;
+        }
+    }
     &__in {
         padding: 0 297px 40px;
+        @media all and (max-width:1130px) {
+            padding: 0 100px 50px;
+        }
+        @media all and (max-width:740px) {
+            padding: 0 16px 50px;
+        }
         h2 {
             font-weight: 700;
             font-size: 30px;

@@ -4,20 +4,50 @@
     background-position: 0 0;
     margin-bottom: 120px;
     background-size: cover;
+    position: relative;
+    &__big-branch {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        z-index: 3;
+        @media all and (max-width:740px) {
+            display: none;
+        }
+    }
     &__in {
-        padding: 150px 70px 150px 90px;
+        padding: 125px 70px 125px 90px;
+        @media all and (max-width:740px) {
+            padding: 60px 16px;
+        }
+        
         h2 {
+            font-family: 'Calibri';
             font-weight: 700;
-            font-size: 44px;
-            line-height: 53px;
+            font-size: 96px;
+            line-height: 117px;
             margin-top: 0;
             margin-bottom: 40px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+                margin-bottom: 30px;
+            }
         }
     }
     &__photos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        @media all and (max-width:1130px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media all and (max-width:740px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__item {
         padding: 10px 10px 30px 10px;

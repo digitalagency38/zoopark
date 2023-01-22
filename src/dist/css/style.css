@@ -1326,6 +1326,7 @@ a {
 .poster .billboard-cards__item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 53px 10px 10px;
   background: #FCDFB3;
   border-radius: 20px;
@@ -1334,7 +1335,6 @@ a {
 
 .poster .billboard-cards-image {
   max-width: 403px;
-  padding-right: 40px;
   max-height: 217px;
 }
 
@@ -1366,7 +1366,7 @@ a {
 }
 
 .poster .billboard-cards-about {
-  max-width: 610px;
+  width: 47%;
   margin-right: 93px;
 }
 
@@ -1383,6 +1383,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+  white-space: pre-line;
 }
 
 .poster .billboard-cards-about-price span {
@@ -2509,119 +2510,6 @@ a {
   margin: 0;
 }
 
-.poster {
-  padding-top: 120px;
-}
-
-.poster__in {
-  padding: 0 80px;
-}
-
-.poster__in h2 {
-  font-family: "Calibri";
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 90px;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.poster .billboard-cards__item {
-  display: flex;
-  align-items: center;
-  padding: 10px 53px 10px 10px;
-  background: #FCDFB3;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.poster .billboard-cards-image {
-  max-width: 403px;
-  padding-right: 40px;
-  max-height: 217px;
-}
-
-.poster .billboard-cards-image img {
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
-.poster .billboard-cards-about {
-  max-width: 610px;
-  margin-right: 93px;
-}
-
-.poster .billboard-cards-about h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 48px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.poster .billboard-cards-about p {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.poster .billboard-cards-about-price span {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 38px;
-}
-
-.poster .billboard-cards-price {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.poster .billboard-cards-price span {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 38px;
-  margin-right: 20px;
-}
-
-.poster .billboard-cards-button-theater {
-  display: block;
-  max-width: 180px;
-  width: 100%;
-  box-sizing: border-box;
-  background: #C48321;
-  padding: 16px 48.5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.poster .billboard-cards-button-theater span {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #fff;
-  margin-right: 0;
-}
-
-.poster .billboard-cards-date span {
-  display: block;
-  text-align: center;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  color: #009846;
-}
-
-.poster .billboard-cards-date span:first-child {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 72px;
-}
-
 .furry-actors__in {
   padding: 120px 80px;
 }
@@ -3242,7 +3130,7 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .banner-holiday__in span:last-child {
@@ -3630,25 +3518,43 @@ a {
   display: block;
 }
 
+.detailed-about-us {
+  position: relative;
+}
+
+.detailed-about-us .leaves {
+  position: absolute;
+  top: 28%;
+  right: 0;
+}
+
+.detailed-about-us .leaves-bottom {
+  position: absolute;
+  top: 62%;
+  left: 0;
+  transform: scale(-1, 1);
+}
+
 .detailed-about-us__in {
   padding: 0 80px;
 }
 
 .detailed-about-us__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 117px;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
 .detailed-about-us__in-banner {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .detailed-about-us__in-banner__item {
-  max-height: 520px;
+  max-height: 500px;
   height: 100%;
 }
 
@@ -3659,6 +3565,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  box-sizing: border-box;
 }
 
 .detailed-about-us__info {
@@ -3670,17 +3577,19 @@ a {
   font-size: 16px;
   line-height: 30px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .detailed-about-us__info-text p {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 0;
 }
 
 .detailed-about-us__info-text ul {
-  padding-left: 18px;
+  padding-left: 26px;
+  margin: 0;
 }
 
 .detailed-about-us__info-text ul li {
@@ -3689,20 +3598,16 @@ a {
   line-height: 24px;
 }
 
+.detailed-about-us__info-text ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .detailed-about-us__info-text .detailed-about-us__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 48px;
   margin-top: 0;
   margin-bottom: 30px;
-}
-
-.detailed-about-us__about {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding-bottom: 80px;
-  margin-bottom: 50px;
 }
 
 .detailed-about-us__about-item-image {
@@ -3720,7 +3625,7 @@ a {
 }
 
 .detailed-about-us__after-banner-text {
-  padding: 0 217px 120px;
+  padding: 50px 217px 135px;
 }
 
 .detailed-about-us__after-banner-text .litle-text {
@@ -3728,7 +3633,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   margin-top: 0;
-  margin-bottom: 120px;
+  margin-bottom: 93px;
 }
 
 .detailed-about-us__after-banner-text .for-the-press {
@@ -3772,7 +3677,7 @@ a {
 }
 
 .detailed-about-us__after-banner-text .for-the-press-image .image-item img {
-  border: 5px solid #2B2A29;
+  border: 5px solid #EC6708;
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -3792,13 +3697,6 @@ a {
 
 .about-us-slider__in {
   padding: 0 80px 120px 80px;
-}
-
-.about-us-slider__flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding-bottom: 80px;
 }
 
 .about-us-slider__flex-item {
@@ -3821,16 +3719,25 @@ a {
   background-position: 0 0;
   margin-bottom: 120px;
   background-size: cover;
+  position: relative;
+}
+
+.team__big-branch {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  z-index: 3;
 }
 
 .team__in {
-  padding: 150px 70px 150px 90px;
+  padding: 125px 70px 125px 90px;
 }
 
 .team__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 117px;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -3867,6 +3774,16 @@ a {
   line-height: 38px;
   margin-top: 20px;
   padding: 0 20px;
+}
+
+.work-license {
+  position: relative;
+}
+
+.work-license .leaves {
+  position: absolute;
+  top: 4%;
+  right: -24px;
 }
 
 .work-license__in {
@@ -4453,6 +4370,43 @@ a {
 
   .video .video-gallery {
     grid-gap: 20px;
+  }
+
+  .detailed-about-us__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .detailed-about-us__info {
+    padding: 0 100px 50px;
+  }
+
+  .detailed-about-us__info-text h2 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .detailed-about-us__after-banner-text {
+    padding: 50px 100px 50px;
+  }
+
+  .detailed-about-us__after-banner-text .for-the-press h2 {
+    font-size: 30px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .team__in h2 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .team__photos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-license__in {
+    padding: 0 100px 50px;
   }
 }
 
@@ -5451,6 +5405,98 @@ a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
+  }
+
+  .detailed-about-us .leaves {
+    display: none;
+  }
+
+  .detailed-about-us .leaves-bottom {
+    display: none;
+  }
+
+  .detailed-about-us__in {
+    padding: 0 16px;
+  }
+
+  .detailed-about-us__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 20px;
+  }
+
+  .detailed-about-us__in-banner__item img {
+    min-height: 250px;
+  }
+
+  .detailed-about-us__info {
+    padding: 0 0 60px;
+  }
+
+  .detailed-about-us__info-text h2 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .detailed-about-us__info-text .detailed-about-us__title {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .detailed-about-us__after-banner-text {
+    padding: 30px 0 50px;
+  }
+
+  .detailed-about-us__after-banner-text .litle-text {
+    margin-bottom: 60px;
+  }
+
+  .detailed-about-us__after-banner-text .for-the-press {
+    margin-bottom: 60px;
+  }
+
+  .detailed-about-us__after-banner-text .for-the-press h2 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  .detailed-about-us__after-banner-text .for-the-press-image .image-item img {
+    min-height: 250px;
+  }
+
+  .about-us-slider__in {
+    padding: 0 16px 60px;
+  }
+
+  .about-us-slider__flex-item {
+    height: 280px;
+  }
+
+  .team__big-branch {
+    display: none;
+  }
+
+  .team__in {
+    padding: 60px 16px;
+  }
+
+  .team__in h2 {
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .team__photos {
+    grid-template-columns: 1fr;
+  }
+
+  .work-license .leaves {
+    display: none;
+  }
+
+  .work-license__in {
+    padding: 0 16px 50px;
   }
 
   .history-zoo__in {
