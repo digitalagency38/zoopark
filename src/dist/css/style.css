@@ -5155,8 +5155,8 @@ a {
   }
 
   .poster .billboard-cards-about {
-    max-width: 100%;
-    padding: 0 10px;
+    width: 93%;
+    padding: 0 20px;
   }
 
   .poster .billboard-cards-about h2 {
@@ -5262,7 +5262,7 @@ a {
   }
 
   .reviews__in {
-    padding: 60px 16px 45px 0;
+    padding: 60px 16px 45px;
   }
 
   .reviews__in h2 {
@@ -5676,6 +5676,11 @@ a {
     margin-bottom: 60px;
   }
 
+  .personal-data__text-bold {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
   .personal-data__text-item {
     margin-bottom: 60px;
   }
@@ -5690,6 +5695,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
+    margin-left: 0;
   }
 
   .detailed-about-us .leaves {
