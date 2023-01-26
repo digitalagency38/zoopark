@@ -10,9 +10,8 @@ const AboutUs = class AboutUs {
         this.slider = new Glide('.about-us-slider__flex.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
-            type: 'carousel',
+            type: 'slider',
+            bound: true,
             breakpoints: {
                 1130: {
                     perView: 2

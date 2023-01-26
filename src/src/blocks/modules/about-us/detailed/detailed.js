@@ -1,18 +1,17 @@
 import Glide from '@glidejs/glide';
 
-const About = class About {
+const DetailedAboutUs = class DetailedAboutUs {
     constructor() {
         this.slider = null;
     }
     initSlider() {
         if (!document.querySelector('.detailed-about-us__about.glide')) return;
-
+        console.log('123');
         this.slider = new Glide('.detailed-about-us__about.glide', {
             perView: 3,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
-            type: 'carousel',
+            type: 'slider',
+            bound: true,
             breakpoints: {
                 1130: {
                     perView: 2
@@ -29,4 +28,4 @@ const About = class About {
     }
 }
 
-export default About;
+export default DetailedAboutUs;

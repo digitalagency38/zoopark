@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230123200157">
+    <link rel="stylesheet" href="css/style.css?_v=20230126224338">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="app">
          <div class="header">
     <div class="container">
     <div class="header__in">
@@ -113,48 +113,56 @@
                 <div class="glide__track" data-glide-el="track">
                     <div class="glide__slides">
                         
-                <div class="detailed-about-us__about-item">
-                    <div class="detailed-about-us__about-item-image">
-                        <img src="img/fairy-tales.jpg" alt="photo">
-                    </div>
-                </div>
+                            <div class="detailed-about-us__about-item">
+                                <div class="detailed-about-us__about-item-image">
+                                    <img src="img/fairy-tales.jpg" alt="photo">
+                                </div>
+                            </div>
                         
-                <div class="detailed-about-us__about-item">
-                    <div class="detailed-about-us__about-item-image">
-                        <img src="img/fairy-tales.jpg" alt="photo">
-                    </div>
-                </div>
+                            <div class="detailed-about-us__about-item">
+                                <div class="detailed-about-us__about-item-image">
+                                    <img src="img/fairy-tales.jpg" alt="photo">
+                                </div>
+                            </div>
                         
-                <div class="detailed-about-us__about-item">
-                    <div class="detailed-about-us__about-item-image">
-                        <img src="img/fairy-tales.jpg" alt="photo">
-                    </div>
-                </div>
+                            <div class="detailed-about-us__about-item">
+                                <div class="detailed-about-us__about-item-image">
+                                    <img src="img/fairy-tales.jpg" alt="photo">
+                                </div>
+                            </div>
+                        
+                            <div class="detailed-about-us__about-item">
+                                <div class="detailed-about-us__about-item-image">
+                                    <img src="img/fairy-tales.jpg" alt="photo">
+                                </div>
+                            </div>
+                        
+                            <div class="detailed-about-us__about-item">
+                                <div class="detailed-about-us__about-item-image">
+                                    <img src="img/fairy-tales.jpg" alt="photo">
+                                </div>
+                            </div>
                            
-                </div>
+                    </div>
                 </div>
             </div>
-            <div class="services__pagination" v-if="services.slider">
+            <div class="services__pagination" v-if="detailedAboutUs.slider">
                 <div class="global__dots">
                     
-                        <div class="global__dot" :class="{'isActive': services.slider.index == 0}" @click="services.slider.go('=0')">0</div>
+                        <div class="global__dot" :class="{'isActive': detailedAboutUs.slider.index == 0}" @click="detailedAboutUs.slider.go('=0')">0</div>
                     
-                        <div class="global__dot" :class="{'isActive': services.slider.index == 1}" @click="services.slider.go('=1')">1</div>
+                        <div class="global__dot" :class="{'isActive': detailedAboutUs.slider.index == 1}" @click="detailedAboutUs.slider.go('=1')">1</div>
                     
-                        <div class="global__dot" :class="{'isActive': services.slider.index == 2}" @click="services.slider.go('=2')">2</div>
-                    
-                        <div class="global__dot" :class="{'isActive': services.slider.index == 3}" @click="services.slider.go('=3')">3</div>
-                    
-                        <div class="global__dot" :class="{'isActive': services.slider.index == 4}" @click="services.slider.go('=4')">4</div>
+                        <div class="global__dot" :class="{'isActive': detailedAboutUs.slider.index == 2}" @click="detailedAboutUs.slider.go('=2')">2</div>
                     
                 </div>
                 <div class="services__arrows global__arows">
-                    <div class="global__arow global__arow--prev" @click="services.slider.go('<')">
+                    <div class="global__arow global__arow--prev" @click="detailedAboutUs.slider.go('<')">
                         <div class="global__arow-in">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
                         </div>
                     </div>
-                    <div class="global__arow global__arow--next" @click="services.slider.go('>')">
+                    <div class="global__arow global__arow--next" @click="detailedAboutUs.slider.go('>')">
                         <div class="global__arow-in">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
                         </div>
@@ -211,30 +219,28 @@
                             <img src="img/press-cat.jpg" alt="image">
                         </div>
                         
+                        <div class="about-us-slider__flex-item">
+                            <img src="img/press-cat.jpg" alt="image">
+                        </div>
+                        
 
                     </div>
                 </div>
-                <div class="services__pagination" v-if="services.slider">
+                <div class="services__pagination" v-if="aboutUs.slider">
                     <div class="global__dots">
                         
-                            <div class="global__dot" :class="{'isActive': services.slider.index == 0}" @click="services.slider.go('=0')">0</div>
+                            <div class="global__dot" :class="{'isActive': aboutUs.slider.index == 0}" @click="aboutUs.slider.go('=0')">0</div>
                         
-                            <div class="global__dot" :class="{'isActive': services.slider.index == 1}" @click="services.slider.go('=1')">1</div>
-                        
-                            <div class="global__dot" :class="{'isActive': services.slider.index == 2}" @click="services.slider.go('=2')">2</div>
-                        
-                            <div class="global__dot" :class="{'isActive': services.slider.index == 3}" @click="services.slider.go('=3')">3</div>
-                        
-                            <div class="global__dot" :class="{'isActive': services.slider.index == 4}" @click="services.slider.go('=4')">4</div>
+                            <div class="global__dot" :class="{'isActive': aboutUs.slider.index == 1}" @click="aboutUs.slider.go('=1')">1</div>
                         
                     </div>
                     <div class="services__arrows global__arows">
-                        <div class="global__arow global__arow--prev" @click="services.slider.go('<')">
+                        <div class="global__arow global__arow--prev" @click="aboutUs.slider.go('<')">
                             <div class="global__arow-in">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
                             </div>
                         </div>
-                        <div class="global__arow global__arow--next" @click="services.slider.go('>')">
+                        <div class="global__arow global__arow--next" @click="aboutUs.slider.go('>')">
                             <div class="global__arow-in">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
                             </div>
@@ -474,6 +480,6 @@
         
 
     </div>
-    <script src="js/app.min.js?_v=20230123200157"></script>
+    <script src="js/app.min.js?_v=20230126224338"></script>
 </body>
 </html>
