@@ -6,7 +6,7 @@ const Animal = class Animal {
     }
     initSlider() {
         if (!document.querySelector('.detailed-animal-page__about.glide')) return;
-
+        console.log('Animal slider inited');
         this.slider = new Glide('.detailed-animal-page__about.glide', {
             perView: 2,
             gap: 20,

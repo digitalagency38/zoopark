@@ -1,20 +1,20 @@
 import Glide from '@glidejs/glide';
 
-const News = class News {
+const Tales = class Tales {
     constructor() {
         this.slider = null;
     }
     initSlider() {
-        if (!document.querySelector('.news__right.glide')) return;
-        console.log('News slider inited');
-        this.slider = new Glide('.news__right.glide', {
+        if (!document.querySelector('.fairy-tales__slider.glide')) return;
+        console.log('Tales slider inited');
+        this.slider = new Glide('.fairy-tales__slider.glide', {
             perView: 2,
             gap: 20,
             swipeThreshold: false,
             dragThreshold: false,
             type: 'carousel',
             breakpoints: {
-                1130: {
+                990: {
                     perView: 1
                 },
                 
@@ -26,4 +26,4 @@ const News = class News {
     }
 }
 
-export default News;
+export default Tales;

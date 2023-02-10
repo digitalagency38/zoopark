@@ -404,7 +404,6 @@ template {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
   will-change: transform;
@@ -462,13 +461,6 @@ template {
 }
 
 @font-face {
-  font-family: "Calibri";
-  font-display: swap;
-  src: url("../fonts/Calibri-Light.woff2") format("woff2"), url("../fonts/Calibri-Light.woff") format("woff"), url("../fonts/Calibri-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
@@ -492,13 +484,6 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MuseoSansCyrl";
-  font-display: swap;
   src: url("../fonts/MuseoSansCyrl-300Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-300Italic.ttf") format("ttf");
   font-weight: 400;
 }
@@ -506,7 +491,7 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
+  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -520,7 +505,7 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
+  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -534,8 +519,22 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
   src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Calibri";
+  font-display: swap;
+  src: url("../fonts/Calibri-Light.woff2") format("woff2"), url("../fonts/Calibri-Light.woff") format("woff"), url("../fonts/Calibri-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 * {
@@ -2461,11 +2460,13 @@ a {
 .detailed__in-banner__item {
   max-height: 520px;
   height: 100%;
+  border: 5px solid #C48321;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .detailed__in-banner__item img {
-  border: 5px solid #C48321;
-  border-radius: 20px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2585,6 +2586,12 @@ a {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+}
+
+.fairy-tales__slider-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .furry-actors__in {
@@ -2782,16 +2789,9 @@ a {
   white-space: nowrap;
 }
 
-.gallery-theater__images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
 .gallery-theater__images-item {
   width: 100%;
   max-height: 354px;
-  height: 100%;
 }
 
 .gallery-theater__images-item iframe {
@@ -2806,6 +2806,12 @@ a {
   border: 5px solid #EC6708;
   border-radius: 20px;
   height: 100%;
+}
+
+.gallery-theater__images-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mini-banner {

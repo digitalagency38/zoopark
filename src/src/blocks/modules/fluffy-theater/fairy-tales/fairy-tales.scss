@@ -41,5 +41,10 @@
             margin: 0;
         }
     }
+    &__slider-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 }

@@ -6,7 +6,7 @@ const Reviews = class Reviews {
     }
     initSlider() {
         if (!document.querySelector('.reviews__slider.glide')) return;
-
+        console.log('Reviews slider inited');
         this.slider = new Glide('.reviews__slider.glide', {
             perView: 2,
             gap: 20,

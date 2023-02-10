@@ -2,14 +2,31 @@
     <div class="container">
         <div class="fairy-tales__in">
             <h2>Сказки, которые мы ставим</h2>
-            <div class="fairy-tales__slider">
-                <div class="fairy-tales__item">
-                    <div class="fairy-tales__item-image">
-                        <img src="img/fairy-tales.jpg" alt="image">
+            <div class="fairy-tales__slider glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        @@for ($i = 0; $i < 10; $i++) {
+                            <div class="fairy-tales__item">
+                                <div class="fairy-tales__item-image">
+                                    <img src="img/fairy-tales.jpg" alt="image">
+                                </div>
+                                <div class="fairy-tales__item-text">
+                                    <h2>Колобок</h2>
+                                    <p>Из последней муки старуха испекла колобка. Он ожил и отправился в путешествие. По пути колобок встретил зайца, волка и медведя, но ушёл от них невредимым.</p>
+                                </div>
+                            </div>
+                        }
                     </div>
-                    <div class="fairy-tales__item-text">
-                        <h2>Колобок</h2>
-                        <p>Из последней муки старуха испекла колобка. Он ожил и отправился в путешествие. По пути колобок встретил зайца, волка и медведя, но ушёл от них невредимым.</p>
+                </div>
+                <div class="fairy-tales__slider-row">
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                     </div>
                 </div>
             </div>

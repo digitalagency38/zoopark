@@ -9,10 +9,12 @@ import Gallery from '../blocks/modules/home-page/gallery/gallery.js';
 import Reviews from '../blocks/modules/home-page/reviews/reviews.js';
 import News from '../blocks/modules/home-page/news/news.js';
 import Poster from '../blocks/modules/home-page/poster/poster.js';
-// import About from '../blocks/modules/about-us/detailed/detailed.js';
 import AboutUs from '../blocks/modules/about-us/about-us-slider/about-us-slider.js';
 import DetailedAboutUs from '../blocks/modules/about-us/detailed/detailed.js';
-// import Animal from '../blocks/modules/animal-page/detailed/detailed.js';
+import Animal from '../blocks/modules/animal-page/detailed/detailed.js';
+import Fluffy from '../blocks/modules/fluffy-theater/detailed/detailed.js';
+import Tales from '../blocks/modules/fluffy-theater/fairy-tales/fairy-tales.js';
+import FluffyGallery from '../blocks/modules/fluffy-theater/gallery/gallery.js';
 
 
 
@@ -27,13 +29,12 @@ window.app = new Vue({
         reviews: new Reviews(),
         news: new News(),
         poster: new Poster(),
-        // about: new About(),
         aboutUs: new AboutUs(),
-        // animal: new Animal(),
-        detailedAboutUs: new DetailedAboutUs()
-
-
-
+        animal: new Animal(),
+        detailedAboutUs: new DetailedAboutUs(),
+        fluffy: new Fluffy(),
+        tales: new Tales(),
+        fluffyGallery: new FluffyGallery(),
     }),
     mounted() {
         this.allAnimals.init();
@@ -42,11 +43,12 @@ window.app = new Vue({
         this.reviews.init();
         this.news.init();
         this.poster.init();
-        // this.about.init();
         this.aboutUs.init();
-        // this.animal.init();
+        this.animal.init();
         this.detailedAboutUs.init();
-
+        this.fluffy.init();
+        this.tales.init();
+        this.fluffyGallery.init();
     }
 });
 

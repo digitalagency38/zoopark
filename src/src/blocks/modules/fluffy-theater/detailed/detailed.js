@@ -1,20 +1,20 @@
 import Glide from '@glidejs/glide';
 
-const News = class News {
+const Fluffy = class Fluffy {
     constructor() {
         this.slider = null;
     }
     initSlider() {
-        if (!document.querySelector('.news__right.glide')) return;
-        console.log('News slider inited');
-        this.slider = new Glide('.news__right.glide', {
-            perView: 2,
+        if (!document.querySelector('.detailed__in-banner.glide')) return;
+        console.log('Fluffy slider inited');
+        this.slider = new Glide('.detailed__in-banner.glide', {
+            perView: 1,
             gap: 20,
             swipeThreshold: false,
             dragThreshold: false,
             type: 'carousel',
             breakpoints: {
-                1130: {
+                990: {
                     perView: 1
                 },
                 
@@ -26,4 +26,4 @@ const News = class News {
     }
 }
 
-export default News;
+export default Fluffy;
