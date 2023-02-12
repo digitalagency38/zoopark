@@ -1,11 +1,24 @@
 .detailed {
     padding-bottom: 120px;
+    &__arrows {
+        .global__arow--prev {
+            position: absolute;
+            top: 50%;
+            left: 40px;
+        }
+        .global__arow--next {
+            position: absolute;
+            top: 50%;
+            right: 40px;
+        }
+    }
     &__in {
        padding: 0 80px;
     }
     &__in-banner {
         width: 100%;
         padding-bottom: 120px;
+        position: relative;
         &__item {
             max-height: 520px;
             height: 100%;
