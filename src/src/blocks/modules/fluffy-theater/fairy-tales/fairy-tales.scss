@@ -1,22 +1,21 @@
 .fairy-tales {
-    background: url("../img/fairy-tales-bg.png"), #F7E3C1;
+    background:#F7E3C1;
     background-repeat: no-repeat;
     background-position: 0 0;
     &__in {
-        padding: 150px 80px 230px;
+        padding: 120px 80px 120px;
         h2 {
+            font-family: 'Calibri';
             font-weight: 700;
-            font-size: 44px;
-            line-height: 53px;
+            font-size: 96px;
+            line-height: 117px;
             margin-top: 0;
-            margin-bottom: 53px;
+            margin-bottom: 40px;
         }
     }
     &__item {
         width: 100%;
         padding: 10px 10px 20px;
-        background: #FCDFB3;
-        border-radius: 20px;
     }
     &__item-image {
         img {
@@ -45,6 +44,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-top: 40px;
     }
 
 }

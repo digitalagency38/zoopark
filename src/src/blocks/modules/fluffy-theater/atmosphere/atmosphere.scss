@@ -1,13 +1,12 @@
 .atmosphere {
-    background: url("../img/atmosthere-bg.svg"), #F7E3C1;
-    background-repeat: repeat;
-    background-position: 0 0;
+    
     &__in {
-        padding: 150px 80px;
+        padding: 0 80px 0px 80px;
         h2 {
+            font-family: 'Calibri';
             font-weight: 700;
-            font-size: 44px;
-            line-height: 53px;
+            font-size: 96px;
+            line-height: 117px;
             margin-top: 0;
             margin-bottom: 40px;
         }

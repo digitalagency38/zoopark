@@ -1355,6 +1355,10 @@ a {
   padding: 0 80px;
 }
 
+.poster__in .fluffy-theater-poster {
+  padding: 0 63px 0 97px;
+}
+
 .poster__in h2 {
   font-family: "Calibri";
   font-weight: 700;
@@ -1372,6 +1376,10 @@ a {
   background: #FCDFB3;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+
+.poster .billboard-cards__item:last-child {
+  margin-bottom: 0;
 }
 
 .poster .billboard-cards-image {
@@ -1502,7 +1510,7 @@ a {
 }
 
 .gallery__in {
-  padding: 100px 80px 120px 80px;
+  padding: 110px 80px 120px 80px;
   background: #FCDFB3;
   border-radius: 120px;
 }
@@ -2410,19 +2418,7 @@ a {
 }
 
 .detailed {
-  padding-bottom: 120px;
-}
-
-.detailed__arrows .global__arow--prev {
-  position: absolute;
-  top: 50%;
-  left: 40px;
-}
-
-.detailed__arrows .global__arow--next {
-  position: absolute;
-  top: 50%;
-  right: 40px;
+  padding-bottom: 145px;
 }
 
 .detailed__in {
@@ -2451,22 +2447,42 @@ a {
      object-fit: cover;
 }
 
+.detailed__in-banner .global__arow--prev {
+  position: absolute;
+  top: 38%;
+  left: 40px;
+}
+
+.detailed__in-banner .global__arow--next {
+  position: absolute;
+  top: 38%;
+  right: 40px;
+}
+
+.detailed__in-banner .glide__bullets {
+  position: absolute;
+  bottom: 22%;
+  left: 43%;
+}
+
 .detailed__info {
   padding: 0 217px 50px;
 }
 
 .detailed__info-text h2 {
+  font-family: "Calibri";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
   margin-top: 0;
   margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
 }
 
 .detailed__info-text p {
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
+  margin: 0;
 }
 
 .detailed__about {
@@ -2513,31 +2529,28 @@ a {
   margin: 0;
 }
 
-.no-webp .fairy-tales {
-  background: url("../img/fairy-tales-bg.png"), #F7E3C1; }
-
 .fairy-tales {
+  background: #F7E3C1;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .fairy-tales__in {
-  padding: 150px 80px 230px;
+  padding: 120px 80px 120px;
 }
 
 .fairy-tales__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 117px;
   margin-top: 0;
-  margin-bottom: 53px;
+  margin-bottom: 40px;
 }
 
 .fairy-tales__item {
   width: 100%;
   padding: 10px 10px 20px;
-  background: #FCDFB3;
-  border-radius: 20px;
 }
 
 .fairy-tales__item-image img {
@@ -2570,100 +2583,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.furry-actors__in {
-  padding: 120px 80px;
-}
-
-.furry-actors__in h2 {
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.furry-actors__animals {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.furry-actors__animals-item {
-  padding: 10px 10px 30px;
-  background: #F7E7CF;
-  border-radius: 20px;
-}
-
-.furry-actors__animals-image {
-  height: 100%;
-  max-height: 250px;
-}
-
-.furry-actors__animals-image img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  height: 100%;
-}
-
-.furry-actors__animals-info {
-  padding: 0 20px;
-}
-
-.furry-actors__animals-info h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 38px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.furry-actors__animals-about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.furry-actors__animals-about span {
-  display: block;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.furry-actors__animals-about .animals-about-geo {
-  color: #C48321;
-  position: relative;
-}
-
-.furry-actors__animals-about .animals-about-geo::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../img/furry-actors-geo.svg") 0 0 no-repeat;
-  position: absolute;
-  top: 0;
-  left: -22px;
-}
-
-.atmosphere {
-  background: url("../img/atmosthere-bg.svg"), #F7E3C1;
-  background-repeat: repeat;
-  background-position: 0 0;
+  padding-top: 40px;
 }
 
 .atmosphere__in {
-  padding: 150px 80px;
+  padding: 0 80px 0px 80px;
 }
 
 .atmosphere__in h2 {
+  font-family: "Calibri";
   font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 96px;
+  line-height: 117px;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -2794,6 +2725,7 @@ a {
 
 .mini-banner {
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .mini-banner__in {
@@ -2840,6 +2772,10 @@ a {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+}
+
+.furry-actors-fluffy {
+  padding-top: 120px;
 }
 
 .furry-actors__in.our-pets {
@@ -2899,8 +2835,8 @@ a {
 
 .furry-actors__animals-about span {
   display: block;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -5145,6 +5081,10 @@ a {
     padding-top: 50px;
   }
 
+  .poster__in .fluffy-theater-poster {
+    padding: 0 16px;
+  }
+
   .poster__in {
     padding: 0 16px;
   }
@@ -6039,5 +5979,3 @@ a {
     top: 123px;
   }
 }
-
-.webp .fairy-tales { background: url(../img/fairy-tales-bg.webp), #F7E3C1; }

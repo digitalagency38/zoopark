@@ -1,4 +1,7 @@
 .furry-actors {
+    &-fluffy {
+        padding-top: 120px;
+    }
     &__in.our-pets {
         padding:0 80px 120px 80px;
         @media all and (max-width:740px) {
@@ -22,6 +25,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        @media all and (max-width:1260px) {
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                    @media all and (max-width:1100px) {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    @media all and (max-width:780px) {
+                        grid-template-columns: 1fr;
+                    }
         &-item {
             padding: 10px 10px 30px;
         }
@@ -52,8 +64,8 @@
             justify-content: space-between;
             span {
                 display: block;
-                font-weight: 300;
-                font-size: 16px;
+                font-weight: 400;
+                font-size: 14px;
                 line-height: 24px;
             }
             .animals-about-geo {

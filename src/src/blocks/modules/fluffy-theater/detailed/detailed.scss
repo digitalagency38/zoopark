@@ -1,17 +1,6 @@
 .detailed {
-    padding-bottom: 120px;
-    &__arrows {
-        .global__arow--prev {
-            position: absolute;
-            top: 50%;
-            left: 40px;
-        }
-        .global__arow--next {
-            position: absolute;
-            top: 50%;
-            right: 40px;
-        }
-    }
+    padding-bottom: 145px;
+    
     &__in {
        padding: 0 80px;
     }
@@ -32,21 +21,38 @@
             height: 100%;
             object-fit: cover;
         }
+        .global__arow--prev {
+            position: absolute;
+            top: 38%;
+            left: 40px;
+        }
+        .global__arow--next {
+            position: absolute;
+            top: 38%;
+            right: 40px;
+        }
+        .glide__bullets {
+            position: absolute;
+            bottom: 22%;
+            left: 43%;
+        }
     }
     &__info {
         padding: 0 217px 50px;
         &-text {
             h2 {
+                font-family: 'Calibri';
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 117px;
                 margin-top: 0;
                 margin-bottom: 30px;
-                font-weight: 700;
-                font-size: 44px;
-                line-height: 53px;
             }
             p {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 26px;
+                margin: 0;
             }
         }
     }
