@@ -5,6 +5,18 @@
 	font-weight: 700;
 }
 @font-face {
+	font-family: "Calibri";
+	font-display: swap;
+	src: url("../fonts/Calibri-Light.woff2") format("woff2"), url("../fonts/Calibri-Light.woff") format("woff"), url("../fonts/Calibri-Light.ttf") format("ttf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "MuseoSansCyrl";
+	font-display: swap;
+	src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
 	font-family: "MuseoSansCyrl";
 	font-display: swap;
 	src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
@@ -14,12 +26,6 @@
 	font-family: "MuseoSansCyrl";
 	font-display: swap;
 	src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "MuseoSansCyrl";
-	font-display: swap;
-	src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
 	font-weight: 400;
 }
 @font-face {
@@ -63,10 +69,4 @@
 	font-display: swap;
 	src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
 	font-weight: 400;
-}
-@font-face {
-	font-family: "Calibri";
-	font-display: swap;
-	src: url("../fonts/Calibri-Light.woff2") format("woff2"), url("../fonts/Calibri-Light.woff") format("woff"), url("../fonts/Calibri-Light.ttf") format("ttf");
-	font-weight: 300;
 }
