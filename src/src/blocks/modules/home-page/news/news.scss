@@ -1,5 +1,18 @@
 .news {
     position: relative;
+    &__leaves {
+        display: none;
+        @media all and (max-width:740px) {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: scale(-1, 1);
+        }
+        img {
+            width: 108px;
+        }
+    }
     &__bg {
         z-index: 5;
         position: absolute;

@@ -1731,6 +1731,14 @@ a {
   position: relative;
 }
 
+.news__leaves {
+  display: none;
+}
+
+.news__leaves img {
+  width: 108px;
+}
+
 .news__bg {
   z-index: 5;
   position: absolute;
@@ -1857,6 +1865,13 @@ a {
 
 .contacts {
   position: relative;
+}
+
+.contacts__leaves {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  transform: scale(-1, 1);
 }
 
 .contacts__paws {
@@ -2898,6 +2913,24 @@ a {
   left: -22px;
 }
 
+.zoo-news {
+  position: relative;
+}
+
+.zoo-news__leaves {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
+.zoo-news__paws {
+  display: none;
+}
+
+.zoo-news__paws img {
+  width: 108px;
+}
+
 .zoo-news__in {
   padding: 0 80px 120px;
 }
@@ -3037,6 +3070,30 @@ a {
 
 .zoo-news__navigation ul li a:active {
   color: #fff;
+}
+
+.text-news {
+  position: relative;
+}
+
+.text-news__leaves {
+  position: absolute;
+  top: 47px;
+  right: 0;
+  transform: scale(-1, 1);
+}
+
+.text-news__leaves-second {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.text-news__leaves-last {
+  position: absolute;
+  bottom: -8.5%;
+  right: 0;
+  transform: scale(-1, 1);
 }
 
 .text-news__in {
@@ -3283,6 +3340,16 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
+}
+
+.application-form {
+  position: relative;
+}
+
+.application-form__leaves {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
 }
 
 .application-form__in {
@@ -3873,6 +3940,18 @@ a {
   margin-bottom: 0;
 }
 
+.history-zoo {
+  position: relative;
+}
+
+.history-zoo__paws {
+  display: none;
+}
+
+.history-zoo__paws img {
+  width: 108px;
+}
+
 .history-zoo__in {
   padding: 0 80px 140px 80px;
 }
@@ -3993,6 +4072,17 @@ a {
   margin: 0;
 }
 
+.detailed-animal-page {
+  position: relative;
+}
+
+.detailed-animal-page__leaves {
+  position: absolute;
+  top: 32%;
+  right: 0;
+  transform: scale(-1, 1);
+}
+
 .detailed-animal-page__in {
   padding: 0 80px 120px;
 }
@@ -4070,7 +4160,9 @@ a {
 }
 
 .detailed-animal-page__info {
-  padding: 0 217px 50px;
+  padding-bottom: 50px;
+  max-width: 846px;
+  margin: 0 auto;
 }
 
 .detailed-animal-page__info-text p {
@@ -4338,6 +4430,16 @@ a {
   .company-details__tabs {
     grid-template-columns: 1fr 1fr;
   }
+
+  .application-form__leaves {
+    top: 0;
+    right: 0;
+    transform: scale(-1, 1);
+  }
+
+  .application-form__leaves img {
+    width: 108px;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -4378,6 +4480,16 @@ a {
     width: 85%;
     text-align: center;
     margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 1180px) {
+  .text-news__leaves {
+    display: none;
+  }
+
+  .text-news__leaves-second {
+    display: none;
   }
 }
 
@@ -4627,10 +4739,6 @@ a {
   .detailed-animal-page__in-banner .banner-text h2 {
     font-size: 75px;
     line-height: 75px;
-  }
-
-  .detailed-animal-page__info {
-    padding: 0 100px 50px;
   }
 
   .detailed-animal-page__info-text .detailed-animal-page__title {
@@ -5311,6 +5419,14 @@ a {
     line-height: 24px;
   }
 
+  .news__leaves {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(-1, 1);
+  }
+
   .news__in {
     padding: 0 16px 60px;
   }
@@ -5616,6 +5732,17 @@ a {
     padding: 0 10px;
   }
 
+  .zoo-news__leaves {
+    display: none;
+  }
+
+  .zoo-news__paws {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+
   .zoo-news__in {
     padding: 0 16px 60px;
   }
@@ -5752,6 +5879,7 @@ a {
     font-size: 55px;
     line-height: 67px;
     margin-bottom: 20px;
+    max-width: 250px;
   }
 
   .error__big-branch {
@@ -5957,6 +6085,13 @@ a {
     padding: 0 16px 50px;
   }
 
+  .history-zoo__paws {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+
   .history-zoo__in {
     padding: 0 16px 50px 16px;
   }
@@ -5971,6 +6106,7 @@ a {
     font-size: 55px;
     line-height: 67px;
     margin-bottom: 20px;
+    max-width: 300px;
   }
 
   .history-by-year__in {
@@ -6038,6 +6174,10 @@ a {
     line-height: 22px;
   }
 
+  .detailed-animal-page__leaves {
+    display: none;
+  }
+
   .detailed-animal-page__in {
     padding: 0 16px 70px;
   }
@@ -6057,7 +6197,7 @@ a {
   }
 
   .detailed-animal-page__info {
-    padding: 0 0 50px;
+    padding-bottom: 60px;
   }
 
   .detailed-animal-page__info-text .detailed-animal-page__title {

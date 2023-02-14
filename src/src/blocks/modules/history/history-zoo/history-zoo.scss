@@ -1,4 +1,17 @@
 .history-zoo {
+    position: relative;
+    &__paws {
+        display: none;
+    @media all and (max-width:740px) {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    img {
+        width: 108px;
+    }
+}
     &__in {
         padding: 0 80px 140px 80px;
         @media all and (max-width:740px) {
@@ -44,6 +57,7 @@
             font-size: 55px;
             line-height: 67px;
             margin-bottom: 20px;
+            max-width: 300px;
         }
     }
 }

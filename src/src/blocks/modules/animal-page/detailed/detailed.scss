@@ -1,4 +1,14 @@
 .detailed-animal-page {
+    position: relative;
+    &__leaves {
+        position: absolute;
+        top: 32%;
+        right: 0;
+        transform: scale(-1, 1);
+        @media all and (max-width:740px) {
+            display: none;
+        }
+    }
     &__in {
        padding: 0 80px 120px;
        @media all and (max-width:740px) {
@@ -87,12 +97,11 @@
         }
     }
     &__info {
-        padding: 0 217px 50px;
-        @media all and (max-width:1130px) {
-            padding: 0 100px 50px;
-        }
+        padding-bottom: 50px;
+        max-width: 846px;
+        margin: 0 auto;
         @media all and (max-width:740px) {
-            padding: 0 0 50px;
+            padding-bottom: 60px;
         }
         &-text {
             p {

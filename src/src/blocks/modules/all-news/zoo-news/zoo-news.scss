@@ -1,4 +1,25 @@
 .zoo-news {
+    position: relative;
+    &__leaves {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        @media all and (max-width:740px) {
+            display: none;
+        }
+    }
+    &__paws {
+            display: none;
+        @media all and (max-width:740px) {
+            display: block;
+            position: absolute;
+            top: 30px;
+            right: 0;
+        }
+        img {
+            width: 108px;
+        }
+    }
     &__in {
         padding: 0 80px 120px;
         @media all and (max-width:740px) {

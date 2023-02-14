@@ -1,4 +1,20 @@
 .application-form {
+    position: relative;
+    &__leaves {
+        position: absolute;
+        bottom: 42px;
+        left: 0;
+        @media all and (max-width: 1260px) {
+            top: 0;
+            right: 0;
+            transform: scale(-1, 1);
+        }
+        img {
+            @media all and (max-width: 1260px) {
+                width: 108px;
+            }
+        }
+    }
     &__in {
         padding: 0 80px 120px;
         @media all and (max-width:740px) {
@@ -62,6 +78,7 @@
                     font-size: 55px;
                     line-height: 67px;
                     margin-bottom: 20px;
+                    max-width: 250px;
                 }
             }
             p {

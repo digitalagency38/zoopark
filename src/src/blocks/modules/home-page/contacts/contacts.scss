@@ -1,5 +1,11 @@
 .contacts {
     position: relative;
+    &__leaves {
+            position: absolute;
+            top: 64px;
+            right: 0;
+            transform: scale(-1, 1);
+    }
     &__paws {
         display: none;
         @media all and (max-width:540px) {
