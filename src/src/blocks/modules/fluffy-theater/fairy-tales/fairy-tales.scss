@@ -10,15 +10,14 @@
             }
         }
     }
-    background:#F7E3C1;
-    background-repeat: no-repeat;
-    background-position: 0 0;
     position: relative;
     @media all and (max-width:740px) {
         margin-bottom: 50px;
     }
     &__in {
         padding: 120px 80px 120px;
+        background: #F7E3C1;
+        border-radius: 40px;
         @media all and (max-width:740px) {
             padding: 60px 16px;
            }

@@ -2556,14 +2556,13 @@ a {
 }
 
 .fairy-tales {
-  background: #F7E3C1;
-  background-repeat: no-repeat;
-  background-position: 0 0;
   position: relative;
 }
 
 .fairy-tales__in {
   padding: 120px 80px 120px;
+  background: #F7E3C1;
+  border-radius: 40px;
 }
 
 .fairy-tales__in h2 {
@@ -5120,6 +5119,7 @@ a {
   .banner .orange-blocks__item {
     padding: 40px 20px;
     min-height: 395px;
+    max-height: 395px;
     max-width: 242px;
   }
 
