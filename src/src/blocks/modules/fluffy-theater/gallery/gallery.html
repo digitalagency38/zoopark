@@ -46,7 +46,7 @@
 
             <div class="services__pagination gallery__pagination" v-if="gallery.slider">
                 <div class="global__dots">
-                    @@for ($i = 0; $i < 10; $i++) {
+                    @@for ($i = 0; $i < 5; $i++) {
                         <div class="global__dot" :class="{'isActive': gallery.slider.index == `+ $i +`}" @click="gallery.slider.go('=`+ $i +`')">`+ $i +`</div>
                     }
                 </div>

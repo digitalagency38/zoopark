@@ -1,4 +1,22 @@
 .furry-actors {
+    position: relative;
+    &__paws {
+        position: absolute;
+        top: 77px;
+        right: 29px;
+        z-index: -1;
+        @media all and (max-width:740px) {
+            top: 28px;
+            right: 29px;
+            z-index: -1;
+            transform: rotate(26deg);
+        }
+        img {
+            @media all and (max-width:740px) {
+                width: 108px;
+            }
+        }
+    }
     &-fluffy {
         padding-top: 120px;
     }
@@ -36,6 +54,8 @@
                     }
         &-item {
             padding: 10px 10px 30px;
+            background: #F7E7CF;
+            border-radius: 20px;
         }
         &-image {
             height: 100%;
@@ -50,6 +70,9 @@
         }
         &-info {
             padding: 0 20px;
+            @media all and (max-width:740px) {
+                padding: 0 10px;
+            }
             h2 {
                 font-weight: 700;
                 font-size: 24px !important;

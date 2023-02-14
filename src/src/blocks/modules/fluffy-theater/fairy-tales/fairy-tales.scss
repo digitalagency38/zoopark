@@ -1,9 +1,27 @@
 .fairy-tales {
+    .services__big-branch {
+        
+        @media all and (max-width:740px) {
+            display: none;
+        }
+        img {
+            @media all and (max-width:1130px) {
+                width: 400px;
+            }
+        }
+    }
     background:#F7E3C1;
     background-repeat: no-repeat;
     background-position: 0 0;
+    position: relative;
+    @media all and (max-width:740px) {
+        margin-bottom: 50px;
+    }
     &__in {
         padding: 120px 80px 120px;
+        @media all and (max-width:740px) {
+            padding: 60px 16px;
+           }
         h2 {
             font-family: 'Calibri';
             font-weight: 700;
@@ -11,26 +29,50 @@
             line-height: 117px;
             margin-top: 0;
             margin-bottom: 40px;
+            @media all and (max-width:1130px) {
+                font-size: 75px;
+                line-height: 75px;
+            }
+            @media all and (max-width:740px) {
+                font-size: 55px;
+                line-height: 67px;
+                margin-bottom: 30px;
+            }
         }
     }
     &__item {
         width: 100%;
         padding: 10px 10px 20px;
+        @media all and (max-width:740px) {
+            padding: 0;
+        }
     }
     &__item-image {
         img {
             width: 100%;
             border-radius: 20px;
             object-fit: cover;
+            @media all and (max-width:740px) {
+                min-height: 250px;
+            }
         }
     }
     &__item-text {
         padding: 20px 0 0 20px;
+        @media all and (max-width:740px) {
+            padding: 20px 0 0 0 ;
+        }
         h2 {
             font-weight: 700;
             font-size: 24px;
             line-height: 38px;
             margin-bottom: 6px;
+            @media all and (max-width:740px) {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+                margin-bottom: 6px;
+            }
         }
         p {
             font-style: normal;

@@ -1,8 +1,11 @@
 .gallery {
+    &-fluffy {
+
+    }
     padding-top: 120px;
     position: relative;
     @media all and (max-width:740px) {
-        padding-top: 120px;
+        padding-top: 60px;
     }
     &-history {
         @media all and (max-width:740px) {
@@ -21,7 +24,7 @@
             }
         }
         @media all and (max-width:740px) {
-            top: 90px;
+            top: 7px;
             left: -56px;        
         }
     }
