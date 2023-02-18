@@ -29,7 +29,7 @@
         width: calc(258px + 67px);
         position: relative;
         z-index: 3;
-        background: linear-gradient(to right, #fff 0%, #fff calc(100% - 20px), transparent 100%);
+        background: linear-gradient(to right, rgb(255, 251, 242) 0%, rgb(255, 251, 242) calc(100% - 20px), transparent 100%);
         padding-right: 67px;
         box-sizing: border-box;
         @media all and (max-width:990px) {
@@ -43,7 +43,7 @@
             top: 0;
             bottom: 0;
             right: 100%;
-            background: #fff;
+            background: rgb(255, 251, 242);
         }
         h2 {
             font-weight: 700;

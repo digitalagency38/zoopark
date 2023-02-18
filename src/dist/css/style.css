@@ -471,35 +471,70 @@ template {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("ttf");
-  font-weight: 100;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-100Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("ttf");
-  font-weight: 300;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-300Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-300Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
-  font-weight: 500;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("ttf");
-  font-weight: 700;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-700Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
   src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("ttf");
-  font-weight: 900;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-900Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 * {
@@ -984,7 +1019,7 @@ a {
   width: 325px;
   position: relative;
   z-index: 3;
-  background: linear-gradient(to right, #fff 0%, #fff calc(100% - 20px), transparent 100%);
+  background: linear-gradient(to right, rgb(255, 251, 242) 0%, rgb(255, 251, 242) calc(100% - 20px), transparent 100%);
   padding-right: 67px;
   box-sizing: border-box;
 }
@@ -997,7 +1032,7 @@ a {
   top: 0;
   bottom: 0;
   right: 100%;
-  background: #fff;
+  background: rgb(255, 251, 242);
 }
 
 .all-animals__left h2 {
@@ -1223,7 +1258,6 @@ a {
 
 .services__in {
   padding: 100px 80px 135px;
-  background: url("../img/big-trees.svg"), #FCDFB3;
   background-repeat: no-repeat;
   background-position: 0% 100%;
   border-radius: 120px;
@@ -1237,6 +1271,27 @@ a {
   line-height: 90px;
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+.services__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+}
+
+.services__background--middle {
+  flex: 1 1 auto;
+  background: #FCDFB3;
+}
+
+.services__body {
+  position: relative;
+  z-index: 10;
 }
 
 .services__big-branch {
@@ -1499,6 +1554,7 @@ a {
   left: 0;
   transform: rotate(180deg);
   transform: scale(-1, 1);
+  z-index: 11;
 }
 
 .gallery__paws {
@@ -1506,16 +1562,38 @@ a {
   top: 21%;
   left: 59%;
   transform: scale(-1, 1);
+  z-index: 11;
 }
 
 .gallery__in {
   padding: 110px 80px 120px 80px;
-  background: #FCDFB3;
   border-radius: 120px;
+  position: relative;
 }
 
 .gallery__in-history {
   background: none;
+}
+
+.gallery__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+}
+
+.gallery__background--middle {
+  flex: 1 1 auto;
+  background: #FCDFB3;
+}
+
+.gallery__body {
+  position: relative;
+  z-index: 10;
 }
 
 .gallery__menu {
@@ -1556,7 +1634,7 @@ a {
   margin-right: 40px;
 }
 
-.gallery__menu ul li a:active {
+.gallery__menu ul li.isActive a {
   color: #EC6708;
   border-bottom: 2px solid #EC6708;
 }
@@ -1601,6 +1679,11 @@ a {
 
 .gallery__images {
   width: 100%;
+}
+
+.gallery__images .glide__track {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .gallery__images-item {
@@ -1662,6 +1745,11 @@ a {
 
 .reviews__items {
   width: 100%;
+}
+
+.reviews__items .glide__track {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .reviews__item {

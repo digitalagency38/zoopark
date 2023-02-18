@@ -3,6 +3,7 @@ import Glide from '@glidejs/glide';
 const Gallery = class Gallery {
     constructor() {
         this.slider = null;
+        this.activeSlidesType = 'all';
     }
     initSlider() {
         if (!document.querySelector('.gallery__images.glide')) return;
@@ -20,6 +21,12 @@ const Gallery = class Gallery {
                 
             }
         }).mount()
+    }
+    changeSlidesType(type) {
+        this.activeSlidesType = type;
+        setTimeout(() => {
+            this.slider.update();
+        }, 0);
     }
     init() {
         this.initSlider();

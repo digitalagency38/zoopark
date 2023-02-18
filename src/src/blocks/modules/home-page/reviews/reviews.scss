@@ -58,6 +58,10 @@
         // grid-template-columns: 1fr 1fr;
         // grid-gap: 20px;
         width: 100%;
+        .glide__track {
+            border-radius: 20px;
+            overflow: hidden;
+        }
     }
     &__item {
         background: #FCDFB3;
