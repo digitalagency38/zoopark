@@ -1,10 +1,8 @@
 .footer {
     &__in {
         padding: 152px 122px 0 80px;
-        background: url("../img/forest-footer3.svg"), #F7E3C1;
-        background-repeat: no-repeat;
-        background-position: 0px 88px;
         border-radius: 120px 120px 0 0;
+        position: relative;
         @media all and (max-width:1160px) {
             background-position: 0 160px;
         }
@@ -16,11 +14,28 @@
             padding: 80px 16px 0;
         }
     }
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        font-size: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__background--middle {
+        flex: 1 1 auto;
+        background: #fcdfb3;
+    }
     &__top {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         padding-bottom: 40px;
+        position: relative;
+        z-index: 10;
         @media all and (max-width:1130px) {
             flex-wrap: wrap;
         }

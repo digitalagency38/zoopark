@@ -3,6 +3,7 @@ import Glide from '@glidejs/glide';
 const AllAnimals = class AllAnimals {
     constructor() {
         this.slider = null;
+        this.index = 0;
     }
     initSlider() {
         if (!document.querySelector('.all-animals__right.glide')) return;

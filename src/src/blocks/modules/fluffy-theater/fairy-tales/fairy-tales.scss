@@ -16,8 +16,8 @@
     }
     &__in {
         padding: 120px 80px 120px;
-        background: #F7E3C1;
-        border-radius: 40px;
+        background: #F7E3C1 url('../img/tales_bg.svg') 50% 50%/cover no-repeat;
+        position: relative;
         @media all and (max-width:740px) {
             padding: 60px 16px;
            }
@@ -39,9 +39,25 @@
             }
         }
     }
+    &__bg_top {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        right: 0;
+        font-size: 0;
+    }
+    &__bg_bottom {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        font-size: 0;
+    }
     &__item {
         width: 100%;
         padding: 10px 10px 20px;
+        background: #F7E3C1;
+        border-radius: 20px;
         @media all and (max-width:740px) {
             padding: 0;
         }

@@ -3,6 +3,15 @@
         <img src="img/big-branch.svg" alt="trees">
     </div>
     <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="lines_goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+              </filter>
+            </defs>
+        </svg>
         <div class="services__in">
             <div class="services__background">
                 <div class="services__background--top">
@@ -25,8 +34,17 @@
                                             <img src="img/banner-fluffy.jpg" alt="image">
                                         </div>
                                         <div class="services__price">
-                                            <span>от</span>
-                                            <span class="bold-pice">1 990 ₽</span>
+                                            <div class="services__circle">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="services__price_text">
+                                                <span>от</span>
+                                                <span class="bold-pice">1 990 ₽</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="services__item-about">

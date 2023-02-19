@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230219000623">
+    <link rel="stylesheet" href="css/style.css?_v=20230219182045">
 </head>
 <body>
     <div class="wrapper" id="app">
@@ -198,12 +198,12 @@
                     </div>
                 </div>
                 <div class="detailed__arrows global__arows">
-                    <div class="global__arow global__arow--prev" @click="detailed.slider.go('<')">
+                    <div class="global__arow global__arow--prev" @click="fluffy.slider.go('<')">
                         <div class="global__arow-in">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#EC6708"></path></svg>
                         </div>
                     </div>
-                    <div class="global__arow global__arow--next" @click="detailed.slider.go('>')">
+                    <div class="global__arow global__arow--next" @click="fluffy.slider.go('>')">
                         <div class="global__arow-in">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#EC6708"></path></svg>
                         </div>
@@ -284,6 +284,9 @@
     </div>
     <div class="container">
         <div class="fairy-tales__in">
+            <div class="fairy-tales__bg_top">
+                <img src="img/tales_top.svg" width="100%" alt="">
+            </div>
             <h2>Сказки, которые мы ставим</h2>
             <div class="fairy-tales__slider glide">
                 <div class="glide__track" data-glide-el="track">
@@ -392,24 +395,45 @@
                     </div>
                 </div>
                 <div class="fairy-tales__slider-row">
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <div class="glide__bullets global__dots" data-glide-el="controls[nav]">
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=0"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=1"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=2"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=3"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=4"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=5"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=6"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=7"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=8"></div>
+                        
+                            <div class="glide__bullet global__dot" data-glide-dir="=9"></div>
+                        
                     </div>
                     <div class="fairy-tale__arrows global__arows">
-                        <div class="global__arow global__arow--prev" @click="fairy-tale.slider.go('<')">
+                        <div class="global__arow global__arow--prev" @click="tales.slider.go('<')">
                             <div class="global__arow-in">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
                             </div>
                         </div>
-                        <div class="global__arow global__arow--next" @click="fairy-tale.slider.go('>')">
+                        <div class="global__arow global__arow--next" @click="tales.slider.go('>')">
                             <div class="global__arow-in">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 16" fill="none"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM39.7071 8.70711C40.0976 8.31658 40.0976 7.68342 39.7071 7.29289L33.3431 0.928932C32.9526 0.538408 32.3195 0.538408 31.9289 0.928932C31.5384 1.31946 31.5384 1.95262 31.9289 2.34315L37.5858 8L31.9289 13.6569C31.5384 14.0474 31.5384 14.6805 31.9289 15.0711C32.3195 15.4616 32.9526 15.4616 33.3431 15.0711L39.7071 8.70711ZM1 9H39V7H1V9Z" fill="#2B2A29"></path></svg>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="fairy-tales__bg_bottom">
+                <img src="img/tales_bottom.svg" width="100%" alt="">
             </div>
         </div>
     </div>
@@ -924,6 +948,15 @@
          <div class="footer">
     <div class="container">
         <div class="footer__in">
+            <div class="footer__background">
+                <div class="footer__background--top">
+                    <img src="img/footer_top.svg" width="100%" alt="">
+                </div>
+                <div class="footer__background--middle"></div>
+                <div class="footer__background--bottom">
+                    <img src="img/footer_bottom.svg" width="100%" alt="">
+                </div>
+            </div>
             <div class="footer__top">
                 <div class="footer__top-item">
                     <div class="footer__top-item-logo">
@@ -1007,6 +1040,6 @@
 
 
     </div>
-    <script src="js/app.min.js?_v=20230219000623"></script>
+    <script src="js/app.min.js?_v=20230219182045"></script>
 </body>
 </html>

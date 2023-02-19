@@ -65,7 +65,8 @@ a {
         &:not(:last-child) {
             margin-right: 10px;
         }
-        &.isActive {
+        &.isActive,
+        &.glide__bullet--active {
             width: 30px;
         }
     }
