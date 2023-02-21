@@ -498,14 +498,14 @@ template {
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
+  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
   font-display: swap;
-  src: url("../fonts/MuseoSansCyrl-500Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-500Italic.ttf") format("ttf");
+  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1071,11 +1071,6 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-}
-
-.all-animals__right {
-  width: calc(100% - 258px - 67px);
-  padding-right: 190px;
 }
 
 .all-animals__right .glide__track {
@@ -4541,6 +4536,13 @@ a {
 
 .burger__top-social-network .social-network-icons__item:not(:last-child) {
   margin-right: 20px;
+}
+
+@media all and (min-width: 991px) {
+  .all-animals__right {
+    width: calc(100% - 258px - 67px);
+    padding-right: 190px;
+  }
 }
 
 @media all and (max-width: 1520px) {
