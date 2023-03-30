@@ -9,55 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
+<div class="zoo-news__animals-item wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s" id="post-<?php the_ID(); ?>">
+	<div class="zoo-news__animals-image">
+		<?php soluzioni_di_casa_post_thumbnail(); ?>
+	</div>
+	<div class="zoo-news__animals-info">
+		<span>
+			<?php
+				$date="$post->post_date";
+				$y = date('Y.m.d',strtotime($date));
+				echo $y;
 			?>
-			<div class="entry-meta">
-				<?php
-				soluzioni_di_casa_posted_on();
-				soluzioni_di_casa_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php soluzioni_di_casa_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'soluzioni-di-casa' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'soluzioni-di-casa' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php soluzioni_di_casa_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+		</span>
+		<h2><?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?></h2>
+		
+		<?php echo $post->post_excerpt?>
+	</div>
+</div><!-- #post-<?php the_ID(); ?> -->

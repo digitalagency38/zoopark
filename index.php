@@ -14,44 +14,62 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+<div class="bread-crumbs">
+    <div class="container">
+        <div class="bread-crumbs__in our-pets">
+            <ul>
+				<?php if(function_exists('bcn_display'))
+				{
+					bcn_display();
+				}?>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="zoo-news">
+    <div class="zoo-news__leaves">
+        <img src="<?php echo get_theme_file_uri(); ?>/src/dist/img/laeves-fl.png" alt="leaves">
+    </div>
+    <div class="zoo-news__paws">
+        <img src="<?php echo get_theme_file_uri(); ?>/src/dist/img/paws-reviews.svg" alt="paws">
+    </div>
+    <div class="container">
+        <div class="zoo-news__in">
+            <h2><?php single_post_title(); ?></h2>
+            <div class="zoo-news__animals">
 				<?php
-			endif;
+				if ( have_posts() ) :
+				?>
+				<?php
 
-			/* Start the Loop */
-			while ( have_posts() ) :
+				/* Start the Loop */
+				while ( have_posts() ) :
 				the_post();
 
 				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
+							 * Include the Post-Type-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+							 */
 				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+				endwhile;
 
-			the_posts_navigation();
+				//the_posts_navigation();
 
-		else :
+				else :
 
-			get_template_part( 'template-parts/content', 'none' );
+				//get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
-
-	</main><!-- #main -->
-
+				endif;
+				?>
+            </div>
+            <div class="zoo-news__navigation">
+				<?php wp_pagenavi(); ?>
+            </div>
+        </div>
+    </div>
+</div>
 <?php
-get_sidebar();
 get_footer();
+?>

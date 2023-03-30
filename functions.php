@@ -174,3 +174,318 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+function mytheme_customize_register( $wp_customize ) {
+/*
+Добавляем секцию в настройки темы
+*/
+  $wp_customize->add_section(
+      // ID
+      'data_sale_section',
+      // Arguments array
+      array(
+          'title' => 'Поля шапки и подвала',
+          'capability' => 'edit_theme_options',
+          'description' => "Тут можно настройки блока"
+      )
+  );
+/*
+Добавляем поле телефона site_telephone
+*/
+  $wp_customize->add_setting(
+      // ID
+      'adr1',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'adr1_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Адрес 1",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'adr1'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'adr2',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'adr2_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Адрес 2",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'adr2'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'work',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'work_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Режим работы",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'work'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'tel',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'tel_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Телефон",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'tel'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'inst',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'inst_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Ссылка на Instagram",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'inst'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'vk',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'vk_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Ссылка на ВКонтакте",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'vk'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'tg',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'tg_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Ссылка на Telegram",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'tg'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'wa',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'wa_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Ссылка на Whatsapp",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'wa'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'rat_yan',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'rat_yan_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Рейтинг Яндекса",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'rat_yan'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'rat_gis',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'rat_gis_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Рейтинг 2GIS",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'rat_gis'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'copy',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'copy_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Копирайт",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'copy'
+      )
+  );
+  $wp_customize->add_setting(
+      // ID
+      'politic',
+      // Arguments array
+      array(
+          'default' => '',
+          'type' => 'option'
+      )
+  );
+  $wp_customize->add_control(
+      // ID
+      'politic_control',
+      // Arguments array
+      array(
+          'type' => 'text',
+          'label' => "Ссылка на политику конфиденциальности",
+          'section' => 'data_sale_section',
+          // This last one must match setting ID from above
+          'settings' => 'politic'
+      )
+  );
+}
+add_action( 'customize_register', 'mytheme_customize_register' );
+
+
+
+
+
+
+
+
+
+
+add_action( 'init', 'true_register_post_type_init' );
+
+function true_register_post_type_init() {
+ 
+	$services_labels = array(
+		'name' => 'Питомцы',
+		'singular_name' => 'Питомец',
+		'add_new' => 'Добавить Питомца',
+		'add_new_item' => 'Добавить Питомца',
+		'edit_item' => 'Редактировать Питомца',
+		'new_item' => 'Новый Питомц',
+		'all_items' => 'Все Питомцы',
+		'search_items' => 'Искать Питомцев',
+		'not_found' =>  'Питомцы по заданным критериям не найдено.',
+		'not_found_in_trash' => 'В корзине нет Питомцев.',
+		'menu_name' => 'Питомцы'
+	);
+ 
+	$services_args = array(
+		'labels' => $services_labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'has_archive' => false,
+		'menu_icon' => 'dashicons-star-filled',
+		'menu_position' => 3,
+		'template' => 'wp_pet.php',
+		'supports' => array( 'title' )
+	);
+ 
+	register_post_type( 'services', $services_args );
+}
+
+

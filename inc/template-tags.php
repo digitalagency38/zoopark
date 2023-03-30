@@ -27,7 +27,7 @@ if ( ! function_exists( 'soluzioni_di_casa_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'soluzioni-di-casa' ),
+			esc_html_x( ' ', 'post date', 'soluzioni-di-casa' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 

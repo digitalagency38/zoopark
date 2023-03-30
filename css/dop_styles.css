@@ -1,0 +1,478 @@
+body {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    outline: none;
+    scroll-behavior: smooth;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.global__dot {
+	border: 0;
+	padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+textarea {
+    resize: none;
+}
+/* width */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #f7e7cf;
+}
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: #ec6708;
+}
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+    background: #ec6708;
+}
+.footer__bottom {
+	position: relative;
+	z-index: 10;
+}
+.animal img {
+	max-width: 100%;
+}
+.reviews__item-icon img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.news__item-image {
+	display: block;
+}
+.burger {
+	display: block;
+	position: absolute;
+	top: 206px;
+	left: -100%;
+	width: 100%;
+	z-index: 1000;
+	transition: all .3s ease-out;
+}
+.burger.isOpened {
+	left: 0;
+}
+.header__bottom-item .menu, .menu-close {
+	cursor: pointer;
+	width: 160px;
+	transition: all .3s ease-out;
+}
+.header__bottom-item .menu:hover, .menu-close:hover {
+	background: #2B2A29;
+}
+.header__bottom-item .menu:hover > span, .menu-close:hover > span {
+	color: #fff;
+}
+.header__bottom-item .menu:hover .line div, .menu-close:hover .line div {
+	background: #fff;
+}
+.header__bottom-item .menu.isHidden {
+	display: none;
+}
+.menu-close.isActive {
+	display: flex;
+}
+.banner__left > span span {
+	position: relative;
+	display: inline-block;
+}
+.banner__left > span span:before {
+	content: '';
+	position: absolute;
+	background: url("data:image/svg+xml,%3Csvg width='70' height='29' viewBox='0 0 70 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 14.828C0 10.9128 0.850268 7.62912 2.5508 4.97689C4.26738 2.32465 6.41711 0.998535 9 0.998535C11.5829 0.998535 13.7246 2.32465 15.4251 4.97689C17.1417 7.62912 18 10.9128 18 14.828C18 18.8443 17.1417 22.2164 15.4251 24.9444C13.7246 27.6472 11.5829 28.9985 9 28.9985C6.41711 28.9985 4.26738 27.6472 2.5508 24.9444C0.850268 22.2164 0 18.8443 0 14.828ZM4.35561 14.828C4.35561 17.1266 4.80481 19.059 5.70321 20.6251C6.6016 22.1659 7.70054 22.9363 9 22.9363C10.2995 22.9363 11.3984 22.1659 12.2968 20.6251C13.1952 19.059 13.6444 17.1266 13.6444 14.828C13.6444 12.6305 13.1952 10.7865 12.2968 9.29624C11.3984 7.80593 10.2995 7.06078 9 7.06078C7.70054 7.06078 6.6016 7.80593 5.70321 9.29624C4.80481 10.7865 4.35561 12.6305 4.35561 14.828Z' fill='%23393185'/%3E%3Cpath d='M4.35561 14.828C4.35561 17.1266 4.80481 19.059 5.70321 20.6251C6.6016 22.1659 7.70054 22.9363 9 22.9363C10.2995 22.9363 11.3984 22.1659 12.2968 20.6251C13.1952 19.059 13.6444 17.1266 13.6444 14.828C13.6444 12.6305 13.1952 10.7865 12.2968 9.29624C11.3984 7.80593 10.2995 7.06078 9 7.06078C7.70054 7.06078 6.6016 7.80593 5.70321 9.29624C4.80481 10.7865 4.35561 12.6305 4.35561 14.828Z' fill='%23393185'/%3E%3Cpath d='M52 14.828C52 10.9128 52.8503 7.62912 54.5508 4.97689C56.2674 2.32465 58.4171 0.998535 61 0.998535C63.5829 0.998535 65.7246 2.32465 67.4251 4.97689C69.1417 7.62912 70 10.9128 70 14.828C70 18.8443 69.1417 22.2164 67.4251 24.9444C65.7246 27.6472 63.5829 28.9985 61 28.9985C58.4171 28.9985 56.2674 27.6472 54.5508 24.9444C52.8503 22.2164 52 18.8443 52 14.828ZM56.3556 14.828C56.3556 17.1266 56.8048 19.059 57.7032 20.6251C58.6016 22.1659 59.7005 22.9363 61 22.9363C62.2995 22.9363 63.3984 22.1659 64.2968 20.6251C65.1952 19.059 65.6444 17.1266 65.6444 14.828C65.6444 12.6305 65.1952 10.7865 64.2968 9.29624C63.3984 7.80593 62.2995 7.06078 61 7.06078C59.7005 7.06078 58.6016 7.80593 57.7032 9.29624C56.8048 10.7865 56.3556 12.6305 56.3556 14.828Z' fill='%23009846'/%3E%3Cpath d='M56.3556 14.828C56.3556 17.1266 56.8048 19.059 57.7032 20.6251C58.6016 22.1659 59.7005 22.9363 61 22.9363C62.2995 22.9363 63.3984 22.1659 64.2968 20.6251C65.1952 19.059 65.6444 17.1266 65.6444 14.828C65.6444 12.6305 65.1952 10.7865 64.2968 9.29624C63.3984 7.80593 62.2995 7.06078 61 7.06078C59.7005 7.06078 58.6016 7.80593 57.7032 9.29624C56.8048 10.7865 56.3556 12.6305 56.3556 14.828Z' fill='%23009846'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+	width: 70px;
+    height: 29px;
+    bottom: 27px;
+    left: 14px;
+    z-index: 0;
+}
+.burger__top-menu ul li a:hover, .footer__top-menu ul li a:hover, .footer__bottom-menu li a:hover {
+	text-decoration: underline;
+}
+.burger__top-social-network .social-network-icons__item, .banner__left .cities__item span, .banner__left .cities__item .icon, .banner .orange-blocks__item .button, .footer__top-social-network .social-network-icons__item {
+	transition: all .3s ease-out;
+}
+.burger__top-social-network .social-network-icons__item:hover, .footer__top-social-network .social-network-icons__item:hover {
+	opacity: .8;
+}
+.banner__left .cities__item span:hover {
+	color: #2B2A29;
+	border-color: #2B2A29;
+}
+.banner__left .cities__item .icon img {
+	width: 20px;
+}
+.banner__left .cities__item:hover .icon img {
+	display: none;
+}
+.banner__left .cities__item .icon {
+	background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.6665 16.6667L15.3332 3' stroke='%23EC6708' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.6665 9.66675V1.66675H8.6665' stroke='%23EC6708' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+	width: 20px;
+	transition: all .3s ease-out;
+	height: 20px;
+}
+.banner__left .cities__item:hover .icon {
+	background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.6665 16.6667L15.3332 3' stroke='%232B2A29' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.6665 9.66675V1.66675H8.6665' stroke='%232B2A29' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+}
+.banner .orange-blocks__item .button:hover {
+	background: #2B2A29;
+}
+.banner .orange-blocks__item .button .icon {
+	width: 28px;
+	height: 28px;
+	transition: all .3s ease-out;
+	background: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.3335 23.3335L23.3335 2.3335M23.3335 2.3335V13.5335M23.3335 2.3335H12.1335' stroke='%232B2A29' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+}
+.banner .orange-blocks__item .button:hover .icon {
+	background: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.3335 23.3335L23.3335 2.3335M23.3335 2.3335V13.5335M23.3335 2.3335H12.1335' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+}
+.banner .orange-blocks__item .button:hover span {
+	color: #fff;
+}
+.banner .orange-blocks__item .list__item, .banner .orange-blocks__item .list__item span {
+	transition: all .3s ease-out;
+}
+.banner .orange-blocks__item .list__item .icon {
+	width: 19px;
+	transition: all .3s ease-out;
+	height: 19px;
+	background: url("data:image/svg+xml,%3Csvg width='19' height='20' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.58337 16.8317L14.5667 3.84839' stroke='%232B2A29' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.8334 10.1818V2.58179H8.2334' stroke='%232B2A29' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+}
+.banner .orange-blocks__item .list__item:hover .icon {
+	background: url("data:image/svg+xml,%3Csvg width='19' height='20' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.58337 16.8317L14.5667 3.84839' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.8334 10.1818V2.58179H8.2334' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+}
+.banner .orange-blocks__item .list__item:hover {
+	border-color: #fff;
+}
+.banner .orange-blocks__item .list__item:hover span {
+	color: #fff;
+}
+.gallery__menu-button {
+	width: 100%;
+}
+/* green button */
+.all-animals .button .green-button, .buy-ticket__item .button-ticket .green-button, .services__item-about .button-services .green-button, .poster .billboard-cards-button .green-button, .gallery__menu-button .green-button, .gallery__menu-button-mobile .green-button, .news .button .green-button {
+	background: url("data:image/svg+xml,%3Csvg width='43' height='28' viewBox='0 0 43 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='29' cy='14' r='14' fill='%23009846'/%3E%3Cpath d='M33.7071 14.7071C34.0976 14.3166 34.0976 13.6834 33.7071 13.2929L27.3431 6.92893C26.9526 6.53841 26.3195 6.53841 25.9289 6.92893C25.5384 7.31946 25.5384 7.95262 25.9289 8.34315L31.5858 14L25.9289 19.6569C25.5384 20.0474 25.5384 20.6805 25.9289 21.0711C26.3195 21.4616 26.9526 21.4616 27.3431 21.0711L33.7071 14.7071ZM0 15H33V13H0V15Z' fill='%232B2A29'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+	width: 43px;
+	transition: all .3s ease-out;
+	height: 28px;
+}
+.buy-a-ticket__item .button .green-button {
+	background: url("data:image/svg+xml,%3Csvg width='43' height='28' viewBox='0 0 43 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='29' cy='14' r='14' fill='%23009846'/%3E%3Cpath d='M33.7071 14.7071C34.0976 14.3166 34.0976 13.6834 33.7071 13.2929L27.3431 6.92893C26.9526 6.53841 26.3195 6.53841 25.9289 6.92893C25.5384 7.31946 25.5384 7.95262 25.9289 8.34315L31.5858 14L25.9289 19.6569C25.5384 20.0474 25.5384 20.6805 25.9289 21.0711C26.3195 21.4616 26.9526 21.4616 27.3431 21.0711L33.7071 14.7071ZM0 15H33V13H0V15Z' fill='%23ffffff'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+	width: 43px;
+	transition: all .3s ease-out;
+	height: 28px;
+}
+.all-animals .button, .buy-ticket__item .button-ticket, .services__item-about .button-services, .poster .billboard-cards-button, .gallery__menu-button, .gallery__menu-button-mobile, .news .button, .buy-a-ticket__item .button {
+	transition: all .3s ease-out;
+}
+.all-animals .button:hover, .buy-ticket__item .button-ticket:hover, .services__item-about .button-services:hover, .poster .billboard-cards-button:hover, .gallery__menu-button:hover, .gallery__menu-button-mobile:hover, .news .button:hover, .buy-a-ticket__item .button:hover {
+	background: #009846;
+	border-color: #009846;
+}
+.all-animals .button:hover span, .buy-ticket__item .button-ticket:hover span, .services__item-about .button-services:hover span, .poster .billboard-cards-button:hover span, .gallery__menu-button:hover span, .gallery__menu-button-mobile:hover span, .news .button:hover span, .buy-a-ticket__item .button:hover span {
+	color: #fff;
+}
+.all-animals__bottom-mobile .button span, .buy-ticket__item .button-ticket span, .services__item-about .button-services span, .poster .billboard-cards-button span, .gallery__menu-button span, .gallery__menu-button-mobile span, .news .button span, .buy-a-ticket__item .button span {
+	margin-right: auto;
+}
+.all-animals .button:hover .green-button, .buy-ticket__item .button-ticket:hover .green-button, .services__item-about .button-services:hover .green-button, .poster .billboard-cards-button:hover .green-button, .gallery__menu-button:hover .green-button, .gallery__menu-button-mobile:hover .green-button, .news .button:hover .green-button, .buy-a-ticket__item .button:hover .green-button {
+	background: url("data:image/svg+xml,%3Csvg width='43' height='28' viewBox='0 0 43 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='29' cy='14' r='14' fill='%23ffffff'/%3E%3Cpath d='M33.7071 14.7071C34.0976 14.3166 34.0976 13.6834 33.7071 13.2929L27.3431 6.92893C26.9526 6.53841 26.3195 6.53841 25.9289 6.92893C25.5384 7.31946 25.5384 7.95262 25.9289 8.34315L31.5858 14L25.9289 19.6569C25.5384 20.0474 25.5384 20.6805 25.9289 21.0711C26.3195 21.4616 26.9526 21.4616 27.3431 21.0711L33.7071 14.7071ZM0 15H33V13H0V15Z' fill='%232B2A29'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+}
+/* green button end */
+.zoo-news__navigation .wp-pagenavi {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.zoo-news__navigation .pages {
+	display: none;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	background: #FCDFB3;
+    border-radius: 10px;
+    padding: 20px 24px;
+    letter-spacing: 0.05em;
+	font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+	border: 0;
+	transition: all .3s ease-out;
+	margin: 0 10px;
+}
+.wp-pagenavi span.current, .wp-pagenavi a:hover {
+	background: #EC6708;
+	color: #fff;
+}
+.zoo-news__animals-item {
+	transition: all .3s ease-out;
+}
+.zoo-news__animals-item:hover {
+	background: #EC6708;
+}
+.zoo-news__animals-item:hover .zoo-news__animals-info, .zoo-news__animals-item:hover span, .zoo-news__animals-item:hover a, .zoo-news__animals-item:active .zoo-news__animals-info, .zoo-news__animals-item:active span, .zoo-news__animals-item:active a {
+	color: #fff;
+}
+.bread-crumbs__in.our-pets li a:hover {
+	text-decoration: underline;
+}
+.text-news__banner-image {
+	height: 500px;
+	overflow: hidden;
+}
+.text-news__banner-image img {
+	height: 500px;
+}
+.bread-crumbs__in {
+	overflow: auto;
+}
+.bread-crumbs__in ul {
+	width: max-content;
+}
+.bread-crumbs__in::-webkit-scrollbar { width: 0; height: 0; }
+.bread-crumbs__in { -ms-overflow-style: none; }
+.bread-crumbs__in { overflow: -moz-scrollbars-none; }
+.detailed__about-item-text {
+	padding-bottom: 20px;
+}
+.furry-actors__animals-item {
+	min-height: 385px;
+}
+.application-form__flex-form {
+	width: 100%;
+}
+.application-form__flex-form form p {
+	margin: 0;
+}
+.application-form__flex-form form label {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;    
+	line-height: normal;
+	color: #827F7C;
+}
+input[type="text"], input[type="tel"], textarea {
+	background: #F7E7CF;
+	border-radius: 6px;
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 132%;
+	color: #2B2A29;
+	border: 1px solid #F7E7CF;
+	padding: 16px 20px;
+	margin-top: 10px;
+	width: 100%;
+}
+input[type="text"]::placeholder, input[type="tel"]::placeholder, textarea::placeholder {
+	color: #827F7C;
+}
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
+	border: 1px solid #E7B76F;
+	background: #F3DBB7;
+}
+.wpcf7-form-control-wrap {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+.wpcf7-not-valid-tip {
+	position: absolute;
+	bottom: 0;
+}
+.bot_form {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.wpcf7-spinner {
+	display: none !important;
+}
+.bot_form input[type="submit"] {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 21px 24px;
+	width: 250px;
+	color: #2B2A29;
+	border: 2px solid #EC6708;
+	border-radius: 200px;
+	cursor: pointer;
+	background: none;
+	padding-right: 87px;
+	transition: all .3s ease-out;
+}
+.sub_form {
+	position: relative;
+}
+.sub_form:before {
+	pointer-events: none;
+	content: '';
+	position: absolute;
+	width: 43px;
+	height: 28px;
+	margin-top: -14px;
+	top: 50%;
+	transition: all .3s ease-out;
+	right: 24px;
+	background: url("data:image/svg+xml,%3Csvg width='43' height='28' viewBox='0 0 43 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='29' cy='14' r='14' fill='%23009846'/%3E%3Cpath d='M33.7071 14.7071C34.0976 14.3166 34.0976 13.6834 33.7071 13.2929L27.3431 6.92893C26.9526 6.53841 26.3195 6.53841 25.9289 6.92893C25.5384 7.31946 25.5384 7.95262 25.9289 8.34315L31.5858 14L25.9289 19.6569C25.5384 20.0474 25.5384 20.6805 25.9289 21.0711C26.3195 21.4616 26.9526 21.4616 27.3431 21.0711L33.7071 14.7071ZM0 15H33V13H0V15Z' fill='%232B2A29'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+.sub_form:hover:before {
+	background: url("data:image/svg+xml,%3Csvg width='43' height='28' viewBox='0 0 43 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='29' cy='14' r='14' fill='white'/%3E%3Cpath d='M33.7071 14.7071C34.0976 14.3166 34.0976 13.6834 33.7071 13.2929L27.3431 6.92893C26.9526 6.53841 26.3195 6.53841 25.9289 6.92893C25.5384 7.31946 25.5384 7.95262 25.9289 8.34315L31.5858 14L25.9289 19.6569C25.5384 20.0474 25.5384 20.6805 25.9289 21.0711C26.3195 21.4616 26.9526 21.4616 27.3431 21.0711L33.7071 14.7071ZM0 15H33V13H0V15Z' fill='%232B2A29'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+.sub_form:hover input[type="submit"] {
+	background: #009846;
+	border-color: #009846;
+	color: #fff;
+}
+.bot_form .wpcf7-list-item {
+	max-width: 373px;
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
+.bot_form .wpcf7-list-item label {
+	display: flex;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2B2A29;
+}
+.bot_form .wpcf7-list-item-label {
+	display: flex;
+	width: 100%:
+	cursor: pointer;
+}
+/* check */
+/* для элемента input c type="checkbox" */
+.bot_form .wpcf7-list-item input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.bot_form .wpcf7-list-item input+.bot_form .wpcf7-list-item-label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.bot_form .wpcf7-list-item input + .wpcf7-list-item-label::before {
+	content: '';
+	display: inline-block;
+	border: 2px solid #EC6708;
+	border-radius: 4px;
+	width: 34px;
+	height: 34px;
+	flex: 0 0 34px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+	margin-right: 16px;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.bot_form .wpcf7-list-item input:checked + .wpcf7-list-item-label::before {
+	background: #EC6708 url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.33312 12.6433L15.9931 4.98242L17.1723 6.16076L8.33312 14.9999L3.02979 9.69659L4.20812 8.51826L8.33312 12.6433Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.bot_form .wpcf7-list-item input:disabled+.bot_form .wpcf7-list-item-label::before {
+	background-color: #e9ecef;
+}
+/* check end */
+/* arrow buttons */
+.global__arow {
+	transition: all .3s ease-out;
+}
+/* .global__arow:hover {
+	background: #ec6708;
+} */
+/* arrow buttons end */
+.gallery__menu ul li a {
+	transition: all .3s ease-out;
+}
+.gallery__menu ul li a:hover {
+	color: #ec6708;
+    border-bottom: 2px solid #ec6708;
+}
+.global__arow:hover {
+	background: #fff;
+}
+@media all and (max-width: 1260px) {
+	.banner__left > span span:before {
+		bottom: 14px;
+		left: 12px;
+		width: 58px;
+	}
+	input[type=text], input[type=tel], textarea {
+		margin-bottom: 20px;
+	}
+	.bot_form {
+		flex-direction: column;
+	}
+	.sub_form {
+		margin-top: 30px;
+	}
+	.sub_form p, .sub_form, .bot_form input[type=submit] {
+		width: 100%;
+		display: block;
+	}
+}
+@media all and (max-width: 990px) {
+	.burger {
+		top: 163px;
+	}
+	.wp-pagenavi a, .wp-pagenavi span {
+		margin: 0 7px;
+	}
+}
+@media all and (max-width: 740px) {
+	.menu, .menu-close {
+		width: 140px;
+	}
+	.banner__left > span span:before {
+		background: url("data:image/svg+xml,%3Csvg width='45' height='18' viewBox='0 0 45 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8.89039C0 6.37348 0.566845 4.26252 1.70054 2.55751C2.84492 0.852504 4.27808 0 6 0C7.72193 0 9.14973 0.852504 10.2834 2.55751C11.4278 4.26252 12 6.37348 12 8.89039C12 11.4723 11.4278 13.6401 10.2834 15.3938C9.14973 17.1313 7.72193 18 6 18C4.27808 18 2.84492 17.1313 1.70054 15.3938C0.566845 13.6401 0 11.4723 0 8.89039ZM2.90374 8.89039C2.90374 10.3681 3.20321 11.6103 3.80214 12.6171C4.40107 13.6076 5.13369 14.1028 6 14.1028C6.86631 14.1028 7.59893 13.6076 8.19786 12.6171C8.79679 11.6103 9.09626 10.3681 9.09626 8.89039C9.09626 7.47767 8.79679 6.29229 8.19786 5.33424C7.59893 4.37618 6.86631 3.89716 6 3.89716C5.13369 3.89716 4.40107 4.37618 3.80214 5.33424C3.20321 6.29229 2.90374 7.47767 2.90374 8.89039Z' fill='%23393185'/%3E%3Cpath d='M2.90374 8.89039C2.90374 10.3681 3.20321 11.6103 3.80214 12.6171C4.40107 13.6076 5.13369 14.1028 6 14.1028C6.86631 14.1028 7.59893 13.6076 8.19786 12.6171C8.79679 11.6103 9.09626 10.3681 9.09626 8.89039C9.09626 7.47767 8.79679 6.29229 8.19786 5.33424C7.59893 4.37618 6.86631 3.89716 6 3.89716C5.13369 3.89716 4.40107 4.37618 3.80214 5.33424C3.20321 6.29229 2.90374 7.47767 2.90374 8.89039Z' fill='%23393185'/%3E%3Cpath d='M33 8.89039C33 6.37348 33.5668 4.26252 34.7005 2.55751C35.8449 0.852504 37.2781 0 39 0C40.7219 0 42.1497 0.852504 43.2834 2.55751C44.4278 4.26252 45 6.37348 45 8.89039C45 11.4723 44.4278 13.6401 43.2834 15.3938C42.1497 17.1313 40.7219 18 39 18C37.2781 18 35.8449 17.1313 34.7005 15.3938C33.5668 13.6401 33 11.4723 33 8.89039ZM35.9037 8.89039C35.9037 10.3681 36.2032 11.6103 36.8021 12.6171C37.4011 13.6076 38.1337 14.1028 39 14.1028C39.8663 14.1028 40.5989 13.6076 41.1979 12.6171C41.7968 11.6103 42.0963 10.3681 42.0963 8.89039C42.0963 7.47767 41.7968 6.29229 41.1979 5.33424C40.5989 4.37618 39.8663 3.89716 39 3.89716C38.1337 3.89716 37.4011 4.37618 36.8021 5.33424C36.2032 6.29229 35.9037 7.47767 35.9037 8.89039Z' fill='%23009846'/%3E%3Cpath d='M35.9037 8.89039C35.9037 10.3681 36.2032 11.6103 36.8021 12.6171C37.4011 13.6076 38.1337 14.1028 39 14.1028C39.8663 14.1028 40.5989 13.6076 41.1979 12.6171C41.7968 11.6103 42.0963 10.3681 42.0963 8.89039C42.0963 7.47767 41.7968 6.29229 41.1979 5.33424C40.5989 4.37618 39.8663 3.89716 39 3.89716C38.1337 3.89716 37.4011 4.37618 36.8021 5.33424C36.2032 6.29229 35.9037 7.47767 35.9037 8.89039Z' fill='%23009846'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+        width: 46px;
+		height: 18px;
+		bottom: 17px;
+    	left: 9px;
+	}
+}
+@media all and (max-width: 520px) {
+	.text-news__banner-image {
+		height: 250px;
+	}
+	.text-news__banner-image img {
+		height: 250px;
+	}
+}
+
+

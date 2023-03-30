@@ -9,52 +9,45 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'soluzioni-di-casa' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'soluzioni-di-casa' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'soluzioni-di-casa' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
+         <div class="error">
+    <div class="error__big-branch">
+        <img src="<?php echo get_theme_file_uri(); ?>/src/dist/img/big-branch.svg" alt="trees">
+    </div>
+    <div class="container">
+        <div class="error__in">
+            <div class="error__block">
+                <div class="error__block-title">
+                    <h2>Извините... но такой страницы не <br>существует</h2>
+                </div>
+                <div class="error__block-menu">
+                    <div class="error__block-menu-item">
+                        <p>Страница, которую вы запрашиваете, не существует. Возможно она была удалена, или вы набрали неверный адрес. 
+                        </p>
+                        <p> Вернитесь на главную страницу и попробуйте найти необходимую вам информацию там.</p>
+                    
+                        <a href="" class="button">
+                            <span>Отправить заявку</span>
+                            <div class="green-button">
+                                <img src="<?php echo get_theme_file_uri(); ?>/src/dist/img/green-button.svg" alt="button">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="error__block-menu-item">
+						<h2>Попробуйте поискать тут:</h2>
+						<?php
+							wp_nav_menu(
 								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
+									'menu'            => 'Меню - Направления',
+									'theme_location'  => '',
+									'container'       => 'ul'
 								)
 							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$soluzioni_di_casa_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'soluzioni-di-casa' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$soluzioni_di_casa_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
+						?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
 <?php
 get_footer();
