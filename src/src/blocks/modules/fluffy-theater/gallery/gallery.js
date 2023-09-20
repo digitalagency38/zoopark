@@ -10,8 +10,8 @@ const FluffyGallery = class FluffyGallery {
         this.slider = new Glide('.gallery-theater__images.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 990: {

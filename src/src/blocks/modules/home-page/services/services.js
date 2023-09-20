@@ -10,8 +10,8 @@ const Services = class Services {
         this.slider = new Glide('.services__slider.glide', {
             perView: 3,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 1130: {

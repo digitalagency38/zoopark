@@ -10,8 +10,8 @@ const Poster = class Poster {
         this.slider = new Glide('.billboard-cards.glide', {
             perView: 1,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 990: {

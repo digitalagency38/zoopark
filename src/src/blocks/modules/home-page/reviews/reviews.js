@@ -10,8 +10,8 @@ const Reviews = class Reviews {
         this.slider = new Glide('.reviews__slider.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 990: {

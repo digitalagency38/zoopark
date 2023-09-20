@@ -10,8 +10,8 @@ const Tales = class Tales {
         this.slider = new Glide('.fairy-tales__slider.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 990: {

@@ -11,8 +11,8 @@ const Gallery = class Gallery {
         this.slider = new Glide('.gallery__images.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 990: {

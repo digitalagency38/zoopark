@@ -10,8 +10,8 @@ const Animal = class Animal {
         this.slider = new Glide('.detailed-animal-page__about.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 1130: {

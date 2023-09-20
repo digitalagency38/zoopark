@@ -10,8 +10,8 @@ const News = class News {
         this.slider = new Glide('.news__right.glide', {
             perView: 2,
             gap: 20,
-            swipeThreshold: false,
-            dragThreshold: false,
+            swipeThreshold: true,
+            dragThreshold: true,
             type: 'carousel',
             breakpoints: {
                 1130: {
